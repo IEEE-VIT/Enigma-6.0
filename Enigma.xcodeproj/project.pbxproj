@@ -12,6 +12,8 @@
 		771ED56B2326B57D0024329F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED5692326B57D0024329F /* Main.storyboard */; };
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
+		778E4619232F4EFF00D7A865 /* Chosence Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778E4618232F4EFF00D7A865 /* Chosence Regular.otf */; };
+		778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461B232F4F4300D7A865 /* Saira-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		771ED56C2326B57F0024329F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771ED56F2326B57F0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		778E4618232F4EFF00D7A865 /* Chosence Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chosence Regular.otf"; sourceTree = "<group>"; };
+		778E461B232F4F4300D7A865 /* Saira-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,20 @@
 				771ED5672326B57D0024329F /* ViewController.swift */,
 				771ED5692326B57D0024329F /* Main.storyboard */,
 				771ED56C2326B57F0024329F /* Assets.xcassets */,
+				778E461D232F4F5700D7A865 /* Fonts */,
 				771ED56E2326B57F0024329F /* LaunchScreen.storyboard */,
 				771ED5712326B57F0024329F /* Info.plist */,
 			);
 			path = Enigma;
+			sourceTree = "<group>";
+		};
+		778E461D232F4F5700D7A865 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				778E4618232F4EFF00D7A865 /* Chosence Regular.otf */,
+				778E461B232F4F4300D7A865 /* Saira-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */,
+				778E4619232F4EFF00D7A865 /* Chosence Regular.otf in Resources */,
 				771ED56D2326B57F0024329F /* Assets.xcassets in Resources */,
+				778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */,
 				771ED56B2326B57D0024329F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
