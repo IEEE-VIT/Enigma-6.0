@@ -10,10 +10,36 @@ import UIKit
 
 class profileSetUpViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var firstNameText: UITextField!
+    @IBOutlet weak var lastNameText: UITextField!
+    @IBOutlet weak var usernameText: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Setting up textFields
+        textFieldDelegateSetUp()
+        //EXTENSION: - Hide keyborad
+        hideKeyboardWhenTappedAround()
     }
     
+    //MARK:- TextField Delegate Method
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+//MARK: - Extensions
+extension profileSetUpViewController: UITextFieldDelegate {
+    
+    //Setup textfield delegates
+    func textFieldDelegateSetUp() {
+        emailText.delegate = self
+        firstNameText.delegate = self
+        lastNameText.delegate = self
+        usernameText.delegate = self
+    }
 }

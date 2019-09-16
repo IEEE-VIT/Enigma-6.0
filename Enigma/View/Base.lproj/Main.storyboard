@@ -657,6 +657,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8DD-75-fua"/>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="y9i-O1-r2t" id="fyW-YY-pBi"/>
+                        <outlet property="firstNameText" destination="ix0-Z1-Cxn" id="mmz-Eu-pst"/>
+                        <outlet property="lastNameText" destination="dZN-ja-Cn6" id="N5b-6M-4RD"/>
+                        <outlet property="usernameText" destination="UFM-pv-87Y" id="6DC-sb-9mQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDX-kD-VWj" sceneMemberID="firstResponder"/>
             </objects>
