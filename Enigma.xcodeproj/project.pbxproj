@@ -66,6 +66,7 @@
 				778E4625232F655400D7A865 /* Model */,
 				778E4622232F650F00D7A865 /* View */,
 				778E4623232F651900D7A865 /* Controllers */,
+				778E461D232F4F5700D7A865 /* Fonts */,
 				778E4624232F652E00D7A865 /* Helpers */,
 				771ED5712326B57F0024329F /* Info.plist */,
 			);
@@ -103,7 +104,6 @@
 			children = (
 				771ED5652326B57D0024329F /* AppDelegate.swift */,
 				771ED56C2326B57F0024329F /* Assets.xcassets */,
-				778E461D232F4F5700D7A865 /* Fonts */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
