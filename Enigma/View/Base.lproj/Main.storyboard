@@ -857,7 +857,7 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="3725" y="1085"/>
         </scene>
-        <!--View Controller-->
+        <!--ENGIMA-->
         <scene sceneID="WU9-EC-Szx">
             <objects>
                 <viewController id="Bc4-tf-De5" sceneMemberID="viewController">
@@ -867,7 +867,7 @@ you will get x points</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gzZ-Ap-CPF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="e8N-79-CjR"/>
+                    <navigationItem key="navigationItem" title="ENGIMA" id="e8N-79-CjR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -904,6 +904,9 @@ you will get x points</string>
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.95294117649999999" green="0.87450980389999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
