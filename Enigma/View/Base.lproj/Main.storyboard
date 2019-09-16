@@ -835,7 +835,7 @@ you will get x points</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Msb-u2-C4T"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rules" id="qUL-RB-O0r"/>
+                    <tabBarItem key="tabBarItem" title="Rules" image="rules" id="qUL-RB-O0r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-9k-0mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -851,7 +851,7 @@ you will get x points</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dFd-Ai-l6w"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="bTA-Mk-qOY"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="bTA-Mk-qOY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -926,7 +926,9 @@ you will get x points</string>
         <image name="hoodie2" width="360" height="160"/>
         <image name="hoodie3" width="360" height="160"/>
         <image name="leaderB" width="32" height="32"/>
+        <image name="profile" width="30" height="30"/>
         <image name="road" width="360" height="160"/>
+        <image name="rules" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="gYd-rA-Sfe"/>
