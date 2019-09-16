@@ -8,7 +8,7 @@
 
 import UIKit
 
-class loginPageViewController: UIViewController, UITextFieldDelegate {
+class loginPageViewController: UIViewController{
 
     //MARK: - Outlets
     @IBOutlet weak var emailText: UITextField!
@@ -23,26 +23,27 @@ class loginPageViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK:- TextField Delegate Method
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         textField.resignFirstResponder()
         return true
-        
     }
     
     //MARK: - Login Button Action
     @IBAction func loginButton(_ sender: UIButton) {
     }
     
-    
     //MARK: - Forget passwork button Action
     @IBAction func forgetButton(_ sender: UIButton) {
     }
+    
+}
 
+//MARK: - Extensions
+extension loginPageViewController: UITextFieldDelegate {
+    
+    //Setup textfield delegates
     func textFieldDelegateSetUp() {
         emailText.delegate = self
         passText.delegate = self
     }
-    
 }
