@@ -34,6 +34,11 @@ class signUpPageViewController: UIViewController {
         
     }
     
+    //MARK: Make Full screen
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
 }
 
 //MARK: - Extensions

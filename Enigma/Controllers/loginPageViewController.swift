@@ -36,6 +36,11 @@ class loginPageViewController: UIViewController{
     @IBAction func forgetButton(_ sender: UIButton) {
     }
     
+    //MARK: Make Full screen
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
 }
 
 //MARK: - Extensions
