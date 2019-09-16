@@ -25,7 +25,7 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     
      //MARK: - Table View datasource Method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return rules.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,7 +41,7 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 65
     }
     
     

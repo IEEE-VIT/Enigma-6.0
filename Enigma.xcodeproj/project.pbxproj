@@ -13,6 +13,8 @@
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
 		7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */; };
 		7787EEBC232FC588008CFBCD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBB232FC588008CFBCD /* RulesViewController.swift */; };
+		7787EEBE232FCAAC008CFBCD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBD232FCAAC008CFBCD /* constants.swift */; };
+		7787EEC0232FCB5D008CFBCD /* rulesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBF232FCB5D008CFBCD /* rulesTableViewCell.swift */; };
 		778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461B232F4F4300D7A865 /* Saira-Regular.ttf */; };
 		778E461F232F50AE00D7A865 /* chosence.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461E232F50AE00D7A865 /* chosence.regular.otf */; };
 		778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4620232F64C800D7A865 /* loginPageViewController.swift */; };
@@ -30,6 +32,8 @@
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSetUpViewController.swift; sourceTree = "<group>"; };
 		7787EEBB232FC588008CFBCD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		7787EEBD232FCAAC008CFBCD /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		7787EEBF232FCB5D008CFBCD /* rulesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rulesTableViewCell.swift; sourceTree = "<group>"; };
 		778E461B232F4F4300D7A865 /* Saira-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Regular.ttf"; sourceTree = "<group>"; };
 		778E461E232F50AE00D7A865 /* chosence.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chosence.regular.otf; sourceTree = "<group>"; };
 		778E4620232F64C800D7A865 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 			path = Enigma;
 			sourceTree = "<group>";
 		};
+		7787EEC1232FCB65008CFBCD /* RulesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7787EEBF232FCB5D008CFBCD /* rulesTableViewCell.swift */,
+				7787EEBB232FC588008CFBCD /* RulesViewController.swift */,
+			);
+			path = RulesViewController;
+			sourceTree = "<group>";
+		};
 		778E461D232F4F5700D7A865 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +113,7 @@
 		778E4623232F651900D7A865 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7787EEBB232FC588008CFBCD /* RulesViewController.swift */,
+				7787EEC1232FCB65008CFBCD /* RulesViewController */,
 				778E462B232F80AE00D7A865 /* signUpPageViewController.swift */,
 				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
 				7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */,
@@ -129,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
+				7787EEBD232FCAAC008CFBCD /* constants.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,9 +224,11 @@
 				778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */,
 				778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */,
 				7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */,
+				7787EEC0232FCB5D008CFBCD /* rulesTableViewCell.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
+				7787EEBE232FCAAC008CFBCD /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
