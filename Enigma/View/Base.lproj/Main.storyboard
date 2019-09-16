@@ -398,6 +398,9 @@
                                                         <integer key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="Nat-wy-oFG"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Kcv-6Y-pBr">
                                                 <rect key="frame" x="84.333333333333329" y="70" width="165.66666666666669" height="30"/>
@@ -456,6 +459,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aF5-MK-FcG"/>
                     </view>
+                    <connections>
+                        <outlet property="cpasswordText" destination="sqr-NY-M0W" id="CaR-xZ-bZu"/>
+                        <outlet property="emailText" destination="crg-Nf-G1i" id="92w-HH-R2x"/>
+                        <outlet property="passwordText" destination="kFB-ZE-hKo" id="3Yi-Dq-0zY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXm-CF-VgQ" sceneMemberID="firstResponder"/>
             </objects>

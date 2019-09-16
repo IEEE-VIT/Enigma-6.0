@@ -10,21 +10,38 @@ import UIKit
 
 class signUpPageViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var cpasswordText: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setting up textFields
+        textFieldDelegateSetUp()
+        //EXTENSION: - Hide keyborad
+        hideKeyboardWhenTappedAround()
+    }
 
-        // Do any additional setup after loading the view.
+    //MARK:- TextField Delegate Method
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - SignIn button action
+    @IBAction func signIn(_ sender: UIButton) {
+        
     }
-    */
+    
+}
 
+//MARK: - Extensions
+extension signUpPageViewController: UITextFieldDelegate {
+    //Setup textfield delegates
+    func textFieldDelegateSetUp() {
+        emailText.delegate = self
+        passwordText.delegate = self
+        cpasswordText.delegate = self
+    }
 }
