@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchText" translatesAutoresizingMaskIntoConstraints="NO" id="ayy-YA-pky">
-                                <rect key="frame" x="20" y="44" width="374" height="803"/>
+                                <rect key="frame" x="20" y="57" width="374" height="790"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enigmaL" translatesAutoresizingMaskIntoConstraints="NO" id="2Tr-u9-2ZO">
                                 <rect key="frame" x="70.666666666666686" y="388.66666666666669" width="273" height="119"/>
@@ -33,7 +33,7 @@
                             <constraint firstItem="LoK-P9-Pzw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2cF-oO-0hR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LoK-P9-Pzw" secondAttribute="trailing" id="Bza-9Z-d6n"/>
                             <constraint firstItem="LoK-P9-Pzw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KD4-Gs-Fnx"/>
-                            <constraint firstItem="ayy-YA-pky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LV8-Z1-r8T"/>
+                            <constraint firstItem="ayy-YA-pky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="LV8-Z1-r8T"/>
                             <constraint firstItem="2Tr-u9-2ZO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S6v-i6-MJi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LoK-P9-Pzw" secondAttribute="bottom" constant="-34" id="cKK-m0-mrp"/>
                             <constraint firstItem="ayy-YA-pky" firstAttribute="centerX" secondItem="2Tr-u9-2ZO" secondAttribute="centerX" id="cww-ZS-j18"/>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
+            <point key="canvasLocation" x="50.399999999999999" y="373.76311844077964"/>
         </scene>
     </scenes>
     <resources>
