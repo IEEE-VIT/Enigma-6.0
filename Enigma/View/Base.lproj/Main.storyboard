@@ -712,6 +712,11 @@
                                 <state key="normal" title="PLAY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vev-mR-zvc">
                                 <rect key="frame" x="0.0" y="241.66666666666669" width="414" height="654.33333333333326"/>
@@ -727,7 +732,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
