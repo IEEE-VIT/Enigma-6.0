@@ -640,12 +640,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oJ-3i-3dF">
+                                <rect key="frame" x="167" y="768" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.96862745098039216" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="GqK-C4-D7Q"/>
+                                    <constraint firstAttribute="height" constant="40" id="OxA-iT-mYo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneAction:" destination="5Gn-Uq-0TL" eventType="touchUpInside" id="rTi-bk-fYM"/>
+                                    <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="MnM-T8-APz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="y9Z-Uj-fMg" firstAttribute="leading" secondItem="8DD-75-fua" secondAttribute="leading" constant="40" id="LAm-4L-16J"/>
+                            <constraint firstItem="7oJ-3i-3dF" firstAttribute="bottom" secondItem="8DD-75-fua" secondAttribute="bottom" constant="-54" id="OQb-BJ-CzD"/>
                             <constraint firstItem="y9Z-Uj-fMg" firstAttribute="top" secondItem="8DD-75-fua" secondAttribute="top" constant="30" id="OlO-rt-anI"/>
                             <constraint firstItem="PVK-Sm-b8j" firstAttribute="centerX" secondItem="aBs-J5-8Lv" secondAttribute="centerX" id="RWc-2F-FLS"/>
+                            <constraint firstItem="7oJ-3i-3dF" firstAttribute="centerX" secondItem="aBs-J5-8Lv" secondAttribute="centerX" id="XEw-Cg-fiy"/>
                             <constraint firstItem="PVK-Sm-b8j" firstAttribute="centerY" secondItem="aBs-J5-8Lv" secondAttribute="centerY" id="Z7B-VZ-xEQ"/>
                             <constraint firstItem="8DD-75-fua" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y9Z-Uj-fMg" secondAttribute="trailing" symbolic="YES" id="a6S-6A-ruq"/>
                             <constraint firstItem="8DD-75-fua" firstAttribute="trailing" secondItem="PVK-Sm-b8j" secondAttribute="trailing" constant="40" id="azO-8E-wRN"/>

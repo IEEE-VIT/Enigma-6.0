@@ -30,6 +30,10 @@ class profileSetUpViewController: UIViewController {
         textField.resignFirstResponder()
         return true
     }
+    
+    //MARK: - Done button action
+    @IBAction func doneAction(_ sender: UIButton) {
+    }
 }
 
 //MARK: - Extensions
