@@ -17,6 +17,11 @@ class RulesViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    //MARK: Make Full screen
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
 }
 
 //MARK: - Extensions
