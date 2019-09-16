@@ -165,6 +165,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajl-jC-HOU"/>
+                                                    <segue destination="6pP-IG-sbO" kind="show" id="eWB-LA-8tM"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-VC-EZa">
@@ -659,6 +660,7 @@
                                 <connections>
                                     <action selector="doneAction:" destination="5Gn-Uq-0TL" eventType="touchUpInside" id="rTi-bk-fYM"/>
                                     <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="MnM-T8-APz"/>
+                                    <segue destination="6pP-IG-sbO" kind="show" id="mYM-za-Dp6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -691,10 +693,55 @@
             </objects>
             <point key="canvasLocation" x="1741" y="50"/>
         </scene>
+        <!--Rules View Controller-->
+        <scene sceneID="zda-y6-RFT">
+            <objects>
+                <viewController id="6pP-IG-sbO" customClass="RulesViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3PV-Xa-qHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="d85-T4-cUr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="241.66666666666666"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d85-T4-cUr" secondAttribute="height" multiplier="125:73" id="3Ef-Bi-x4n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-Cp-VgF">
+                                <rect key="frame" x="20" y="74" width="374" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="rFf-Gr-Izf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chosence" family="Chosence" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JXo-Cp-VgF" firstAttribute="top" secondItem="ZYC-mS-Ysq" secondAttribute="top" constant="30" id="0mV-HR-RZe"/>
+                            <constraint firstItem="d85-T4-cUr" firstAttribute="top" secondItem="3PV-Xa-qHi" secondAttribute="top" id="3Lg-qm-bKY"/>
+                            <constraint firstItem="JXo-Cp-VgF" firstAttribute="centerX" secondItem="3PV-Xa-qHi" secondAttribute="centerX" id="GQo-tz-8oh"/>
+                            <constraint firstItem="JXo-Cp-VgF" firstAttribute="leading" secondItem="ZYC-mS-Ysq" secondAttribute="leading" constant="20" id="Lha-yS-KdM"/>
+                            <constraint firstItem="d85-T4-cUr" firstAttribute="trailing" secondItem="ZYC-mS-Ysq" secondAttribute="trailing" id="V1I-qD-I2E"/>
+                            <constraint firstItem="ZYC-mS-Ysq" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JXo-Cp-VgF" secondAttribute="trailing" id="hqR-wq-mUR"/>
+                            <constraint firstItem="d85-T4-cUr" firstAttribute="leading" secondItem="ZYC-mS-Ysq" secondAttribute="leading" id="i9L-Ih-eNQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZYC-mS-Ysq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTw-Gl-DgI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2607" y="50"/>
+        </scene>
     </scenes>
     <resources>
         <image name="hoodie" width="360" height="160"/>
         <image name="hoodie2" width="360" height="160"/>
         <image name="hoodie3" width="360" height="160"/>
+        <image name="road" width="360" height="160"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eWB-LA-8tM"/>
+    </inferredMetricsTieBreakers>
 </document>
