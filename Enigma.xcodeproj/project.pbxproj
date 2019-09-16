@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		771ED5662326B57D0024329F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771ED5652326B57D0024329F /* AppDelegate.swift */; };
-		771ED5682326B57D0024329F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771ED5672326B57D0024329F /* ViewController.swift */; };
 		771ED56B2326B57D0024329F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED5692326B57D0024329F /* Main.storyboard */; };
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
 		778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461B232F4F4300D7A865 /* Saira-Regular.ttf */; };
 		778E461F232F50AE00D7A865 /* chosence.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461E232F50AE00D7A865 /* chosence.regular.otf */; };
+		778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4620232F64C800D7A865 /* loginPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		771ED5622326B57D0024329F /* Enigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771ED5652326B57D0024329F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		771ED5672326B57D0024329F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		771ED56A2326B57D0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		771ED56C2326B57F0024329F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771ED56F2326B57F0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778E461B232F4F4300D7A865 /* Saira-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Regular.ttf"; sourceTree = "<group>"; };
 		778E461E232F50AE00D7A865 /* chosence.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chosence.regular.otf; sourceTree = "<group>"; };
+		778E4620232F64C800D7A865 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 		771ED5642326B57D0024329F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
+				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
 				771ED5652326B57D0024329F /* AppDelegate.swift */,
-				771ED5672326B57D0024329F /* ViewController.swift */,
 				771ED5692326B57D0024329F /* Main.storyboard */,
 				771ED56C2326B57F0024329F /* Assets.xcassets */,
 				778E461D232F4F5700D7A865 /* Fonts */,
@@ -151,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771ED5682326B57D0024329F /* ViewController.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
+				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
