@@ -134,6 +134,9 @@
                                                 <state key="normal" title="Forgot password ?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="forgetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yd5-Cv-otb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -144,7 +147,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="H7V-xc-12s">
                                         <rect key="frame" x="0.0" y="188.99999999999994" width="334" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM0-Ca-0Ff">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qM0-Ca-0Ff" userLabel="LOGINB">
                                                 <rect key="frame" x="127" y="0.0" width="80" height="40"/>
                                                 <color key="backgroundColor" red="0.80784313725490198" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -160,6 +163,9 @@
                                                         <integer key="value" value="7"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajl-jC-HOU"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-VC-EZa">
                                                 <rect key="frame" x="56.333333333333329" y="70" width="221.66666666666669" height="30"/>
@@ -215,6 +221,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="QGF-u0-YbL" id="K5v-PQ-khH"/>
+                        <outlet property="passText" destination="xjC-kk-iOr" id="e8I-pF-Jx8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

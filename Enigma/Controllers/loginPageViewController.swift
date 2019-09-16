@@ -8,14 +8,41 @@
 
 import UIKit
 
-class loginPageViewController: UIViewController {
+class loginPageViewController: UIViewController, UITextFieldDelegate {
 
+    //MARK: - Outlets
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Setting up textFields
+        textFieldDelegateSetUp()
+        //EXTENSION: - Hide keyborad
+        hideKeyboardWhenTappedAround()
     }
     
+    //MARK:- TextField Delegate Method
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    //MARK: - Login Button Action
+    @IBAction func loginButton(_ sender: UIButton) {
+    }
+    
+    
+    //MARK: - Forget passwork button Action
+    @IBAction func forgetButton(_ sender: UIButton) {
+    }
 
-
+    func textFieldDelegateSetUp() {
+        emailText.delegate = self
+        passText.delegate = self
+    }
+    
 }

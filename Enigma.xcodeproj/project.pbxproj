@@ -15,6 +15,7 @@
 		778E461F232F50AE00D7A865 /* chosence.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461E232F50AE00D7A865 /* chosence.regular.otf */; };
 		778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4620232F64C800D7A865 /* loginPageViewController.swift */; };
 		778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4626232F65E300D7A865 /* NetworkEngine.swift */; };
+		778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4629232F690400D7A865 /* keyboard+Hide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		778E461E232F50AE00D7A865 /* chosence.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chosence.regular.otf; sourceTree = "<group>"; };
 		778E4620232F64C800D7A865 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 		778E4626232F65E300D7A865 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		778E4629232F690400D7A865 /* keyboard+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		771ED5642326B57D0024329F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
+				778E4628232F68D900D7A865 /* Extensions */,
 				778E4625232F655400D7A865 /* Model */,
 				778E4622232F650F00D7A865 /* View */,
 				778E4623232F651900D7A865 /* Controllers */,
@@ -111,6 +114,14 @@
 				778E4626232F65E300D7A865 /* NetworkEngine.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		778E4628232F68D900D7A865 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
