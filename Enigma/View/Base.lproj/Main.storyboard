@@ -735,7 +735,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -819,7 +819,7 @@ you will get x points</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4PO-in-gfL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Learderboard" id="Lar-Z3-p3Y"/>
+                    <tabBarItem key="tabBarItem" title="Learderboard" image="leaderB" id="Lar-Z3-p3Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fe-Zb-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -899,7 +899,7 @@ you will get x points</string>
         <scene sceneID="Mf3-nM-gs8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4VP-kL-AXd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Play" id="Aqi-Wy-QZF"/>
+                    <tabBarItem key="tabBarItem" title="Play" image="game" id="Aqi-Wy-QZF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qo5-ES-hcx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -921,9 +921,11 @@ you will get x points</string>
     </scenes>
     <resources>
         <image name="Ellipse 2" width="10" height="10"/>
+        <image name="game" width="32" height="32"/>
         <image name="hoodie" width="360" height="160"/>
         <image name="hoodie2" width="360" height="160"/>
         <image name="hoodie3" width="360" height="160"/>
+        <image name="leaderB" width="32" height="32"/>
         <image name="road" width="360" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
