@@ -12,9 +12,12 @@ class RulesViewController: UIViewController {
 
     //MARK: - Outlets
     @IBOutlet weak var rulesTable: UITableView!
+    @IBOutlet weak var play: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Play button added to subview(Top of table view)
+        view.addSubview(play)
     }
     
     //MARK: Make Full screen
