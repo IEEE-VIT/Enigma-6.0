@@ -11,6 +11,7 @@
 		771ED56B2326B57D0024329F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED5692326B57D0024329F /* Main.storyboard */; };
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
+		7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */; };
 		778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461B232F4F4300D7A865 /* Saira-Regular.ttf */; };
 		778E461F232F50AE00D7A865 /* chosence.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461E232F50AE00D7A865 /* chosence.regular.otf */; };
 		778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4620232F64C800D7A865 /* loginPageViewController.swift */; };
@@ -26,6 +27,7 @@
 		771ED56C2326B57F0024329F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771ED56F2326B57F0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSetUpViewController.swift; sourceTree = "<group>"; };
 		778E461B232F4F4300D7A865 /* Saira-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Regular.ttf"; sourceTree = "<group>"; };
 		778E461E232F50AE00D7A865 /* chosence.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chosence.regular.otf; sourceTree = "<group>"; };
 		778E4620232F64C800D7A865 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				778E462B232F80AE00D7A865 /* signUpPageViewController.swift */,
 				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
+				7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */,
 				778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */,
+				7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
