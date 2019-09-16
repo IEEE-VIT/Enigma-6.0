@@ -49,43 +49,97 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4r-F9-3Ed">
-                                <rect key="frame" x="166" y="372" width="24" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kew-xe-fqQ">
+                                <rect key="frame" x="67" y="439" width="240" height="85"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-Ho-5Pf">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="35"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QGF-u0-YbL">
+                                                <rect key="frame" x="10" y="0.0" width="230" height="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="continue" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by6-3Y-srB">
+                                                <rect key="frame" x="0.0" y="34" width="240" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="GwO-ge-4Hz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="by6-3Y-srB" firstAttribute="leading" secondItem="Wdy-Ho-5Pf" secondAttribute="leading" id="28y-le-mRZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="by6-3Y-srB" secondAttribute="trailing" id="5Ln-En-uy4"/>
+                                            <constraint firstItem="QGF-u0-YbL" firstAttribute="leading" secondItem="Wdy-Ho-5Pf" secondAttribute="leading" constant="10" id="Ofr-x8-N04"/>
+                                            <constraint firstAttribute="trailing" secondItem="QGF-u0-YbL" secondAttribute="trailing" id="Slk-Bg-8iA"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="C4W-yN-hX1">
+                                        <rect key="frame" x="0.0" y="50" width="240" height="35"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-kk-iOr">
+                                                <rect key="frame" x="10" y="0.0" width="220" height="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX1-cq-HqB">
+                                                <rect key="frame" x="0.0" y="34" width="240" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="c4b-9b-8ep"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xjC-kk-iOr" firstAttribute="leading" secondItem="C4W-yN-hX1" secondAttribute="leading" constant="10" id="f4C-DW-2y4"/>
+                                            <constraint firstAttribute="trailing" secondItem="tX1-cq-HqB" secondAttribute="trailing" id="vF0-d1-LzQ"/>
+                                            <constraint firstItem="tX1-cq-HqB" firstAttribute="leading" secondItem="C4W-yN-hX1" secondAttribute="leading" id="wDU-8O-1Qu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="C4W-yN-hX1" firstAttribute="leading" secondItem="Kew-xe-fqQ" secondAttribute="leading" id="Jl8-Ds-b1X"/>
+                                    <constraint firstAttribute="trailing" secondItem="C4W-yN-hX1" secondAttribute="trailing" id="eHq-wd-Qtf"/>
+                                    <constraint firstItem="Wdy-Ho-5Pf" firstAttribute="leading" secondItem="Kew-xe-fqQ" secondAttribute="leading" id="glk-nk-eU8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wdy-Ho-5Pf" secondAttribute="trailing" id="sSo-IG-5pP"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4r-F9-3Ed">
+                                <rect key="frame" x="175" y="340" width="24" height="27"/>
                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QGF-u0-YbL">
-                                <rect key="frame" x="106" y="407" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-kk-iOr">
-                                <rect key="frame" x="106" y="458" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Kew-xe-fqQ" firstAttribute="top" secondItem="k4r-F9-3Ed" secondAttribute="bottom" constant="72" id="0Bf-2I-sTl"/>
                             <constraint firstItem="Ukq-2K-oA2" firstAttribute="top" secondItem="67g-KU-vmH" secondAttribute="bottom" constant="60" id="1i6-4g-ehO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ukq-2K-oA2" secondAttribute="trailing" constant="65" id="3bC-AH-5rc"/>
                             <constraint firstItem="3FH-ul-mS3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="BrB-8a-lcz"/>
                             <constraint firstItem="67g-KU-vmH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C7S-1X-W5b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k4r-F9-3Ed" secondAttribute="trailing" constant="176" id="Fbt-Hm-LMe"/>
                             <constraint firstItem="67g-KU-vmH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G8h-Y6-Zxv"/>
                             <constraint firstItem="Ukq-2K-oA2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="Tcg-3s-B93"/>
+                            <constraint firstItem="Kew-xe-fqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="bIz-9D-eab"/>
                             <constraint firstItem="3FH-ul-mS3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="dtJ-Bg-JtG"/>
+                            <constraint firstItem="k4r-F9-3Ed" firstAttribute="top" secondItem="Ukq-2K-oA2" secondAttribute="bottom" constant="18" id="fR9-Fo-Tey"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3FH-ul-mS3" secondAttribute="trailing" symbolic="YES" id="qBY-qm-ixH"/>
+                            <constraint firstItem="Kew-xe-fqQ" firstAttribute="centerX" secondItem="k4r-F9-3Ed" secondAttribute="centerX" id="uGh-gc-ev2"/>
+                            <constraint firstItem="Kew-xe-fqQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="439" id="umH-Jy-4SU"/>
                             <constraint firstItem="67g-KU-vmH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xFz-4W-ZXA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
