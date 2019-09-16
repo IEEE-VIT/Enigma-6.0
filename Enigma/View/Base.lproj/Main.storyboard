@@ -165,7 +165,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajl-jC-HOU"/>
-                                                    <segue destination="6pP-IG-sbO" kind="show" id="eWB-LA-8tM"/>
+                                                    <segue destination="sKm-24-W0p" kind="show" id="2aw-CJ-Dch"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-VC-EZa">
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXm-CF-VgQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="50"/>
+            <point key="canvasLocation" x="880" y="48"/>
         </scene>
         <!--Profile Set Up View Controller-->
         <scene sceneID="R8N-kp-6G8">
@@ -691,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDX-kD-VWj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="50"/>
+            <point key="canvasLocation" x="920" y="882"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="zda-y6-RFT">
@@ -717,6 +717,9 @@
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="sKm-24-W0p" kind="show" id="gYd-rA-Sfe"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vev-mR-zvc">
                                 <rect key="frame" x="0.0" y="241.66666666666669" width="414" height="654.33333333333326"/>
@@ -804,7 +807,110 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTw-Gl-DgI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="47.544642857142854"/>
+            <point key="canvasLocation" x="1777" y="882"/>
+        </scene>
+        <!--Learderboard-->
+        <scene sceneID="IeQ-ld-dzS">
+            <objects>
+                <viewController id="30E-h9-OW9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kvq-29-jM1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4PO-in-gfL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Learderboard" id="Lar-Z3-p3Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fe-Zb-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3077" y="398"/>
+        </scene>
+        <!--Rules-->
+        <scene sceneID="FzR-PN-e2c">
+            <objects>
+                <viewController id="XAP-IK-lqJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Um-b3-B1a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Msb-u2-C4T"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rules" id="qUL-RB-O0r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-9k-0mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4122" y="368"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="HnU-mY-hus">
+            <objects>
+                <viewController id="9gO-8H-Ywf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jrq-jU-7AV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dFd-Ai-l6w"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="bTA-Mk-qOY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3725" y="1085"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WU9-EC-Szx">
+            <objects>
+                <viewController id="Bc4-tf-De5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yye-0y-Xf7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gzZ-Ap-CPF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e8N-79-CjR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4122" y="-360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wxM-fu-bq7">
+            <objects>
+                <tabBarController id="sKm-24-W0p" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ohX-eY-HHs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4VP-kL-AXd" kind="relationship" relationship="viewControllers" id="Hdi-Fe-7OM"/>
+                        <segue destination="30E-h9-OW9" kind="relationship" relationship="viewControllers" id="WfN-CM-khh"/>
+                        <segue destination="XAP-IK-lqJ" kind="relationship" relationship="viewControllers" id="LuZ-cz-fR6"/>
+                        <segue destination="9gO-8H-Ywf" kind="relationship" relationship="viewControllers" id="HK1-nH-K0k"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OoL-N0-qEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="73"/>
+        </scene>
+        <!--Play-->
+        <scene sceneID="Mf3-nM-gs8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4VP-kL-AXd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Play" id="Aqi-Wy-QZF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qo5-ES-hcx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bc4-tf-De5" kind="relationship" relationship="rootViewController" id="f5l-1o-JhH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRk-GH-YD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3078" y="-360"/>
         </scene>
     </scenes>
     <resources>
@@ -815,6 +921,6 @@ you will get x points</string>
         <image name="road" width="360" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mYM-za-Dp6"/>
+        <segue reference="gYd-rA-Sfe"/>
     </inferredMetricsTieBreakers>
 </document>
