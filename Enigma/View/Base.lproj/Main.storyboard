@@ -181,6 +181,9 @@
                                                         <state key="normal" title="Sign up ">
                                                             <color key="titleColor" red="0.8901960784313725" green="0.80392156862745101" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="7aU-Js-xJT" kind="show" id="Xso-dn-JZT"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -229,6 +232,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="55.200000000000003" y="40.029985007496258"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ifl-nN-zlQ">
+            <objects>
+                <viewController id="7aU-Js-xJT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gGa-2f-Zdh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dDp-GG-lqV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx6-rV-pcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="33"/>
         </scene>
     </scenes>
     <resources>
