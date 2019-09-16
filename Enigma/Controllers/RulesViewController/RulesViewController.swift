@@ -29,7 +29,7 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = rulesTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = rulesTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! rulesTableViewCell
         return cell
     }
     
@@ -41,8 +41,11 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 65
+        return 30
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
     
 }
