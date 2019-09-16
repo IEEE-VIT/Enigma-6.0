@@ -14,6 +14,7 @@
 		778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461B232F4F4300D7A865 /* Saira-Regular.ttf */; };
 		778E461F232F50AE00D7A865 /* chosence.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 778E461E232F50AE00D7A865 /* chosence.regular.otf */; };
 		778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4620232F64C800D7A865 /* loginPageViewController.swift */; };
+		778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4626232F65E300D7A865 /* NetworkEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		778E461B232F4F4300D7A865 /* Saira-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Saira-Regular.ttf"; sourceTree = "<group>"; };
 		778E461E232F50AE00D7A865 /* chosence.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chosence.regular.otf; sourceTree = "<group>"; };
 		778E4620232F64C800D7A865 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
+		778E4626232F65E300D7A865 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,10 @@
 		771ED5642326B57D0024329F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
-				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
-				771ED5652326B57D0024329F /* AppDelegate.swift */,
-				771ED5692326B57D0024329F /* Main.storyboard */,
-				771ED56C2326B57F0024329F /* Assets.xcassets */,
-				778E461D232F4F5700D7A865 /* Fonts */,
-				771ED56E2326B57F0024329F /* LaunchScreen.storyboard */,
+				778E4625232F655400D7A865 /* Model */,
+				778E4622232F650F00D7A865 /* View */,
+				778E4623232F651900D7A865 /* Controllers */,
+				778E4624232F652E00D7A865 /* Helpers */,
 				771ED5712326B57F0024329F /* Info.plist */,
 			);
 			path = Enigma;
@@ -76,6 +76,41 @@
 				778E461B232F4F4300D7A865 /* Saira-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		778E4622232F650F00D7A865 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				771ED5692326B57D0024329F /* Main.storyboard */,
+				771ED56E2326B57F0024329F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		778E4623232F651900D7A865 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		778E4624232F652E00D7A865 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				771ED5652326B57D0024329F /* AppDelegate.swift */,
+				771ED56C2326B57F0024329F /* Assets.xcassets */,
+				778E461D232F4F5700D7A865 /* Fonts */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		778E4625232F655400D7A865 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				778E4626232F65E300D7A865 /* NetworkEngine.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +188,7 @@
 			files = (
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
+				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
