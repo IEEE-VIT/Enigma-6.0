@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import Network
 
 class loginPageViewController: UIViewController{
 
     //MARK: - Outlets
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passText: UITextField!
+    
+    //MARK: - Variables
+    let monitor = NWPathMonitor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +35,16 @@ class loginPageViewController: UIViewController{
     
     //MARK: - Login Button Action
     @IBAction func loginButton(_ sender: UIButton) {
+        
+        Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
+            in
+            if error != nil {
+                print(error?.localizedDescription ?? "Error")
+            }
+            else {
+                print("login Sucess")
+            }
+        }
     }
     
     //MARK: - Forget passwork button Action

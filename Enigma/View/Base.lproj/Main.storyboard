@@ -691,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDX-kD-VWj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="882"/>
+            <point key="canvasLocation" x="919" y="850"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="zda-y6-RFT">
@@ -735,7 +735,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -807,7 +807,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTw-Gl-DgI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="882"/>
+            <point key="canvasLocation" x="1774" y="850"/>
         </scene>
         <!--Learderboard-->
         <scene sceneID="IeQ-ld-dzS">
@@ -823,7 +823,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fe-Zb-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3077" y="398"/>
+            <point key="canvasLocation" x="3358" y="327"/>
         </scene>
         <!--Rules-->
         <scene sceneID="FzR-PN-e2c">
@@ -839,7 +839,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-9k-0mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4122" y="368"/>
+            <point key="canvasLocation" x="2538" y="-779"/>
         </scene>
         <!--Profile-->
         <scene sceneID="HnU-mY-hus">
@@ -855,7 +855,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3725" y="1085"/>
+            <point key="canvasLocation" x="2538" y="1012"/>
         </scene>
         <!--ENGIMA-->
         <scene sceneID="WU9-EC-Szx">
@@ -871,7 +871,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4122" y="-360"/>
+            <point key="canvasLocation" x="4122" y="-392"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wxM-fu-bq7">
@@ -893,7 +893,7 @@ you will get x points</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OoL-N0-qEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="73"/>
+            <point key="canvasLocation" x="2539" y="40"/>
         </scene>
         <!--Play-->
         <scene sceneID="Mf3-nM-gs8">
@@ -916,7 +916,7 @@ you will get x points</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRk-GH-YD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3078" y="-360"/>
+            <point key="canvasLocation" x="3359" y="-392"/>
         </scene>
     </scenes>
     <resources>
