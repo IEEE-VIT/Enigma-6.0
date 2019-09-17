@@ -14,6 +14,7 @@ class loginPageViewController: UIViewController{
     //MARK: - Outlets
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passText: UITextField!
+    @IBOutlet weak var load: UIActivityIndicatorView!
     
     
     override func viewDidLoad() {
@@ -22,6 +23,8 @@ class loginPageViewController: UIViewController{
         textFieldDelegateSetUp()
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
+        // Hide activity monitor
+        self.load.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -38,16 +41,22 @@ class loginPageViewController: UIViewController{
     
     //MARK: - Login Button Action
     @IBAction func loginButton(_ sender: UIButton) {
+        
+        self.load.isHidden = false
+        load.startAnimating()
         checkNewtork(ifError: "Cannot login")
         Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
             in
             if error != nil {
                 print(error?.localizedDescription ?? "Error")
                 self.authAlert(titlepass: "Login failed",message: "Authentication failed please try again.")
+                self.load.isHidden = true
             }
             else {
                 print("login Sucess")
                 self.performSegue(withIdentifier: "goToPlay", sender: self)
+                self.load.stopAnimating()
+                self.load.isHidden = true
             }
         }
     }
@@ -55,18 +64,23 @@ class loginPageViewController: UIViewController{
     //MARK: - Forget passwork button Action
     @IBAction func forgetButton(_ sender: UIButton) {
         
+        self.load.isHidden = false
+        load.startAnimating()
         if emailText.text == "" {
             authAlert(titlepass: "Enter email", message: "Please enter valid email to reset password.")
+            self.load.isHidden = true
         } else if emailText.text != nil {
         
             Auth.auth().sendPasswordReset(withEmail: emailText.text ?? " ") { error in
             if error != nil {
                 print(error?.localizedDescription ?? "Error")
                 self.authAlert(titlepass: "Reset failed",message: "Please try again.")
+                self.load.isHidden = true
             }
             else {
                 print("Success!")
                 self.authAlert(titlepass: "Note",message: "Reset password email has been send.")
+                self.load.isHidden = true
                 }
             }
         }
