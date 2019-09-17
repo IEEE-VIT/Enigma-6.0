@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import Network
 
 class loginPageViewController: UIViewController{
 
@@ -16,8 +15,6 @@ class loginPageViewController: UIViewController{
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passText: UITextField!
     
-    //MARK: - Variables
-    let monitor = NWPathMonitor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,19 +22,8 @@ class loginPageViewController: UIViewController{
         textFieldDelegateSetUp()
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
-        
-        monitor.pathUpdateHandler = { path in
-            if path.status == .satisfied {
-                print("We're connected!")
-            } else {
-                print("No connection.")
-            }
-            print(path.isExpensive)
-        }
-        
-        let queue = DispatchQueue(label: "Monitor")
-        monitor.start(queue: queue)
-        
+        // Function for checking newtwork connection
+        checkNewtork()
     }
     
     //MARK:- TextField Delegate Method
@@ -49,6 +35,7 @@ class loginPageViewController: UIViewController{
     //MARK: - Login Button Action
     @IBAction func loginButton(_ sender: UIButton) {
         
+        checkNewtork()
         Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
             in
             if error != nil {
@@ -56,6 +43,7 @@ class loginPageViewController: UIViewController{
             }
             else {
                 print("login Sucess")
+                self.performSegue(withIdentifier: "goToPlay", sender: self)
             }
         }
     }

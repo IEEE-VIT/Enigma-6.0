@@ -12,6 +12,7 @@
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
 		774478AC23313E9900674543 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478AB23313E9900674543 /* Reachability.swift */; };
+		774478B1233140A800674543 /* checkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478B0233140A800674543 /* checkNetwork.swift */; };
 		7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */; };
 		7787EEBC232FC588008CFBCD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBB232FC588008CFBCD /* RulesViewController.swift */; };
 		7787EEBE232FCAAC008CFBCD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBD232FCAAC008CFBCD /* constants.swift */; };
@@ -36,6 +37,7 @@
 		771ED56F2326B57F0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		774478AB23313E9900674543 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		774478B0233140A800674543 /* checkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkNetwork.swift; sourceTree = "<group>"; };
 		7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSetUpViewController.swift; sourceTree = "<group>"; };
 		7787EEBB232FC588008CFBCD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		7787EEBD232FCAAC008CFBCD /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
 				7787EEBD232FCAAC008CFBCD /* constants.swift */,
+				774478B0233140A800674543 /* checkNetwork.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */,
 				7787EEC0232FCB5D008CFBCD /* rulesTableViewCell.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
+				774478B1233140A800674543 /* checkNetwork.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
 				774478AC23313E9900674543 /* Reachability.swift in Sources */,

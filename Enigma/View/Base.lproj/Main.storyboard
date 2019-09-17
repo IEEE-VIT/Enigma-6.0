@@ -165,7 +165,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajl-jC-HOU"/>
-                                                    <segue destination="sKm-24-W0p" kind="show" id="2aw-CJ-Dch"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-VC-EZa">
@@ -228,6 +227,7 @@
                     <connections>
                         <outlet property="emailText" destination="QGF-u0-YbL" id="K5v-PQ-khH"/>
                         <outlet property="passText" destination="xjC-kk-iOr" id="e8I-pF-Jx8"/>
+                        <segue destination="sKm-24-W0p" kind="show" identifier="goToPlay" id="hY3-U7-WSv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -469,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXm-CF-VgQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="48"/>
+            <point key="canvasLocation" x="970" y="64"/>
         </scene>
         <!--Profile Set Up View Controller-->
         <scene sceneID="R8N-kp-6G8">
@@ -931,6 +931,6 @@ you will get x points</string>
         <image name="rules" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gYd-rA-Sfe"/>
+        <segue reference="hY3-U7-WSv"/>
     </inferredMetricsTieBreakers>
 </document>

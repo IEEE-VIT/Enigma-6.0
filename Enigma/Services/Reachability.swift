@@ -324,3 +324,22 @@ fileprivate extension Reachability {
         }
     }
 }
+
+func checkConnection(completion:@escaping(_ status:String,_ code:Int)->Void){
+    
+    var reachability:Reachability!
+    //reachability
+    reachability = Reachability.init()
+    
+    switch reachability.connection {
+    case .wifi:
+        print("connected via wifi")
+        completion("connected to internet", 200)
+    case .cellular:
+        print("connected via cellular")
+        completion("connected to internet", 200)
+    case .none:
+        print("hhihi")
+        completion("error connecting to internet", 404)
+    }
+}
