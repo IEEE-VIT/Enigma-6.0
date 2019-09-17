@@ -11,6 +11,7 @@
 		771ED56B2326B57D0024329F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED5692326B57D0024329F /* Main.storyboard */; };
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
+		774478AC23313E9900674543 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478AB23313E9900674543 /* Reachability.swift */; };
 		7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */; };
 		7787EEBC232FC588008CFBCD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBB232FC588008CFBCD /* RulesViewController.swift */; };
 		7787EEBE232FCAAC008CFBCD /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBD232FCAAC008CFBCD /* constants.swift */; };
@@ -34,6 +35,7 @@
 		771ED56C2326B57F0024329F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771ED56F2326B57F0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774478AB23313E9900674543 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSetUpViewController.swift; sourceTree = "<group>"; };
 		7787EEBB232FC588008CFBCD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		7787EEBD232FCAAC008CFBCD /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
@@ -86,11 +88,20 @@
 				778E4622232F650F00D7A865 /* View */,
 				778E4623232F651900D7A865 /* Controllers */,
 				778E461D232F4F5700D7A865 /* Fonts */,
+				774478AD23313EA000674543 /* Services */,
 				778E4624232F652E00D7A865 /* Helpers */,
 				771ED5712326B57F0024329F /* Info.plist */,
 				77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */,
 			);
 			path = Enigma;
+			sourceTree = "<group>";
+		};
+		774478AD23313EA000674543 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				774478AB23313E9900674543 /* Reachability.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		7787EEC1232FCB65008CFBCD /* RulesViewController */ = {
@@ -163,7 +174,6 @@
 				61E5325E48241822FE57E2AE /* Pods-Enigma.debug.xcconfig */,
 				375343E786E61C0E32712818 /* Pods-Enigma.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -310,6 +320,7 @@
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
+				774478AC23313E9900674543 /* Reachability.swift in Sources */,
 				7787EEBE232FCAAC008CFBCD /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

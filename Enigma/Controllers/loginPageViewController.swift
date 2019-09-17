@@ -25,6 +25,19 @@ class loginPageViewController: UIViewController{
         textFieldDelegateSetUp()
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
+        
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                print("We're connected!")
+            } else {
+                print("No connection.")
+            }
+            print(path.isExpensive)
+        }
+        
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
+        
     }
     
     //MARK:- TextField Delegate Method
