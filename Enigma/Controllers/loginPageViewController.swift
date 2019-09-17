@@ -43,7 +43,7 @@ class loginPageViewController: UIViewController{
             in
             if error != nil {
                 print(error?.localizedDescription ?? "Error")
-                self.authAlert(titlepass: "Login failed")
+                self.authAlert(titlepass: "Login failed",message: "Authentication failed please try again.")
             }
             else {
                 print("login Sucess")
@@ -54,6 +54,16 @@ class loginPageViewController: UIViewController{
     
     //MARK: - Forget passwork button Action
     @IBAction func forgetButton(_ sender: UIButton) {
+        Auth.auth().sendPasswordReset(withEmail: emailText.text ?? " ") { error in
+            if error != nil {
+                print(error?.localizedDescription ?? "Error")
+                self.authAlert(titlepass: "Reset failed",message: "Please try again.")
+            }
+            else {
+                print("Success!")
+                self.authAlert(titlepass: "Note",message: "Reset password email has been send.")
+            }
+        }
     }
     
     //MARK: Make Full screen
