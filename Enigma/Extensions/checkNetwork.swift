@@ -7,14 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
-internal func checkNewtork() {
-
-    checkConnection { (status, statusCode) in
-    if statusCode == 404{
-        print("No connection!")
-    }else{
-        print("connection existing")
+extension UIViewController
+{
+    internal func checkNewtork(ifError: String) {
+        checkConnection { (status, statusCode) in
+            if statusCode == 404{
+                print("No connection!!")
+                self.errorAlert(titlepass: ifError)
+            }else{
+                print("connection existing")
+            }
         }
     }
 }

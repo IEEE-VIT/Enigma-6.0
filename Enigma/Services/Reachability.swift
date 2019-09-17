@@ -339,7 +339,7 @@ func checkConnection(completion:@escaping(_ status:String,_ code:Int)->Void){
         print("connected via cellular")
         completion("connected to internet", 200)
     case .none:
-        print("hhihi")
+        print("NOOOO")
         completion("error connecting to internet", 404)
     }
 }

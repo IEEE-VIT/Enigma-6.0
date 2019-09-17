@@ -22,8 +22,12 @@ class loginPageViewController: UIViewController{
         textFieldDelegateSetUp()
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         // Function for checking newtwork connection
-        checkNewtork()
+        checkNewtork(ifError: "Cannot login")
     }
     
     //MARK:- TextField Delegate Method
@@ -34,8 +38,7 @@ class loginPageViewController: UIViewController{
     
     //MARK: - Login Button Action
     @IBAction func loginButton(_ sender: UIButton) {
-        
-        checkNewtork()
+        checkNewtork(ifError: "Cannot login")
         Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
             in
             if error != nil {
