@@ -21,6 +21,7 @@
 		778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4626232F65E300D7A865 /* NetworkEngine.swift */; };
 		778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4629232F690400D7A865 /* keyboard+Hide.swift */; };
 		778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E462B232F80AE00D7A865 /* signUpPageViewController.swift */; };
+		77AA76AA233133D700C7C5ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		778E4626232F65E300D7A865 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		778E4629232F690400D7A865 /* keyboard+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
 		778E462B232F80AE00D7A865 /* signUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpPageViewController.swift; sourceTree = "<group>"; };
+		77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				778E461D232F4F5700D7A865 /* Fonts */,
 				778E4624232F652E00D7A865 /* Helpers */,
 				771ED5712326B57F0024329F /* Info.plist */,
+				77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */,
 			);
 			path = Enigma;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				771ED56D2326B57F0024329F /* Assets.xcassets in Resources */,
 				778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */,
 				771ED56B2326B57D0024329F /* Main.storyboard in Resources */,
+				77AA76AA233133D700C7C5ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
