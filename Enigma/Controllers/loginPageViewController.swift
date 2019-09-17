@@ -43,6 +43,7 @@ class loginPageViewController: UIViewController{
             in
             if error != nil {
                 print(error?.localizedDescription ?? "Error")
+                self.authAlert(titlepass: "Login failed")
             }
             else {
                 print("login Sucess")

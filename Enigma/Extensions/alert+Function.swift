@@ -26,7 +26,7 @@ extension UIViewController
     
     //MARK: - ALERT function for Authentication
     internal func authAlert(titlepass: String) {
-        let alert = UIAlertController(title: titlepass, message: "Authentication failed please try again", preferredStyle: .alert)
+        let alert = UIAlertController(title: titlepass, message: "Authentication failed please try again.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(alert,animated: true,completion: nil)
     }
