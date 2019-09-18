@@ -61,6 +61,12 @@ class loginPageViewController: UIViewController{
         }
     }
     
+    //MARK: - Login with Google action
+    @IBAction func googleLogin(_ sender: UIButton) {
+        
+    }
+    
+    
     //MARK: - Forget passwork button Action
     @IBAction func forgetButton(_ sender: UIButton) {
         
