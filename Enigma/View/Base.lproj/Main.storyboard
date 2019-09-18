@@ -38,7 +38,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukq-2K-oA2">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukq-2K-oA2">
                                 <rect key="frame" x="65" y="294.66666666666669" width="284" height="50"/>
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -953,7 +953,7 @@ you will get x points</string>
         <image name="rules" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gYd-rA-Sfe"/>
+        <segue reference="hY3-U7-WSv"/>
         <segue reference="Uyl-PR-FLu"/>
     </inferredMetricsTieBreakers>
 </document>
