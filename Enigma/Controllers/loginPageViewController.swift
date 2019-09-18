@@ -64,6 +64,8 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
     
     //MARK: - Login with Google action
     @IBAction func googleLogin(_ sender: UIButton) {
+        self.load.isHidden = false
+        load.startAnimating()
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance().signIn()
     }

@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55.200000000000003" y="40.029985007496258"/>
+            <point key="canvasLocation" x="43" y="40"/>
         </scene>
         <!--Sign Up Page View Controller-->
         <scene sceneID="Lv7-Nz-SfN">
@@ -705,7 +705,7 @@
         <!--Rules View Controller-->
         <scene sceneID="zda-y6-RFT">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="6pP-IG-sbO" customClass="RulesViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RulesViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6pP-IG-sbO" customClass="RulesViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3PV-Xa-qHi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -832,7 +832,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fe-Zb-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358" y="327"/>
+            <point key="canvasLocation" x="3358" y="331"/>
         </scene>
         <!--Rules-->
         <scene sceneID="FzR-PN-e2c">
@@ -853,18 +853,31 @@ you will get x points</string>
         <!--Profile-->
         <scene sceneID="HnU-mY-hus">
             <objects>
-                <viewController id="9gO-8H-Ywf" sceneMemberID="viewController">
+                <viewController id="9gO-8H-Ywf" customClass="profileViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrq-jU-7AV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDu-4Q-Vq6">
+                                <rect key="frame" x="201" y="221" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="9gO-8H-Ywf" eventType="touchUpInside" id="WjU-GT-yvm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dFd-Ai-l6w"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="bTA-Mk-qOY"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="Uyl-PR-FLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2538" y="1012"/>
+            <point key="canvasLocation" x="2537.68115942029" y="1011.8303571428571"/>
         </scene>
         <!--ENGIMA-->
         <scene sceneID="WU9-EC-Szx">
@@ -940,6 +953,7 @@ you will get x points</string>
         <image name="rules" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hY3-U7-WSv"/>
+        <segue reference="gYd-rA-Sfe"/>
+        <segue reference="Uyl-PR-FLu"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -39,16 +39,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     // GoogleSignIn setting up app delegate methods
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        // ...
+        
         if let error = error {
             print(error)
             return
         }
-        
+        print(user)
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
         print(credential as Any)
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            guard let uid = user.userID else { return }
+            print("Sucessfully logged into firebase with Google!",uid)
+            
+            // Access the storyboard and fetch an instance of the view controller
+            let storyboard = UIStoryboard(name: "Main", bundle: nil);
+            let viewController: RulesViewController = storyboard.instantiateViewController(withIdentifier: "RulesViewController") as! RulesViewController
+            
+            // Then push that view controller onto the navigation stack
+            let rootViewController = self.window!.rootViewController 
+            rootViewController?.show(viewController, sender: true)
+        }
+        
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
