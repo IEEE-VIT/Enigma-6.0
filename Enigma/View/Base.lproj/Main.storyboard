@@ -880,10 +880,13 @@ you will get x points</string>
                         <viewLayoutGuide key="safeArea" id="dFd-Ai-l6w"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="bTA-Mk-qOY"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="ADU-KK-U9k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537.68115942029" y="1011.8303571428571"/>
+            <point key="canvasLocation" x="2538" y="850"/>
         </scene>
         <!--ENGIMA-->
         <scene sceneID="WU9-EC-Szx">
