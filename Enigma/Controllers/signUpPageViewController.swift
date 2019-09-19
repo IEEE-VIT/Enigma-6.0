@@ -52,7 +52,7 @@ class signUpPageViewController: UIViewController {
                 UIDevice.invalidVibrate()
                 print(error?.localizedDescription ?? "Error")
                 if error?.localizedDescription == "The email address is already in use by another account." {
-                    self.authAlert(titlepass: "Account Exists", message: "Please contact Enigma team.")
+                    self.authAlert(titlepass: "Account Exists", message: "Account already exists please login")
                 }
                 self.authAlert(titlepass: "signIn failed",message: "Authentication failed please try again.")
                 self.load.isHidden = true
