@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 
 class loginPageViewController: UIViewController, GIDSignInUIDelegate{
-
+    
     //MARK: - Outlets
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passText: UITextField!
@@ -47,7 +47,6 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
         checkNewtork(ifError: "Cannot login")
         Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
             in
-            print(Auth.auth().currentUser?.isEmailVerified)
             if error != nil {
                 // Vibrates on errors
                 UIDevice.invalidVibrate()
@@ -56,12 +55,16 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
                 self.load.isHidden = true
             }
             else {
-                // Vibrates on valid
-                UIDevice.validVibrate()
-                print("login Sucess")
-                self.performSegue(withIdentifier: "goToSetUp", sender: self)
-                self.load.stopAnimating()
-                self.load.isHidden = true
+                if Auth.auth().currentUser?.isEmailVerified == true {
+                    // Vibrates on valid
+                    UIDevice.validVibrate()
+                    print("login Sucess")
+                    self.performSegue(withIdentifier: "goToSetUp", sender: self)
+                    self.load.stopAnimating()
+                    self.load.isHidden = true
+                } else {
+                    self.authAlert(titlepass: "Alert", message: "Please verify your email before login.")
+                }
             }
         }
     }
@@ -84,17 +87,16 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
             authAlert(titlepass: "Enter email", message: "Please enter valid email to reset password.")
             self.load.isHidden = true
         } else if emailText.text != nil {
-        
             Auth.auth().sendPasswordReset(withEmail: emailText.text ?? " ") { error in
-            if error != nil {
-                print(error?.localizedDescription ?? "Error")
-                self.authAlert(titlepass: "Reset failed",message: "Please try again.")
-                self.load.isHidden = true
-            }
-            else {
-                print("Success!")
-                self.authAlert(titlepass: "Note",message: "Reset password email has been send.")
-                self.load.isHidden = true
+                if error != nil {
+                    print(error?.localizedDescription ?? "Error")
+                    self.authAlert(titlepass: "Reset failed",message: "Please try again.")
+                    self.load.isHidden = true
+                }
+                else {
+                    print("Success!")
+                    self.authAlert(titlepass: "Note",message: "Reset password email has been send.")
+                    self.load.isHidden = true
                 }
             }
         }
