@@ -483,6 +483,7 @@
                         <outlet property="emailText" destination="crg-Nf-G1i" id="92w-HH-R2x"/>
                         <outlet property="load" destination="mze-zG-a9U" id="TQw-XE-e3L"/>
                         <outlet property="passwordText" destination="kFB-ZE-hKo" id="3Yi-Dq-0zY"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin1" id="sV0-FY-1nE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXm-CF-VgQ" sceneMemberID="firstResponder"/>
@@ -963,5 +964,6 @@ you will get x points</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hY3-U7-WSv"/>
+        <segue reference="sV0-FY-1nE"/>
     </inferredMetricsTieBreakers>
 </document>

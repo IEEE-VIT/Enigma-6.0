@@ -47,6 +47,7 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
         checkNewtork(ifError: "Cannot login")
         Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
             in
+            print(Auth.auth().currentUser?.isEmailVerified)
             if error != nil {
                 // Vibrates on errors
                 UIDevice.invalidVibrate()

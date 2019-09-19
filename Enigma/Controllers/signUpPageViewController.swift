@@ -26,6 +26,7 @@ class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
         hideKeyboardWhenTappedAround()
         // Hide activity monitor
         self.load.isHidden = true
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,13 +46,36 @@ class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
         self.load.isHidden = false
         load.startAnimating()
         checkNewtork(ifError: "Cannot Signin")
-//        Auth.auth().sendEmailVerification(withEmail: emailText.text!) { error in
-//            if error != nil {
-//                print(error?.localizedDescription ?? "Error")
-//                self.authAlert(titlepass: "Signin failed",message: "Authentication failed please try again.")
-//                self.load.isHidden = true
-//            }
-//        }
+        if passwordText.text! == cpasswordText.text! {
+        Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (user, error) in
+            if error != nil{
+                // Vibrates on errors
+                UIDevice.invalidVibrate()
+                print(error?.localizedDescription ?? "Error")
+                if error?.localizedDescription == "The email address is already in use by another account." {
+                    self.authAlert(titlepass: "Account Exists", message: "Please contact Enigma team.")
+                }
+                self.authAlert(titlepass: "signIn failed",message: "Authentication failed please try again.")
+                self.load.isHidden = true
+            } else {
+                print("Sucess")
+                Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                    let alert = UIAlertController(title: "Verification email", message: "Verification email has been sent please verify it.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (UIAlertAction) in
+                        // Vibrates on valid
+                        UIDevice.validVibrate()
+                        self.performSegue(withIdentifier: "goToLogin1", sender: self)
+                        self.load.stopAnimating()
+                        self.load.isHidden = true
+                    }))
+                    
+                    self.present(alert,animated: true,completion: nil)
+                })
+            }
+        }
+        } else {
+            authAlert(titlepass: "Error", message: "Password does not match please try again.")
+        }
     }
     
     //MARK: - Google signin button
@@ -59,8 +83,7 @@ class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
         checkNewtork(ifError: "Cannot Signin")
         self.load.isHidden = false
         load.startAnimating()
-        GIDSignIn.sharedInstance()?.uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+        gSignIn()
     }
     
     // Dismiss to loginViewController
