@@ -68,6 +68,11 @@ class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
         return true
     }
     
+    
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 //MARK: - Extensions

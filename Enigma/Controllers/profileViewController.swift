@@ -20,7 +20,7 @@ class profileViewController: UIViewController {
         do {
             GIDSignIn.sharedInstance().signOut()
             print("SignOut sucessful")
-            performSegue(withIdentifier: "goToLogin", sender: self)
+            dismiss(animated: true, completion: nil)
            }
     }
 }
