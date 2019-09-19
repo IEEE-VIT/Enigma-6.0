@@ -8,9 +8,8 @@
 
 import UIKit
 import Firebase
-import GoogleSignIn
 
-class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
+class signUpPageViewController: UIViewController {
 
     //MARK: - Outlets
     @IBOutlet weak var emailText: UITextField!
@@ -76,14 +75,6 @@ class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
         } else {
             authAlert(titlepass: "Error", message: "Password does not match please try again.")
         }
-    }
-    
-    //MARK: - Google signin button
-    @IBAction func googleSignIn(_ sender: UIButton) {
-        checkNewtork(ifError: "Cannot Signin")
-        self.load.isHidden = false
-        load.startAnimating()
-        gSignIn()
     }
     
     // Dismiss to loginViewController
