@@ -58,12 +58,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             
             // Access the storyboard and fetch an instance of the view controller
             let storyboard = UIStoryboard(name: "Main", bundle: nil);
-            let viewController: RulesViewController = storyboard.instantiateViewController(withIdentifier: "RulesViewController") as! RulesViewController
+            let viewController: profileSetUpViewController = storyboard.instantiateViewController(withIdentifier: "profileSetUpViewController") as! profileSetUpViewController
             
             // Then push that view controller onto the navigation stack
             let rootViewController = self.window!.rootViewController 
             rootViewController?.show(viewController, sender: true)
-            // Haptic when logged in
+            // Haptic feedback when logged in
             UIDevice.validVibrate()
         }
         

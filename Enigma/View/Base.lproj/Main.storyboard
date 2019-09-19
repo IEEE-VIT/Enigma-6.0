@@ -237,6 +237,7 @@
                         <outlet property="load" destination="vB2-b4-W2x" id="gez-cH-fNM"/>
                         <outlet property="passText" destination="xjC-kk-iOr" id="e8I-pF-Jx8"/>
                         <segue destination="sKm-24-W0p" kind="show" identifier="goToPlay" id="hY3-U7-WSv"/>
+                        <segue destination="5Gn-Uq-0TL" kind="show" identifier="goToSetUp" id="nFO-zh-5da"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -491,7 +492,7 @@
         <!--Profile Set Up View Controller-->
         <scene sceneID="R8N-kp-6G8">
             <objects>
-                <viewController id="5Gn-Uq-0TL" customClass="profileSetUpViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileSetUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Gn-Uq-0TL" customClass="profileSetUpViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBs-J5-8Lv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -708,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDX-kD-VWj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="850"/>
+            <point key="canvasLocation" x="810" y="850"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="zda-y6-RFT">
@@ -920,7 +921,7 @@ you will get x points</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OoL-N0-qEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2539" y="40"/>
+            <point key="canvasLocation" x="2538" y="40"/>
         </scene>
         <!--Play-->
         <scene sceneID="Mf3-nM-gs8">

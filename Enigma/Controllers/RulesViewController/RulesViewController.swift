@@ -19,12 +19,6 @@ class RulesViewController: UIViewController {
         //Play button added to subview(Top of table view)
         view.addSubview(play)
     }
-    
-    //MARK: Make Full screen
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
 }
 
 //MARK: - Extensions

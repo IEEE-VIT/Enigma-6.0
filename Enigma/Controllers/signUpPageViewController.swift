@@ -63,12 +63,7 @@ class signUpPageViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().signIn()
     }
     
-    //MARK: Make Full screen
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
-    
+    // Dismiss to loginViewController
     @IBAction func back(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

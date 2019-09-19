@@ -34,12 +34,6 @@ class profileSetUpViewController: UIViewController {
     //MARK: - Done button action
     @IBAction func doneAction(_ sender: UIButton) {
     }
-    
-    //MARK: Make Full screen
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
 }
 
 //MARK: - Extensions

@@ -48,15 +48,17 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
         Auth.auth().signIn(withEmail: emailText.text!, password: passText.text!) { (user, error)
             in
             if error != nil {
+                // Vibrates on errors
+                UIDevice.invalidVibrate()
                 print(error?.localizedDescription ?? "Error")
                 self.authAlert(titlepass: "Login failed",message: "Authentication failed please try again.")
                 self.load.isHidden = true
             }
             else {
-                // Vibrates on errors
-                UIDevice.invalidVibrate()
+                // Vibrates on valid
+                UIDevice.validVibrate()
                 print("login Sucess")
-                self.performSegue(withIdentifier: "goToPlay", sender: self)
+                self.performSegue(withIdentifier: "goToSetUp", sender: self)
                 self.load.stopAnimating()
                 self.load.isHidden = true
             }
@@ -96,12 +98,6 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
             }
         }
     }
-    
-    //MARK: Make Full screen
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
 }
 
 //MARK: - Extensions
