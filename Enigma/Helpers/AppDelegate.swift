@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.signInSilently()
         // Increse Launch Time
-        Thread.sleep(forTimeInterval: 1.5)
+        Thread.sleep(forTimeInterval: 1.3)
         return true
     }
     
@@ -63,6 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             // Then push that view controller onto the navigation stack
             let rootViewController = self.window!.rootViewController 
             rootViewController?.show(viewController, sender: true)
+            // Haptic when logged in
+            UIDevice.validVibrate()
         }
         
     }

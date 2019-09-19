@@ -263,7 +263,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rN-Rw-pVi">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rN-Rw-pVi">
                                 <rect key="frame" x="65" y="294.66666666666669" width="284" height="50"/>
                                 <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -278,8 +278,11 @@
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="googleSignIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="zgx-RK-45I"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="893-zJ-ssr">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="893-zJ-ssr">
                                 <rect key="frame" x="40" y="392.66666666666674" width="334" height="285"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="COf-Fc-ALj">
@@ -389,8 +392,8 @@
                                             <constraint firstItem="9yC-2R-BV1" firstAttribute="leading" secondItem="COf-Fc-ALj" secondAttribute="leading" id="yRi-J1-nhk"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BKH-5w-9yP">
-                                        <rect key="frame" x="0.0" y="184.99999999999994" width="334" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BKH-5w-9yP">
+                                        <rect key="frame" x="0.0" y="194.99999999999994" width="334" height="90"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-lG-PiT" userLabel="SIGNLabel">
                                                 <rect key="frame" x="127" y="0.0" width="80" height="40"/>
@@ -410,11 +413,10 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="Nat-wy-oFG"/>
-                                                    <segue destination="5Gn-Uq-0TL" kind="show" id="a7x-X4-69Z"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Kcv-6Y-pBr">
-                                                <rect key="frame" x="84.333333333333329" y="70" width="165.66666666666669" height="30"/>
+                                                <rect key="frame" x="84.333333333333329" y="60" width="165.66666666666669" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCQ-51-Cai">
                                                         <rect key="frame" x="0.0" y="0.0" width="125.66666666666667" height="30"/>
@@ -449,6 +451,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="mze-zG-a9U">
+                                <rect key="frame" x="197" y="549.66666666666663" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -462,7 +467,9 @@
                             <constraint firstItem="893-zJ-ssr" firstAttribute="top" secondItem="xgD-jg-5iD" secondAttribute="bottom" constant="8" id="jHL-ml-dHx"/>
                             <constraint firstItem="3rN-Rw-pVi" firstAttribute="leading" secondItem="aF5-MK-FcG" secondAttribute="leading" constant="65" id="jxV-SV-rsY"/>
                             <constraint firstItem="4ix-Zl-PNL" firstAttribute="leading" secondItem="aF5-MK-FcG" secondAttribute="leading" constant="63" id="mDr-w6-4Wt"/>
+                            <constraint firstItem="mze-zG-a9U" firstAttribute="top" secondItem="xgD-jg-5iD" secondAttribute="bottom" constant="165" id="nKa-Yc-45S"/>
                             <constraint firstItem="aF5-MK-FcG" firstAttribute="trailing" secondItem="893-zJ-ssr" secondAttribute="trailing" constant="40" id="ncB-Si-NGL"/>
+                            <constraint firstItem="mze-zG-a9U" firstAttribute="centerX" secondItem="BRJ-8V-OTZ" secondAttribute="centerX" id="o83-4m-8WA"/>
                             <constraint firstItem="YV0-E2-w7K" firstAttribute="leading" secondItem="aF5-MK-FcG" secondAttribute="leading" id="ow6-3l-sLg"/>
                             <constraint firstItem="3rN-Rw-pVi" firstAttribute="top" secondItem="YV0-E2-w7K" secondAttribute="bottom" constant="53" id="qI0-LI-ng0"/>
                             <constraint firstItem="aF5-MK-FcG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4ix-Zl-PNL" secondAttribute="trailing" symbolic="YES" id="qds-IP-Tbw"/>
@@ -473,6 +480,7 @@
                     <connections>
                         <outlet property="cpasswordText" destination="sqr-NY-M0W" id="CaR-xZ-bZu"/>
                         <outlet property="emailText" destination="crg-Nf-G1i" id="92w-HH-R2x"/>
+                        <outlet property="load" destination="mze-zG-a9U" id="TQw-XE-e3L"/>
                         <outlet property="passwordText" destination="kFB-ZE-hKo" id="3Yi-Dq-0zY"/>
                     </connections>
                 </viewController>
@@ -744,7 +752,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -954,6 +962,6 @@ you will get x points</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hY3-U7-WSv"/>
-        <segue reference="Uyl-PR-FLu"/>
+        <segue reference="SSx-1x-wcl"/>
     </inferredMetricsTieBreakers>
 </document>

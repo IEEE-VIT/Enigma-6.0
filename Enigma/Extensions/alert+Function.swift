@@ -13,6 +13,8 @@ extension UIViewController
 {
     //MARK: - ALERT function for network connection
    internal func errorAlert(titlepass : String) {
+        // Vibrates on errors
+        UIDevice.invalidVibrate()
         let alert = UIAlertController(title: titlepass, message: "No internet connection available.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
             let settingsUrl = NSURL(string: UIApplication.openSettingsURLString)
@@ -26,6 +28,8 @@ extension UIViewController
     
     //MARK: - ALERT function for Authentication
     internal func authAlert(titlepass: String,message: String) {
+        // Vibrates on errors
+        UIDevice.invalidVibrate()
         let alert = UIAlertController(title: titlepass, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(alert,animated: true,completion: nil)

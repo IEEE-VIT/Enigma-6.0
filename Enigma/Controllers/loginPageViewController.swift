@@ -42,7 +42,6 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
     
     //MARK: - Login Button Action
     @IBAction func loginButton(_ sender: UIButton) {
-        
         self.load.isHidden = false
         load.startAnimating()
         checkNewtork(ifError: "Cannot login")
@@ -64,6 +63,7 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
     
     //MARK: - Login with Google action
     @IBAction func googleLogin(_ sender: UIButton) {
+        checkNewtork(ifError: "Cannot login")
         self.load.isHidden = false
         load.startAnimating()
         GIDSignIn.sharedInstance()?.uiDelegate = self
