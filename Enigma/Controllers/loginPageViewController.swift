@@ -53,6 +53,8 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
                 self.load.isHidden = true
             }
             else {
+                // Vibrates on errors
+                UIDevice.invalidVibrate()
                 print("login Sucess")
                 self.performSegue(withIdentifier: "goToPlay", sender: self)
                 self.load.stopAnimating()
@@ -66,8 +68,7 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
         checkNewtork(ifError: "Cannot login")
         self.load.isHidden = false
         load.startAnimating()
-        GIDSignIn.sharedInstance()?.uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
+        gSignIn()
     }
     
     

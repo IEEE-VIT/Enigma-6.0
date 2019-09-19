@@ -15,6 +15,8 @@ extension UIViewController
         checkConnection { (status, statusCode) in
             if statusCode == 404{
                 print("No connection!!")
+                // Vibrates on errors
+                UIDevice.invalidVibrate()
                 self.errorAlert(titlepass: ifError)
             }else{
                 print("connection existing")

@@ -27,6 +27,7 @@
 		778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E462B232F80AE00D7A865 /* signUpPageViewController.swift */; };
 		77AA76AA233133D700C7C5ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */; };
 		77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */; };
+		77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7D2333BE4100E4338D /* google+SignIn.swift */; };
 		D4308317C040D9605A997FD6 /* Pods_Enigma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		778E462B232F80AE00D7A865 /* signUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpPageViewController.swift; sourceTree = "<group>"; };
 		77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "haptic+Feedback.swift"; sourceTree = "<group>"; };
+		77EE0A7D2333BE4100E4338D /* google+SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "google+SignIn.swift"; sourceTree = "<group>"; };
 		F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Enigma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 		778E4628232F68D900D7A865 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				77EE0A7D2333BE4100E4338D /* google+SignIn.swift */,
 				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
 				7787EEBD232FCAAC008CFBCD /* constants.swift */,
 				77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */,
@@ -359,6 +362,7 @@
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				774478B1233140A800674543 /* checkNetwork.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
+				77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
 				77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */,
 				774478AC23313E9900674543 /* Reachability.swift in Sources */,
