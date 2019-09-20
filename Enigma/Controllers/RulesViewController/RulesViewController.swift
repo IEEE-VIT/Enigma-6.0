@@ -19,6 +19,11 @@ class RulesViewController: UIViewController {
         //Play button added to subview(Top of table view)
         view.addSubview(play)
     }
+    
+    //MARK: - Set status bar style to light
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
 }
 
 //MARK: - Extensions

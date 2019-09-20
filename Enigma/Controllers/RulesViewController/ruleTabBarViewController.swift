@@ -17,7 +17,11 @@ class ruleTabBarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    //MARK: - Set status bar style to light
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
 }
 
 //MARK: - Extensions
