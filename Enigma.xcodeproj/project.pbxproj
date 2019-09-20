@@ -14,6 +14,7 @@
 		774478AC23313E9900674543 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478AB23313E9900674543 /* Reachability.swift */; };
 		774478B1233140A800674543 /* checkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478B0233140A800674543 /* checkNetwork.swift */; };
 		774478B32331487800674543 /* alert+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478B22331487800674543 /* alert+Function.swift */; };
+		7762795E233540700050A402 /* ruleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7762795D233540700050A402 /* ruleTabBarViewController.swift */; };
 		77721CC9233289D30053F617 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77721CC8233289D30053F617 /* profileViewController.swift */; };
 		7787EEBA232FAEAB008CFBCD /* profileSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */; };
 		7787EEBC232FC588008CFBCD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787EEBB232FC588008CFBCD /* RulesViewController.swift */; };
@@ -43,6 +44,7 @@
 		774478AB23313E9900674543 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		774478B0233140A800674543 /* checkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkNetwork.swift; sourceTree = "<group>"; };
 		774478B22331487800674543 /* alert+Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "alert+Function.swift"; sourceTree = "<group>"; };
+		7762795D233540700050A402 /* ruleTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruleTabBarViewController.swift; sourceTree = "<group>"; };
 		77721CC8233289D30053F617 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileSetUpViewController.swift; sourceTree = "<group>"; };
 		7787EEBB232FC588008CFBCD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
@@ -114,9 +116,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7762795C233540360050A402 /* profileViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77721CC8233289D30053F617 /* profileViewController.swift */,
+				7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */,
+			);
+			path = profileViewControllers;
+			sourceTree = "<group>";
+		};
 		7787EEC1232FCB65008CFBCD /* RulesViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7762795D233540700050A402 /* ruleTabBarViewController.swift */,
 				7787EEBF232FCB5D008CFBCD /* rulesTableViewCell.swift */,
 				7787EEBB232FC588008CFBCD /* RulesViewController.swift */,
 			);
@@ -145,10 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				7787EEC1232FCB65008CFBCD /* RulesViewController */,
-				77721CC8233289D30053F617 /* profileViewController.swift */,
+				7762795C233540360050A402 /* profileViewControllers */,
 				778E462B232F80AE00D7A865 /* signUpPageViewController.swift */,
 				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
-				7787EEB9232FAEAB008CFBCD /* profileSetUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -364,6 +375,7 @@
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
+				7762795E233540700050A402 /* ruleTabBarViewController.swift in Sources */,
 				77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */,
 				774478AC23313E9900674543 /* Reachability.swift in Sources */,
 				7787EEBE232FCAAC008CFBCD /* constants.swift in Sources */,
