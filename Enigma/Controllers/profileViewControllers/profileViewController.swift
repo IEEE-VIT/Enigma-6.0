@@ -14,12 +14,19 @@ class profileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+//  
+//    //MARK: - Set status bar style to light
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return UIStatusBarStyle.lightContent
+//    }
     
-    @IBAction func logoutButton(_ sender: UIButton) {
+    @IBAction func logout(_ sender: Any) {
         do {
             GIDSignIn.sharedInstance().signOut()
             print("SignOut sucessful")
-            performSegue(withIdentifier: "goToLogin", sender: self)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "loginPageViewController")
+            self.present(controller, animated: true, completion: nil)
         }
     }
 }

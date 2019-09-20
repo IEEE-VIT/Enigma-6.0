@@ -21,9 +21,9 @@
         <!--Login Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="loginPageViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginPageViewController" id="BYZ-38-t0r" customClass="loginPageViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodie" translatesAutoresizingMaskIntoConstraints="NO" id="67g-KU-vmH">
@@ -33,7 +33,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3FH-ul-mS3">
-                                <rect key="frame" x="63" y="102" width="113" height="66"/>
+                                <rect key="frame" x="63" y="58" width="113" height="66"/>
                                 <fontDescription key="fontDescription" name="Chosence" family="Chosence" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by6-3Y-srB">
-                                                                <rect key="frame" x="0.0" y="34" width="334" height="1"/>
+                                                                <rect key="frame" x="0.0" y="33.999999999999943" width="334" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="GwO-ge-4Hz"/>
@@ -96,7 +96,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="C4W-yN-hX1">
-                                                        <rect key="frame" x="0.0" y="50" width="334" height="35"/>
+                                                        <rect key="frame" x="0.0" y="49.999999999999943" width="334" height="35"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xjC-kk-iOr">
                                                                 <rect key="frame" x="10" y="0.0" width="314" height="27"/>
@@ -132,7 +132,7 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-E0-KlT">
-                                                <rect key="frame" x="0.0" y="100" width="145" height="39"/>
+                                                <rect key="frame" x="0.0" y="99.999999999999943" width="145" height="39"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                 <state key="normal" title="Forgot password ?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,7 +248,7 @@
             <objects>
                 <viewController id="7xe-Ug-eTC" customClass="signUpPageViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRJ-8V-OTZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodie2" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-E2-w7K">
@@ -258,16 +258,16 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4ix-Zl-PNL">
-                                <rect key="frame" x="63" y="102" width="157" height="66"/>
+                                <rect key="frame" x="63" y="58" width="157" height="66"/>
                                 <fontDescription key="fontDescription" name="Chosence" family="Chosence" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="mze-zG-a9U">
-                                <rect key="frame" x="197" y="716" width="20" height="20"/>
+                                <rect key="frame" x="197" y="579" width="20" height="20"/>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BKH-5w-9yP">
-                                <rect key="frame" x="124.33333333333333" y="752" width="165.66666666666669" height="90"/>
+                                <rect key="frame" x="124.33333333333333" y="615" width="165.66666666666669" height="90"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiM-lG-PiT" userLabel="SIGNLabel">
                                         <rect key="frame" x="42.666666666666671" y="0.0" width="80" height="40"/>
@@ -312,7 +312,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="COf-Fc-ALj">
-                                <rect key="frame" x="59.666666666666657" y="380.66666666666669" width="295" height="135.00000000000006"/>
+                                <rect key="frame" x="59.666666666666657" y="295" width="295" height="135"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RBy-ee-ey1">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="85"/>
@@ -409,7 +409,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4AC-1g-ojX">
-                                                <rect key="frame" x="0.0" y="33.999999999999943" width="295" height="1"/>
+                                                <rect key="frame" x="0.0" y="34" width="295" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="ufD-XX-h8a"/>
@@ -696,7 +696,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDX-kD-VWj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="850"/>
+            <point key="canvasLocation" x="42" y="850"/>
         </scene>
         <!--Rules View Controller-->
         <scene sceneID="zda-y6-RFT">
@@ -740,7 +740,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -812,14 +812,14 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTw-Gl-DgI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="850"/>
+            <point key="canvasLocation" x="1052" y="850"/>
         </scene>
         <!--Rules-->
         <scene sceneID="IeQ-ld-dzS">
             <objects>
                 <viewController id="30E-h9-OW9" customClass="ruleTabBarViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kvq-29-jM1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="Eih-Bg-5jW">
@@ -848,7 +848,7 @@ you will get x points</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-oy-G6m">
-                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -903,14 +903,14 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fe-Zb-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3352.8000000000002" y="327.88605697151428"/>
+            <point key="canvasLocation" x="5200.8000000000002" y="326.98650674662673"/>
         </scene>
         <!--Learderboard-->
         <scene sceneID="FzR-PN-e2c">
             <objects>
                 <viewController id="XAP-IK-lqJ" customClass="ruleTabBarViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Um-b3-B1a">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Msb-u2-C4T"/>
@@ -921,43 +921,40 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="2538" y="-779"/>
         </scene>
-        <!--Profile-->
+        <!--PROFILE-->
         <scene sceneID="HnU-mY-hus">
             <objects>
                 <viewController id="9gO-8H-Ywf" customClass="profileViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrq-jU-7AV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDu-4Q-Vq6">
-                                <rect key="frame" x="201" y="221" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Logout"/>
-                                <connections>
-                                    <action selector="logoutButton:" destination="9gO-8H-Ywf" eventType="touchUpInside" id="WjU-GT-yvm"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dFd-Ai-l6w"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="bTA-Mk-qOY"/>
+                    <navigationItem key="navigationItem" title="PROFILE" id="RwR-6N-c7o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="6Ia-eZ-1yc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logout:" destination="9gO-8H-Ywf" id="IDf-Jz-JW5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="ADU-KK-U9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2538" y="850"/>
+            <point key="canvasLocation" x="4386.3999999999996" y="849.62518740629696"/>
         </scene>
         <!--ENGIMA-->
         <scene sceneID="WU9-EC-Szx">
             <objects>
                 <viewController id="Bc4-tf-De5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yye-0y-Xf7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gzZ-Ap-CPF"/>
                     </view>
                     <navigationItem key="navigationItem" title="ENGIMA" id="e8N-79-CjR"/>
@@ -970,18 +967,18 @@ you will get x points</string>
         <scene sceneID="wxM-fu-bq7">
             <objects>
                 <tabBarController id="sKm-24-W0p" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ohX-eY-HHs">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ohX-eY-HHs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" red="0.95294117649999999" green="0.87450980389999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="4VP-kL-AXd" kind="relationship" relationship="viewControllers" id="Nnd-yM-RFG"/>
                         <segue destination="XAP-IK-lqJ" kind="relationship" relationship="viewControllers" id="NDg-1r-Jxa"/>
                         <segue destination="30E-h9-OW9" kind="relationship" relationship="viewControllers" id="8AP-KN-p0a"/>
-                        <segue destination="9gO-8H-Ywf" kind="relationship" relationship="viewControllers" id="vgd-xu-272"/>
+                        <segue destination="vaC-W2-iQ3" kind="relationship" relationship="viewControllers" id="T70-kD-XNv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OoL-N0-qEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -994,10 +991,10 @@ you will get x points</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4VP-kL-AXd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Play" image="game" id="Aqi-Wy-QZF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qo5-ES-hcx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Qo5-ES-hcx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.95294117649999999" green="0.87450980389999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -1010,6 +1007,29 @@ you will get x points</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRk-GH-YD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3359" y="-392"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="bSZ-ev-11B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vaC-W2-iQ3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="Lc8-yA-rSq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wX4-mQ-6gM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9gO-8H-Ywf" kind="relationship" relationship="rootViewController" id="5dr-cT-FkC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVv-sd-hkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3447.1999999999998" y="849.62518740629696"/>
         </scene>
     </scenes>
     <resources>
