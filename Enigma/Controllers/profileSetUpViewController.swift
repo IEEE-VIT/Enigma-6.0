@@ -9,7 +9,7 @@
 import UIKit
 
 class profileSetUpViewController: UIViewController {
-
+    
     //MARK: - Outlets
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var firstNameText: UITextField!

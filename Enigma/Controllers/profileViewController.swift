@@ -10,10 +10,10 @@ import UIKit
 import Firebase
 import GoogleSignIn
 class profileViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func logoutButton(_ sender: UIButton) {
@@ -21,6 +21,6 @@ class profileViewController: UIViewController {
             GIDSignIn.sharedInstance().signOut()
             print("SignOut sucessful")
             performSegue(withIdentifier: "goToLogin", sender: self)
-           }
+        }
     }
 }
