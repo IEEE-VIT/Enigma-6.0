@@ -63,7 +63,7 @@ class signUpPageViewController: UIViewController {
                         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (UIAlertAction) in
                             // Vibrates on valid
                             UIDevice.validVibrate()
-                            self.performSegue(withIdentifier: "goToLogin1", sender: self)
+                            self.dismiss(animated: true, completion: nil)
                             self.load.stopAnimating()
                             self.load.isHidden = true
                         }))

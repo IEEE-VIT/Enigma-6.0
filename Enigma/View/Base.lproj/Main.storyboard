@@ -236,7 +236,6 @@
                         <outlet property="emailText" destination="QGF-u0-YbL" id="K5v-PQ-khH"/>
                         <outlet property="load" destination="vB2-b4-W2x" id="gez-cH-fNM"/>
                         <outlet property="passText" destination="xjC-kk-iOr" id="e8I-pF-Jx8"/>
-                        <segue destination="sKm-24-W0p" kind="show" identifier="goToPlay" id="hY3-U7-WSv"/>
                         <segue destination="5Gn-Uq-0TL" kind="show" identifier="goToSetUp" id="nFO-zh-5da"/>
                     </connections>
                 </viewController>
@@ -471,12 +470,11 @@
                         <outlet property="emailText" destination="crg-Nf-G1i" id="92w-HH-R2x"/>
                         <outlet property="load" destination="mze-zG-a9U" id="TQw-XE-e3L"/>
                         <outlet property="passwordText" destination="kFB-ZE-hKo" id="3Yi-Dq-0zY"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin1" id="sV0-FY-1nE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXm-CF-VgQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="64"/>
+            <point key="canvasLocation" x="970" y="40"/>
         </scene>
         <!--Profile Set Up View Controller-->
         <scene sceneID="R8N-kp-6G8">
@@ -742,7 +740,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -950,8 +948,4 @@ you will get x points</string>
         <image name="road" width="360" height="160"/>
         <image name="rules" width="32" height="32"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="hY3-U7-WSv"/>
-        <segue reference="sV0-FY-1nE"/>
-    </inferredMetricsTieBreakers>
 </document>

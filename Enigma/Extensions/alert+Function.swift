@@ -22,7 +22,7 @@ extension UIViewController
                 UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
             }
         })
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     
@@ -31,7 +31,7 @@ extension UIViewController
         // Vibrates on errors
         UIDevice.invalidVibrate()
         let alert = UIAlertController(title: titlepass, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert,animated: true,completion: nil)
     }
     
