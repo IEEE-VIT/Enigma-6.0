@@ -60,7 +60,7 @@ class signUpPageViewController: UIViewController {
                     print("Sucess")
                     Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
                         let alert = UIAlertController(title: "Verification email", message: "Verification email has been sent please verify it.", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (UIAlertAction) in
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) in
                             // Vibrates on valid
                             UIDevice.validVibrate()
                             self.dismiss(animated: true, completion: nil)
