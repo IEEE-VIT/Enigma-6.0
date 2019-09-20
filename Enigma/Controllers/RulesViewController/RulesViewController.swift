@@ -34,20 +34,19 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
         let cell = rulesTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! rulesTableViewCell
         return cell
     }
-    
+    // Setting custom header properties
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.backgroundColor = UIColor(ciColor: .black)
         headerView.tintColor = .black
         return headerView
     }
-    
+    // Setting custom header height
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
-    
+     // Setting custom row height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
-    
 }

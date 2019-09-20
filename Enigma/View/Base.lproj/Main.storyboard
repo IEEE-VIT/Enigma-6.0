@@ -814,7 +814,7 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="1774" y="850"/>
         </scene>
-        <!--Learderboard-->
+        <!--Rules-->
         <scene sceneID="IeQ-ld-dzS">
             <objects>
                 <viewController id="30E-h9-OW9" customClass="ruleTabBarViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
@@ -896,7 +896,7 @@ you will get x points</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PO-in-gfL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Learderboard" image="leaderB" id="Lar-Z3-p3Y"/>
+                    <tabBarItem key="tabBarItem" title="Rules" image="rules" id="Lar-Z3-p3Y"/>
                     <connections>
                         <outlet property="rulesTable" destination="xGg-oQ-VtH" id="w9g-o7-Vzw"/>
                     </connections>
@@ -905,17 +905,17 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="3352.8000000000002" y="327.88605697151428"/>
         </scene>
-        <!--Rules-->
+        <!--Learderboard-->
         <scene sceneID="FzR-PN-e2c">
             <objects>
-                <viewController id="XAP-IK-lqJ" sceneMemberID="viewController">
+                <viewController id="XAP-IK-lqJ" customClass="ruleTabBarViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Um-b3-B1a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Msb-u2-C4T"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rules" image="rules" id="qUL-RB-O0r"/>
+                    <tabBarItem key="tabBarItem" title="Learderboard" image="leaderB" id="qUL-RB-O0r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-9k-0mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -978,10 +978,10 @@ you will get x points</string>
                         <color key="selectedImageTintColor" red="0.95294117649999999" green="0.87450980389999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4VP-kL-AXd" kind="relationship" relationship="viewControllers" id="Hdi-Fe-7OM"/>
-                        <segue destination="30E-h9-OW9" kind="relationship" relationship="viewControllers" id="WfN-CM-khh"/>
-                        <segue destination="XAP-IK-lqJ" kind="relationship" relationship="viewControllers" id="LuZ-cz-fR6"/>
-                        <segue destination="9gO-8H-Ywf" kind="relationship" relationship="viewControllers" id="HK1-nH-K0k"/>
+                        <segue destination="4VP-kL-AXd" kind="relationship" relationship="viewControllers" id="Nnd-yM-RFG"/>
+                        <segue destination="XAP-IK-lqJ" kind="relationship" relationship="viewControllers" id="NDg-1r-Jxa"/>
+                        <segue destination="30E-h9-OW9" kind="relationship" relationship="viewControllers" id="8AP-KN-p0a"/>
+                        <segue destination="9gO-8H-Ywf" kind="relationship" relationship="viewControllers" id="vgd-xu-272"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OoL-N0-qEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
