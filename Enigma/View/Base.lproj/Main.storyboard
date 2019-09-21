@@ -926,24 +926,58 @@ you will get x points</string>
             <objects>
                 <viewController id="9gO-8H-Ywf" customClass="profileViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrq-jU-7AV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="767"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lb8-tG-j4h">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="767"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWR-ld-3OE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="679"/>
+                                        <rect key="frame" x="0.0" y="40" width="375" height="679"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtg-XM-mhY">
-                                                <rect key="frame" x="181" y="619" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QSolve" translatesAutoresizingMaskIntoConstraints="NO" id="LX5-IE-KKC">
+                                                <rect key="frame" x="8" y="273" width="218" height="138"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="bWI-YA-mV9">
+                                                <rect key="frame" x="8" y="419" width="218" height="138"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rank" translatesAutoresizingMaskIntoConstraints="NO" id="got-le-yVI">
+                                                <rect key="frame" x="8" y="565" width="218" height="138"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="spl-hn-GHg">
+                                                <rect key="frame" x="91" y="293" width="52" height="63"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="X4R-Z5-1eB">
+                                                <rect key="frame" x="91" y="444" width="52" height="63"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ii0-9s-Gvw">
+                                                <rect key="frame" x="91" y="590" width="52" height="63"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="centerX" secondItem="spl-hn-GHg" secondAttribute="centerX" id="21N-vQ-kO4"/>
+                                            <constraint firstItem="bWI-YA-mV9" firstAttribute="top" secondItem="spl-hn-GHg" secondAttribute="bottom" constant="63" id="3bt-Qz-YYO"/>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="centerX" secondItem="X4R-Z5-1eB" secondAttribute="centerX" id="7Sh-yM-keN"/>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="centerX" secondItem="ii0-9s-Gvw" secondAttribute="centerX" id="Ryd-6w-mRA"/>
+                                            <constraint firstItem="X4R-Z5-1eB" firstAttribute="top" secondItem="LX5-IE-KKC" secondAttribute="bottom" constant="33" id="SFQ-vn-isJ"/>
+                                            <constraint firstItem="LX5-IE-KKC" firstAttribute="leading" secondItem="VWR-ld-3OE" secondAttribute="leadingMargin" id="U7i-Oa-MlM"/>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="leading" secondItem="LX5-IE-KKC" secondAttribute="leading" id="Xr9-1L-hJO"/>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="top" secondItem="bWI-YA-mV9" secondAttribute="bottom" constant="8" symbolic="YES" id="YVU-Js-nDN"/>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="leading" secondItem="bWI-YA-mV9" secondAttribute="leading" id="f0F-kN-JPp"/>
+                                            <constraint firstAttribute="bottom" secondItem="X4R-Z5-1eB" secondAttribute="bottom" constant="172" id="hnP-NT-eyD"/>
                                             <constraint firstAttribute="height" constant="679" id="lt7-Dz-MRB"/>
+                                            <constraint firstItem="ii0-9s-Gvw" firstAttribute="top" secondItem="bWI-YA-mV9" secondAttribute="bottom" constant="33" id="uVL-BG-uPK"/>
+                                            <constraint firstItem="got-le-yVI" firstAttribute="top" secondItem="X4R-Z5-1eB" secondAttribute="bottom" constant="58" id="vhA-VV-Gx5"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-UL-jqv">
@@ -1036,6 +1070,7 @@ you will get x points</string>
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VWR-ld-3OE" secondAttribute="trailing" id="E2K-gl-oyT"/>
                                     <constraint firstItem="iJC-UL-jqv" firstAttribute="top" secondItem="lb8-tG-j4h" secondAttribute="topMargin" constant="27" id="EqI-zg-6cP"/>
@@ -1070,7 +1105,7 @@ you will get x points</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <size key="freeformSize" width="375" height="800"/>
+                    <size key="freeformSize" width="375" height="880"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="ADU-KK-U9k"/>
                     </connections>
@@ -1166,13 +1201,16 @@ you will get x points</string>
     </scenes>
     <resources>
         <image name="Ellipse 2" width="10" height="10"/>
+        <image name="QSolve" width="218" height="138"/>
         <image name="game" width="32" height="32"/>
         <image name="hoodie" width="360" height="160"/>
         <image name="hoodie2" width="360" height="160"/>
         <image name="hoodie3" width="360" height="160"/>
         <image name="leaderB" width="32" height="32"/>
         <image name="profile" width="30" height="30"/>
+        <image name="rank" width="218" height="138"/>
         <image name="road" width="360" height="160"/>
         <image name="rules" width="32" height="32"/>
+        <image name="score" width="218" height="138"/>
     </resources>
 </document>
