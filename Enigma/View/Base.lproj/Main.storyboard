@@ -1102,6 +1102,15 @@ you will get x points</string>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="880"/>
+                    <connections>
+                        <outlet property="email" destination="AVj-iN-3jO" id="hPR-cO-jGT"/>
+                        <outlet property="hintsUsed" destination="BNj-Ac-twn" id="LGC-8c-pPB"/>
+                        <outlet property="name" destination="wgr-F6-aSu" id="uOd-LE-moG"/>
+                        <outlet property="questionSolved" destination="X4R-Z5-1eB" id="nzf-V8-MfK"/>
+                        <outlet property="rank" destination="ii0-9s-Gvw" id="Fky-fe-Ddf"/>
+                        <outlet property="score" destination="X4R-Z5-1eB" id="MPg-KR-tTi"/>
+                        <outlet property="username" destination="fAD-ps-lgO" id="a3i-4I-V5m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXj-Jg-PBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

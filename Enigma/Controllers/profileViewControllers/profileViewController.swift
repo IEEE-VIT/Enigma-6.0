@@ -11,10 +11,19 @@ import Firebase
 import GoogleSignIn
 class profileViewController: UIViewController {
     
+    //MARK: - Outlets
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var hintsUsed: UILabel!
+    @IBOutlet weak var questionSolved: UILabel!
+    @IBOutlet weak var score: UILabel!
+    @IBOutlet weak var rank: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-//  
+    
 //    //MARK: - Set status bar style to light
 //    override var preferredStatusBarStyle: UIStatusBarStyle {
 //        return UIStatusBarStyle.lightContent
