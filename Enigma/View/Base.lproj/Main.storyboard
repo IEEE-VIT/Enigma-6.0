@@ -491,16 +491,16 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="PVK-Sm-b8j">
-                                <rect key="frame" x="40" y="369.66666666666669" width="334" height="157.00000000000006"/>
+                                <rect key="frame" x="40" y="355.66666666666669" width="334" height="185.00000000000006"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Lm1-4D-wyd">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="157"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="185"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WZU-WA-aUY">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="35"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="y9i-O1-r2t">
-                                                        <rect key="frame" x="10" y="0.0" width="314" height="20"/>
+                                                        <rect key="frame" x="10" y="0.0" width="314" height="27"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="continue"/>
@@ -511,7 +511,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-xe-7fD">
-                                                        <rect key="frame" x="0.0" y="27" width="334" height="1"/>
+                                                        <rect key="frame" x="0.0" y="34" width="334" height="1"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="vOh-nb-CZE"/>
@@ -525,13 +525,13 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gRo-j7-Zyh">
-                                                <rect key="frame" x="0.0" y="43" width="334" height="71"/>
+                                                <rect key="frame" x="0.0" y="50" width="334" height="85"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Czp-1t-UJD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="35"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ix0-Z1-Cxn">
-                                                                <rect key="frame" x="10" y="0.0" width="324" height="20"/>
+                                                                <rect key="frame" x="10" y="0.0" width="324" height="27"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="continue"/>
@@ -542,7 +542,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Y7-kW-4hc">
-                                                                <rect key="frame" x="0.0" y="27" width="334" height="1"/>
+                                                                <rect key="frame" x="0.0" y="34" width="334" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="jPB-LJ-fz4"/>
@@ -557,10 +557,10 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kPj-mq-Roz">
-                                                        <rect key="frame" x="0.0" y="43" width="334" height="28"/>
+                                                        <rect key="frame" x="0.0" y="50" width="334" height="35"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dZN-ja-Cn6">
-                                                                <rect key="frame" x="10" y="0.0" width="314" height="20"/>
+                                                                <rect key="frame" x="10" y="0.0" width="314" height="27"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="continue"/>
@@ -571,7 +571,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5z6-QY-baW">
-                                                                <rect key="frame" x="0.0" y="27" width="334" height="1"/>
+                                                                <rect key="frame" x="0.0" y="34" width="334" height="1"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="rNQ-Kd-sGP"/>
@@ -593,10 +593,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="965-SG-SA7">
-                                                <rect key="frame" x="0.0" y="129" width="334" height="28"/>
+                                                <rect key="frame" x="0.0" y="150" width="334" height="35"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UFM-pv-87Y">
-                                                        <rect key="frame" x="10" y="0.0" width="314" height="20"/>
+                                                        <rect key="frame" x="10" y="0.0" width="314" height="27"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
@@ -607,7 +607,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRc-2d-Mwc">
-                                                        <rect key="frame" x="0.0" y="26.999999999999943" width="334" height="1"/>
+                                                        <rect key="frame" x="0.0" y="33.999999999999943" width="334" height="1"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Um7-TV-qa5"/>
@@ -912,7 +912,7 @@ you will get x points</string>
                     <view key="view" contentMode="scaleToFill" id="4Um-b3-B1a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Msb-u2-C4T"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learderboard" image="leaderB" id="qUL-RB-O0r"/>
@@ -945,37 +945,37 @@ you will get x points</string>
                                                 <rect key="frame" x="8" y="565" width="218" height="138"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="spl-hn-GHg">
-                                                <rect key="frame" x="94.666666666666671" y="309.33333333333331" width="44.666666666666671" height="46.666666666666686"/>
+                                                <rect key="frame" x="91" y="293" width="52" height="63"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="X4R-Z5-1eB">
-                                                <rect key="frame" x="94.666666666666671" y="460.33333333333337" width="44.666666666666671" height="46.666666666666686"/>
+                                                <rect key="frame" x="91" y="444" width="52" height="63"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ii0-9s-Gvw">
-                                                <rect key="frame" x="94.666666666666671" y="590" width="44.666666666666671" height="46.666666666666629"/>
+                                                <rect key="frame" x="91" y="590" width="52" height="63"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-UL-jqv">
-                                                <rect key="frame" x="22" y="38" width="269.66666666666669" height="212"/>
+                                                <rect key="frame" x="22" y="-11" width="281.66666666666669" height="261"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZoI-fb-f8F">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="252.66666666666666" height="54"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FL-3u-eEQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" red="0.3803921569" green="0.96862745100000003" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Donald Trump Tatya Tommy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wgr-F6-aSu">
-                                                                <rect key="frame" x="0.0" y="20" width="240" height="20"/>
+                                                                <rect key="frame" x="0.0" y="27" width="252.66666666666666" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -983,16 +983,16 @@ you will get x points</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-zh-9Md">
-                                                        <rect key="frame" x="0.0" y="55" width="240" height="47"/>
+                                                        <rect key="frame" x="0.0" y="69" width="252.66666666666666" height="54"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-J1-BQw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="94" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" red="0.38039215686274508" green="0.96862745098039216" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Donald Trump Tatya Tommy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ps-lgO">
-                                                                <rect key="frame" x="0.0" y="20" width="240" height="27"/>
+                                                                <rect key="frame" x="0.0" y="27" width="252.66666666666666" height="27"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="27" id="IXK-91-2y3"/>
                                                                 </constraints>
@@ -1006,16 +1006,16 @@ you will get x points</string>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dxJ-LL-oir">
-                                                        <rect key="frame" x="0.0" y="117" width="269.66666666666669" height="40"/>
+                                                        <rect key="frame" x="0.0" y="138" width="281.66666666666669" height="54"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayk-ws-qYQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" red="0.3803921569" green="0.96862745100000003" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DonaldTrump2018@vitstudent.ac.in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-iN-3jO">
-                                                                <rect key="frame" x="0.0" y="20" width="269.66666666666669" height="20"/>
+                                                                <rect key="frame" x="0.0" y="27" width="281.66666666666669" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -1026,16 +1026,16 @@ you will get x points</string>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zMf-8Y-N2t">
-                                                        <rect key="frame" x="0.0" y="172" width="100.33333333333333" height="40"/>
+                                                        <rect key="frame" x="0.0" y="207" width="99.333333333333329" height="54"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HINTS USED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL1-8C-G9i">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" red="0.3803921569" green="0.96862745100000003" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-Ac-twn">
-                                                                <rect key="frame" x="0.0" y="20" width="42.333333333333336" height="20"/>
+                                                                <rect key="frame" x="0.0" y="27" width="41.333333333333336" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
