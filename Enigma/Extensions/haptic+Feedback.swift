@@ -11,6 +11,7 @@ import UIKit
 import AudioToolbox
 
 extension UIDevice {
+    
     // Vibrates when any error occur like invalid password etc.
     static func invalidVibrate() {
         let tryAgain = SystemSoundID(1102)

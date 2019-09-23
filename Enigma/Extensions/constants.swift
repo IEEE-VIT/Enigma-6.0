@@ -8,4 +8,4 @@
 
 import Foundation
 
-let rules = ["For every correct answer without using hints,you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points"]
+internal let rules = ["For every correct answer without using hints,you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points"]

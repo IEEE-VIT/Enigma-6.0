@@ -9,7 +9,7 @@
 import UIKit
 
 class ruleTabBarViewController: UIViewController {
-
+    
     //MARK: - Outlets
     @IBOutlet weak var rulesTable: UITableView!
     

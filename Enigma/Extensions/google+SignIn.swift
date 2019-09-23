@@ -11,6 +11,8 @@ import Firebase
 import GoogleSignIn
 
 extension GIDSignInUIDelegate {
+    
+    // Setting up Google Sign In delegate and signIn function
     func gSignIn() {
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance().signIn()

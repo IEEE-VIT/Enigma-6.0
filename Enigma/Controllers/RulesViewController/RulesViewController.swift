@@ -9,7 +9,7 @@
 import UIKit
 
 class RulesViewController: UIViewController {
-
+    
     //MARK: - Outlets
     @IBOutlet weak var rulesTable: UITableView!
     @IBOutlet weak var play: UIButton!
@@ -30,7 +30,7 @@ class RulesViewController: UIViewController {
 
 extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     
-     //MARK: - Table View datasource Method
+    //MARK: - Table View datasource Method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rules.count
     }
@@ -50,7 +50,7 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
-     // Setting custom row height
+    // Setting custom row height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }

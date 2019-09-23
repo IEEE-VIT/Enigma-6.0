@@ -24,10 +24,10 @@ class profileViewController: UIViewController {
         super.viewDidLoad()
     }
     
-//    //MARK: - Set status bar style to light
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return UIStatusBarStyle.lightContent
-//    }
+    //    //MARK: - Set status bar style to light
+    //    override var preferredStatusBarStyle: UIStatusBarStyle {
+    //        return UIStatusBarStyle.lightContent
+    //    }
     
     @IBAction func logout(_ sender: Any) {
         do {

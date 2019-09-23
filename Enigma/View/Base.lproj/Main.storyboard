@@ -903,7 +903,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fe-Zb-TBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5200.8000000000002" y="326.98650674662673"/>
+            <point key="canvasLocation" x="970" y="-710"/>
         </scene>
         <!--Learderboard-->
         <scene sceneID="FzR-PN-e2c">
@@ -919,7 +919,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhs-9k-0mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2538" y="-779"/>
+            <point key="canvasLocation" x="4122" y="300"/>
         </scene>
         <!--PROFILE-->
         <scene sceneID="HnU-mY-hus">

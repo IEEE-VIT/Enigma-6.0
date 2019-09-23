@@ -12,7 +12,7 @@ import UIKit
 extension UIViewController
 {
     //MARK: - ALERT function for network connection
-   internal func errorAlert(titlepass : String) {
+    internal func errorAlert(titlepass : String) {
         // Vibrates on errors
         UIDevice.invalidVibrate()
         let alert = UIAlertController(title: titlepass, message: "No internet connection available.", preferredStyle: .alert)
