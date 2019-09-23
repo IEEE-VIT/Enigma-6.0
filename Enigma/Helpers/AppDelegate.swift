@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.signInSilently()
+//        guard let userID = Auth.auth().currentUser?.uid else { return }
+        print(Auth.auth().currentUser?.uid)
+        print("fuck you")
         // Increse Launch Time
         Thread.sleep(forTimeInterval: 1.3)
         return true

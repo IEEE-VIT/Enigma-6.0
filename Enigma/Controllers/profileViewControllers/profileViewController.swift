@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import GoogleSignIn
+
 class profileViewController: UIViewController {
     
     //MARK: - Outlets
@@ -30,12 +30,6 @@ class profileViewController: UIViewController {
     //    }
     
     @IBAction func logout(_ sender: Any) {
-        do {
-            GIDSignIn.sharedInstance().signOut()
-            print("SignOut sucessful")
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "loginPageViewController")
-            self.present(controller, animated: true, completion: nil)
-        }
+      signOut()
     }
 }
