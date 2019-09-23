@@ -52,6 +52,8 @@ extension leaderBoardViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel!.text = "Cell \(indexPath.row)"
+        cell.textLabel?.textColor = .white
+        cell.backgroundColor = .black
         return cell
     }
 
