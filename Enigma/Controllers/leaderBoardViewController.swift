@@ -13,7 +13,7 @@ class leaderBoardViewController: UIViewController {
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     
     let maxHeaderHeight: CGFloat = 220
-    let minHeaderHeight: CGFloat = 70
+    let minHeaderHeight: CGFloat = 80
     
     /// The last known scroll position
     var previousScrollOffset: CGFloat = 0
@@ -152,7 +152,7 @@ extension leaderBoardViewController: UITableViewDelegate {
         let openAmount = self.headerHeightConstraint.constant - self.minHeaderHeight
         let percentage = openAmount / range
         
-        self.titleTopConstraint.constant = -openAmount + 30
+        self.titleTopConstraint.constant = -openAmount + 40
         self.logoImageView.alpha = percentage
     }
 }
