@@ -1135,7 +1135,7 @@ you will get x points</string>
         <!--Tab Bar Controller-->
         <scene sceneID="wxM-fu-bq7">
             <objects>
-                <tabBarController id="sKm-24-W0p" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tapBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sKm-24-W0p" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ohX-eY-HHs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

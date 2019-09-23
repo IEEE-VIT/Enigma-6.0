@@ -31,6 +31,8 @@
 		77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */; };
 		77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7D2333BE4100E4338D /* google+SignIn.swift */; };
 		77F39F012338FFED00F0F378 /* email+SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F002338FFED00F0F378 /* email+SignOut.swift */; };
+		77F39F032339073500F0F378 /* instantiate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F022339073500F0F378 /* instantiate+ViewController.swift */; };
+		77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F0623391F0A00F0F378 /* constant+Functions.swift */; };
 		D4308317C040D9605A997FD6 /* Pods_Enigma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "haptic+Feedback.swift"; sourceTree = "<group>"; };
 		77EE0A7D2333BE4100E4338D /* google+SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "google+SignIn.swift"; sourceTree = "<group>"; };
 		77F39F002338FFED00F0F378 /* email+SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "email+SignOut.swift"; sourceTree = "<group>"; };
+		77F39F022339073500F0F378 /* instantiate+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "instantiate+ViewController.swift"; sourceTree = "<group>"; };
+		77F39F0623391F0A00F0F378 /* constant+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "constant+Functions.swift"; sourceTree = "<group>"; };
 		F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Enigma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -196,6 +200,8 @@
 				774478B22331487800674543 /* alert+Function.swift */,
 				774478B0233140A800674543 /* checkNetwork.swift */,
 				77799FB623355AA300110768 /* custom+Navigation.swift */,
+				77F39F022339073500F0F378 /* instantiate+ViewController.swift */,
+				77F39F0623391F0A00F0F378 /* constant+Functions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,11 +384,13 @@
 				774478B32331487800674543 /* alert+Function.swift in Sources */,
 				7787EEC0232FCB5D008CFBCD /* rulesTableViewCell.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
+				77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */,
 				774478B1233140A800674543 /* checkNetwork.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,
 				77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */,
 				778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */,
 				7762795E233540700050A402 /* ruleTabBarViewController.swift in Sources */,
+				77F39F032339073500F0F378 /* instantiate+ViewController.swift in Sources */,
 				77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */,
 				77799FB723355AA300110768 /* custom+Navigation.swift in Sources */,
 				774478AC23313E9900674543 /* Reachability.swift in Sources */,
