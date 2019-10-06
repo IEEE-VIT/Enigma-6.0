@@ -9,5 +9,7 @@
 import Foundation
 
 class NetworkEngine {
+
+    static let url = "EGWERYT"
     
 }
