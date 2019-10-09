@@ -251,7 +251,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodie2" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-E2-w7K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoodie2" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-E2-w7K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YV0-E2-w7K" secondAttribute="height" multiplier="125:73" id="A7h-WV-ldO"/>
@@ -814,7 +814,7 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="1052" y="850"/>
         </scene>
-        <!--Rules-->
+        <!--Rule Tab Bar View Controller-->
         <scene sceneID="IeQ-ld-dzS">
             <objects>
                 <viewController id="30E-h9-OW9" customClass="ruleTabBarViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
@@ -896,7 +896,9 @@ you will get x points</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PO-in-gfL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rules" image="rules" id="Lar-Z3-p3Y"/>
+                    <tabBarItem key="tabBarItem" title="" image="rules" id="Lar-Z3-p3Y">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="rulesTable" destination="xGg-oQ-VtH" id="w9g-o7-Vzw"/>
                     </connections>
@@ -1333,11 +1335,13 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="2538" y="40"/>
         </scene>
-        <!--Play-->
+        <!--Navigation Controller-->
         <scene sceneID="Mf3-nM-gs8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4VP-kL-AXd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Play" image="game" id="Aqi-Wy-QZF"/>
+                    <tabBarItem key="tabBarItem" title="" image="game" id="Aqi-Wy-QZF">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Qo5-ES-hcx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1356,11 +1360,13 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="3289" y="-895"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="bSZ-ev-11B">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vaC-W2-iQ3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="Lc8-yA-rSq"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="Lc8-yA-rSq">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wX4-mQ-6gM">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1379,7 +1385,7 @@ you will get x points</string>
             </objects>
             <point key="canvasLocation" x="2538" y="913"/>
         </scene>
-        <!--Leaderboard-->
+        <!--Leader Board View Controller-->
         <scene sceneID="Tly-j2-zCh">
             <objects>
                 <viewController id="MdU-kc-Kkr" customClass="leaderBoardViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
@@ -1436,7 +1442,9 @@ you will get x points</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4sy-Ea-YPb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Leaderboard" image="leaderB" id="d1b-Qg-ST6"/>
+                    <tabBarItem key="tabBarItem" title="" image="leaderB" id="d1b-Qg-ST6">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="headerHeightConstraint" destination="fUs-Zf-hZl" id="08y-2q-hG8"/>
