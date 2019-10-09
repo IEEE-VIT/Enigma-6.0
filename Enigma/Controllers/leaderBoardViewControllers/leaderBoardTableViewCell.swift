@@ -14,6 +14,12 @@ class leaderBoardTableViewCell: UITableViewCell {
     
     //MARK: - Outlets
     
+    @IBOutlet weak var rank: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var ques: UILabel!
+    @IBOutlet weak var score: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
