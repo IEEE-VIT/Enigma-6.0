@@ -180,6 +180,8 @@
 		778E4624232F652E00D7A865 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				772A9B67234DAF4100DB95C8 /* RoundedCornerView.swift */,
+				77F39F0623391F0A00F0F378 /* constant+Functions.swift */,
 				771ED5652326B57D0024329F /* AppDelegate.swift */,
 				771ED56C2326B57F0024329F /* Assets.xcassets */,
 			);
@@ -197,7 +199,6 @@
 		778E4628232F68D900D7A865 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				772A9B67234DAF4100DB95C8 /* RoundedCornerView.swift */,
 				77EE0A7D2333BE4100E4338D /* google+SignIn.swift */,
 				77F39F002338FFED00F0F378 /* email+SignOut.swift */,
 				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
@@ -207,7 +208,6 @@
 				774478B0233140A800674543 /* checkNetwork.swift */,
 				77799FB623355AA300110768 /* custom+Navigation.swift */,
 				77F39F022339073500F0F378 /* instantiate+ViewController.swift */,
-				77F39F0623391F0A00F0F378 /* constant+Functions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
