@@ -1217,7 +1217,7 @@ you will get x points</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2j-fr-1HM">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2j-fr-1HM">
                                                 <rect key="frame" x="28" y="286" width="319" height="176"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -1228,15 +1228,56 @@ you will get x points</string>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9f-4b-Qmc">
+                                                <rect key="frame" x="28" y="502" width="319" height="100"/>
+                                                <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="j1i-fK-COf"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-yY-1MM" userLabel="SIGNLabel">
+                                                <rect key="frame" x="147" y="666" width="80" height="40"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.87450980389999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Zro-WY-JgB"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="uMV-bp-RDo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
+                                                <state key="normal" title="SUBMIT">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="uUe-fC-fub"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="2FY-XP-7JS" firstAttribute="top" secondItem="tWd-0K-bGI" secondAttribute="top" constant="32" id="1Ef-DF-p1Z"/>
                                             <constraint firstAttribute="trailing" secondItem="2FY-XP-7JS" secondAttribute="trailing" constant="28" id="9Jg-d8-R4q"/>
+                                            <constraint firstItem="IJE-yY-1MM" firstAttribute="top" secondItem="M9f-4b-Qmc" secondAttribute="bottom" constant="64" id="BOA-JA-eX5"/>
                                             <constraint firstItem="2FY-XP-7JS" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="28" id="Brk-qW-Hc9"/>
+                                            <constraint firstItem="M9f-4b-Qmc" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="28" id="Lf1-vj-uIc"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IJE-yY-1MM" secondAttribute="trailing" constant="20" symbolic="YES" id="N4l-lh-NAa"/>
                                             <constraint firstAttribute="height" constant="779" id="Vgk-4Z-rsC"/>
                                             <constraint firstItem="d2j-fr-1HM" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="28" id="bsg-Sc-Fag"/>
+                                            <constraint firstItem="IJE-yY-1MM" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="147" id="gTS-rX-6Y3"/>
                                             <constraint firstItem="d2j-fr-1HM" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="bottom" constant="21" id="jOB-rW-mZP"/>
+                                            <constraint firstAttribute="trailing" secondItem="M9f-4b-Qmc" secondAttribute="trailing" constant="28" id="nrF-RV-ffG"/>
+                                            <constraint firstItem="M9f-4b-Qmc" firstAttribute="top" secondItem="d2j-fr-1HM" secondAttribute="bottom" constant="40" id="yb7-TM-YuX"/>
                                             <constraint firstAttribute="trailing" secondItem="d2j-fr-1HM" secondAttribute="trailing" constant="28" id="ycK-q2-NKR"/>
                                         </constraints>
                                     </view>
