@@ -30,6 +30,7 @@
 		778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4629232F690400D7A865 /* keyboard+Hide.swift */; };
 		778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E462B232F80AE00D7A865 /* signUpPageViewController.swift */; };
 		77AA76AA233133D700C7C5ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */; };
+		77E6424C234E13A90075F0A4 /* leaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6424B234E13A80075F0A4 /* leaderBoardTableViewCell.swift */; };
 		77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */; };
 		77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7D2333BE4100E4338D /* google+SignIn.swift */; };
 		77F39F012338FFED00F0F378 /* email+SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F002338FFED00F0F378 /* email+SignOut.swift */; };
@@ -67,6 +68,7 @@
 		778E4629232F690400D7A865 /* keyboard+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
 		778E462B232F80AE00D7A865 /* signUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpPageViewController.swift; sourceTree = "<group>"; };
 		77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77E6424B234E13A80075F0A4 /* leaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardTableViewCell.swift; sourceTree = "<group>"; };
 		77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "haptic+Feedback.swift"; sourceTree = "<group>"; };
 		77EE0A7D2333BE4100E4338D /* google+SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "google+SignIn.swift"; sourceTree = "<group>"; };
 		77F39F002338FFED00F0F378 /* email+SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "email+SignOut.swift"; sourceTree = "<group>"; };
@@ -170,11 +172,11 @@
 		778E4623232F651900D7A865 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				772A9B69234DB5ED00DB95C8 /* playViewController.swift */,
-				77F39F08233929F800F0F378 /* leaderBoardViewController.swift */,
+				77E6424E234E13C00075F0A4 /* leaderBoardViewControllers */,
 				7787EEC1232FCB65008CFBCD /* RulesViewController */,
 				7762795C233540360050A402 /* profileViewControllers */,
 				778E462B232F80AE00D7A865 /* signUpPageViewController.swift */,
+				772A9B69234DB5ED00DB95C8 /* playViewController.swift */,
 				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
 			);
 			path = Controllers;
@@ -213,6 +215,15 @@
 				77F39F022339073500F0F378 /* instantiate+ViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77E6424E234E13C00075F0A4 /* leaderBoardViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77E6424B234E13A80075F0A4 /* leaderBoardTableViewCell.swift */,
+				77F39F08233929F800F0F378 /* leaderBoardViewController.swift */,
+			);
+			path = leaderBoardViewControllers;
 			sourceTree = "<group>";
 		};
 		A492BA66EEB22480668EBD20 /* Pods */ = {
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77721CC9233289D30053F617 /* profileViewController.swift in Sources */,
+				77E6424C234E13A90075F0A4 /* leaderBoardTableViewCell.swift in Sources */,
 				7787EEBC232FC588008CFBCD /* RulesViewController.swift in Sources */,
 				77F39F012338FFED00F0F378 /* email+SignOut.swift in Sources */,
 				778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */,
