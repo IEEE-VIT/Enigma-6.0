@@ -12,6 +12,7 @@
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
 		771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56E2326B57F0024329F /* LaunchScreen.storyboard */; };
 		772A9B68234DAF4100DB95C8 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A9B67234DAF4100DB95C8 /* RoundedCornerView.swift */; };
+		772A9B6A234DB5ED00DB95C8 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A9B69234DB5ED00DB95C8 /* playViewController.swift */; };
 		774478AC23313E9900674543 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478AB23313E9900674543 /* Reachability.swift */; };
 		774478B1233140A800674543 /* checkNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478B0233140A800674543 /* checkNetwork.swift */; };
 		774478B32331487800674543 /* alert+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774478B22331487800674543 /* alert+Function.swift */; };
@@ -48,6 +49,7 @@
 		771ED56F2326B57F0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771ED5712326B57F0024329F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772A9B67234DAF4100DB95C8 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		772A9B69234DB5ED00DB95C8 /* playViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playViewController.swift; sourceTree = "<group>"; };
 		774478AB23313E9900674543 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		774478B0233140A800674543 /* checkNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkNetwork.swift; sourceTree = "<group>"; };
 		774478B22331487800674543 /* alert+Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "alert+Function.swift"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		778E4623232F651900D7A865 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				772A9B69234DB5ED00DB95C8 /* playViewController.swift */,
 				77F39F08233929F800F0F378 /* leaderBoardViewController.swift */,
 				7787EEC1232FCB65008CFBCD /* RulesViewController */,
 				7762795C233540360050A402 /* profileViewControllers */,
@@ -390,6 +393,7 @@
 				774478B32331487800674543 /* alert+Function.swift in Sources */,
 				7787EEC0232FCB5D008CFBCD /* rulesTableViewCell.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
+				772A9B6A234DB5ED00DB95C8 /* playViewController.swift in Sources */,
 				77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */,
 				77F39F09233929F800F0F378 /* leaderBoardViewController.swift in Sources */,
 				774478B1233140A800674543 /* checkNetwork.swift in Sources */,

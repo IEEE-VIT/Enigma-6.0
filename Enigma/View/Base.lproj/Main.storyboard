@@ -1143,7 +1143,7 @@ you will get x points</string>
         <!--ENIGMA-->
         <scene sceneID="WU9-EC-Szx">
             <objects>
-                <viewController id="Bc4-tf-De5" sceneMemberID="viewController">
+                <viewController id="Bc4-tf-De5" customClass="playViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yye-0y-Xf7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1236,7 +1236,7 @@ you will get x points</string>
                                                 </constraints>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
                                                         <integer key="value" value="10"/>
@@ -1303,6 +1303,9 @@ you will get x points</string>
                     </view>
                     <navigationItem key="navigationItem" title="ENIGMA" id="e8N-79-CjR"/>
                     <size key="freeformSize" width="375" height="900"/>
+                    <connections>
+                        <outlet property="answerText" destination="M9f-4b-Qmc" id="7XE-TU-7Cz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
