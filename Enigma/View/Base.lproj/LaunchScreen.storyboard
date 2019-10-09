@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchBack" translatesAutoresizingMaskIntoConstraints="NO" id="LoK-P9-Pzw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="LoK-P9-Pzw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="701"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchText" translatesAutoresizingMaskIntoConstraints="NO" id="ayy-YA-pky">
@@ -51,7 +51,7 @@
     </scenes>
     <resources>
         <image name="EnigmaL" width="268" height="141"/>
-        <image name="launchBack" width="419" height="592"/>
         <image name="launchText" width="329" height="534"/>
+        <image name="splash" width="435" height="616"/>
     </resources>
 </document>
