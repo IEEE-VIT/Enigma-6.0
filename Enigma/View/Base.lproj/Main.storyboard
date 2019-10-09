@@ -1145,16 +1145,76 @@ you will get x points</string>
             <objects>
                 <viewController id="Bc4-tf-De5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yye-0y-Xf7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sz-uC-ad0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="787"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-0K-bGI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="779"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FY-XP-7JS">
+                                                <rect key="frame" x="28" y="32" width="319" height="233"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quesimg" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-JW-zAR">
+                                                        <rect key="frame" x="0.0" y="3" width="319" height="226"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Aho-JW-zAR" secondAttribute="bottom" constant="4" id="FIm-bx-2F7"/>
+                                                    <constraint firstItem="Aho-JW-zAR" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" constant="3" id="Kst-Lp-3hu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Aho-JW-zAR" secondAttribute="trailing" id="TqT-md-QqD"/>
+                                                    <constraint firstItem="Aho-JW-zAR" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="bKe-EH-1LJ"/>
+                                                    <constraint firstAttribute="width" secondItem="2FY-XP-7JS" secondAttribute="height" multiplier="152:111" id="g57-gR-r4q"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2FY-XP-7JS" firstAttribute="top" secondItem="tWd-0K-bGI" secondAttribute="top" constant="32" id="1Ef-DF-p1Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="2FY-XP-7JS" secondAttribute="trailing" constant="28" id="9Jg-d8-R4q"/>
+                                            <constraint firstItem="2FY-XP-7JS" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="28" id="Brk-qW-Hc9"/>
+                                            <constraint firstAttribute="height" constant="779" id="Vgk-4Z-rsC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tWd-0K-bGI" secondAttribute="bottom" constant="8" id="PTO-ot-4xA"/>
+                                    <constraint firstAttribute="trailing" secondItem="tWd-0K-bGI" secondAttribute="trailing" id="Xf0-oI-ubS"/>
+                                    <constraint firstItem="tWd-0K-bGI" firstAttribute="leading" secondItem="4sz-uC-ad0" secondAttribute="leading" id="hwz-wp-LUv"/>
+                                    <constraint firstItem="tWd-0K-bGI" firstAttribute="top" secondItem="4sz-uC-ad0" secondAttribute="top" id="nL0-1h-QPP"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4sz-uC-ad0" firstAttribute="trailing" secondItem="gzZ-Ap-CPF" secondAttribute="trailing" id="741-8H-flQ"/>
+                            <constraint firstItem="4sz-uC-ad0" firstAttribute="top" secondItem="gzZ-Ap-CPF" secondAttribute="top" id="ItL-0f-ARz"/>
+                            <constraint firstItem="4sz-uC-ad0" firstAttribute="leading" secondItem="gzZ-Ap-CPF" secondAttribute="leading" id="bai-pf-NB4"/>
+                            <constraint firstItem="tWd-0K-bGI" firstAttribute="width" secondItem="yye-0y-Xf7" secondAttribute="width" id="srs-na-N8H"/>
+                            <constraint firstItem="4sz-uC-ad0" firstAttribute="bottom" secondItem="gzZ-Ap-CPF" secondAttribute="bottom" id="ykx-hD-4A1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gzZ-Ap-CPF"/>
                     </view>
                     <navigationItem key="navigationItem" title="ENIGMA" id="e8N-79-CjR"/>
+                    <size key="freeformSize" width="375" height="900"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4122" y="-392"/>
+            <point key="canvasLocation" x="4253.6000000000004" y="-896.85157421289364"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wxM-fu-bq7">
@@ -1199,7 +1259,7 @@ you will get x points</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRk-GH-YD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3359" y="-392"/>
+            <point key="canvasLocation" x="3289" y="-895"/>
         </scene>
         <!--Profile-->
         <scene sceneID="bSZ-ev-11B">
@@ -1305,6 +1365,7 @@ you will get x points</string>
         <image name="leaderB" width="32" height="32"/>
         <image name="leaderBoard" width="360" height="160"/>
         <image name="profile" width="30" height="30"/>
+        <image name="quesimg" width="261" height="191"/>
         <image name="rank" width="218" height="138"/>
         <image name="road" width="360" height="160"/>
         <image name="rules" width="32" height="32"/>
