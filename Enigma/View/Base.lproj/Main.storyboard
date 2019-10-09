@@ -1161,25 +1161,49 @@ you will get x points</string>
                                                         <rect key="frame" x="0.0" y="3" width="319" height="226"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="10"/>
+                                                                <integer key="value" value="12"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXV-GU-Vn0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                        <color key="backgroundColor" red="0.8901960784313725" green="0.80392156862745101" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="Etp-1r-XOR"/>
+                                                            <constraint firstAttribute="width" constant="44" id="F1k-1h-tnt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="20"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Aho-JW-zAR" secondAttribute="bottom" constant="4" id="FIm-bx-2F7"/>
                                                     <constraint firstItem="Aho-JW-zAR" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" constant="3" id="Kst-Lp-3hu"/>
                                                     <constraint firstAttribute="trailing" secondItem="Aho-JW-zAR" secondAttribute="trailing" id="TqT-md-QqD"/>
+                                                    <constraint firstItem="jXV-GU-Vn0" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" id="WET-9N-3dm"/>
+                                                    <constraint firstItem="jXV-GU-Vn0" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="awj-n0-FFP"/>
                                                     <constraint firstItem="Aho-JW-zAR" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="bKe-EH-1LJ"/>
                                                     <constraint firstAttribute="width" secondItem="2FY-XP-7JS" secondAttribute="height" multiplier="152:111" id="g57-gR-r4q"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jXV-GU-Vn0" secondAttribute="trailing" constant="20" symbolic="YES" id="tG2-FK-Gdg"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="10"/>
+                                                        <integer key="value" value="13"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2j-fr-1HM">
+                                                <rect key="frame" x="28" y="286" width="319" height="176"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="d2j-fr-1HM" secondAttribute="height" multiplier="29:16" id="hg1-go-BYq"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1187,6 +1211,9 @@ you will get x points</string>
                                             <constraint firstAttribute="trailing" secondItem="2FY-XP-7JS" secondAttribute="trailing" constant="28" id="9Jg-d8-R4q"/>
                                             <constraint firstItem="2FY-XP-7JS" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="28" id="Brk-qW-Hc9"/>
                                             <constraint firstAttribute="height" constant="779" id="Vgk-4Z-rsC"/>
+                                            <constraint firstItem="d2j-fr-1HM" firstAttribute="leading" secondItem="tWd-0K-bGI" secondAttribute="leading" constant="28" id="bsg-Sc-Fag"/>
+                                            <constraint firstItem="d2j-fr-1HM" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="bottom" constant="21" id="jOB-rW-mZP"/>
+                                            <constraint firstAttribute="trailing" secondItem="d2j-fr-1HM" secondAttribute="trailing" constant="28" id="ycK-q2-NKR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
