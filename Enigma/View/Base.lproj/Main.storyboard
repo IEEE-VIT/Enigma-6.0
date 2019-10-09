@@ -1165,7 +1165,7 @@ you will get x points</string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXV-GU-Vn0">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXV-GU-Vn0">
                                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                         <color key="backgroundColor" red="0.8901960784313725" green="0.80392156862745101" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -1174,7 +1174,28 @@ you will get x points</string>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="20"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMV-r9-jR8" customClass="RoundedCornerView" customModule="Enigma" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="184" width="44" height="44"/>
+                                                        <color key="backgroundColor" red="0.89019607840000003" green="0.80392156859999997" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="J0h-kj-mlf"/>
+                                                            <constraint firstAttribute="width" constant="44" id="bPc-91-gHg"/>
+                                                        </constraints>
+                                                        <state key="normal" image="key"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -1184,7 +1205,9 @@ you will get x points</string>
                                                     <constraint firstItem="jXV-GU-Vn0" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" id="WET-9N-3dm"/>
                                                     <constraint firstItem="jXV-GU-Vn0" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="awj-n0-FFP"/>
                                                     <constraint firstItem="Aho-JW-zAR" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="bKe-EH-1LJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iMV-r9-jR8" secondAttribute="bottom" constant="5" id="btu-c8-vpU"/>
                                                     <constraint firstAttribute="width" secondItem="2FY-XP-7JS" secondAttribute="height" multiplier="152:111" id="g57-gR-r4q"/>
+                                                    <constraint firstItem="iMV-r9-jR8" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="jPK-6X-df0"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jXV-GU-Vn0" secondAttribute="trailing" constant="20" symbolic="YES" id="tG2-FK-Gdg"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -1389,6 +1412,7 @@ you will get x points</string>
         <image name="hoodie" width="360" height="160"/>
         <image name="hoodie2" width="360" height="160"/>
         <image name="hoodie3" width="360" height="160"/>
+        <image name="key" width="15" height="15"/>
         <image name="leaderB" width="32" height="32"/>
         <image name="leaderBoard" width="360" height="160"/>
         <image name="profile" width="30" height="30"/>
