@@ -17,3 +17,7 @@ internal let lname = ["Aman","Aman","Aman","Aman","Aman","Aman","Aman","Aman","A
 internal let ques = ["01","02","03","04","05","06","07","08","09","10","11"]
 
 internal let score = ["01","02","03","04","05","06","07","08","09","10","11"]
+
+internal let baseurl = "http://enigma6-backend.herokuapp.com/"
+
+

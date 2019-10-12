@@ -7,9 +7,8 @@
 //
 
 import Foundation
+import Alamofire
 
 class NetworkEngine {
-
-    static let url = "EGWERYT"
     
 }

@@ -185,6 +185,7 @@
 		778E4624232F652E00D7A865 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				7787EEBD232FCAAC008CFBCD /* constants.swift */,
 				772A9B67234DAF4100DB95C8 /* RoundedCornerView.swift */,
 				77F39F0623391F0A00F0F378 /* constant+Functions.swift */,
 				771ED5652326B57D0024329F /* AppDelegate.swift */,
@@ -207,7 +208,6 @@
 				77EE0A7D2333BE4100E4338D /* google+SignIn.swift */,
 				77F39F002338FFED00F0F378 /* email+SignOut.swift */,
 				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
-				7787EEBD232FCAAC008CFBCD /* constants.swift */,
 				77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */,
 				774478B22331487800674543 /* alert+Function.swift */,
 				774478B0233140A800674543 /* checkNetwork.swift */,
