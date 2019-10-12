@@ -14,3 +14,8 @@ internal func getUID() -> String {
     let uid = Auth.auth().currentUser?.uid
     return uid ?? "notFound"
 }
+
+internal func getEmail() -> String {
+    let userEmail = Auth.auth().currentUser?.email
+    return userEmail ?? "notFound"
+}

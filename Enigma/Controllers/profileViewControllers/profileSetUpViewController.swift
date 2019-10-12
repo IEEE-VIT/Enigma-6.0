@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class profileSetUpViewController: UIViewController {
     
@@ -23,6 +25,8 @@ class profileSetUpViewController: UIViewController {
         textFieldDelegateSetUp()
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
+        let email = getEmail()
+        emailText.text = email
     }
     
     //MARK:- TextField Delegate Method
@@ -34,8 +38,21 @@ class profileSetUpViewController: UIViewController {
     //MARK: - Done button action
     @IBAction func doneAction(_ sender: UIButton) {
         
-//        print("QWefq")
+
+        if usernameText.text == "" || emailText.text == "" {
+            authAlert(titlepass: "Please fill all the required details", message: "Fields empty!")
+        }
+        else {
+        NetworkEngine.registerPlayer(username: usernameText.text!, email: getEmail()) { (sucess) in
+            if sucess {
+                print("Registred")
+            }
+            else {
+                print("erf2f")
+            }
+        }
         
+        }
     }
 }
 

@@ -32,9 +32,6 @@ class loginPageViewController: UIViewController, GIDSignInUIDelegate{
         super.viewDidAppear(animated)
         // Function for checking newtwork connection
         checkNewtork(ifError: "Cannot login")
-//        guard let userID = Auth.auth().currentUser?.uid else { return }
-//        print(userID)
-//        print("fuck you")
     }
     
     //MARK:- TextField Delegate Method
