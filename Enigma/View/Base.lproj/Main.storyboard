@@ -664,6 +664,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doneAction:" destination="5Gn-Uq-0TL" eventType="touchUpInside" id="rTi-bk-fYM"/>
+                                    <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="MnM-T8-APz"/>
                                 </connections>
                             </button>
                         </subviews>

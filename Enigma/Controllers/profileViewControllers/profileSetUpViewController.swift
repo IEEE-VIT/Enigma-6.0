@@ -34,7 +34,7 @@ class profileSetUpViewController: UIViewController {
     //MARK: - Done button action
     @IBAction func doneAction(_ sender: UIButton) {
         
-        
+//        print("QWefq")
         
     }
 }
