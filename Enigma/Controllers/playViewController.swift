@@ -32,7 +32,7 @@ class playViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Function for checking newtwork connection
-        checkNewtork(ifError: "Cannot login")
+        checkNewtork(ifError: "Cannot fetch question")
     }
     
     //MARK: - Function to fetch the qestion and display
