@@ -25,6 +25,13 @@ class leaderBoardViewController: UIViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         leaderTable.addSubview(refreshControl)
+        //Loading table and refresh UI
+        loadLead()
+        
+    }
+    
+    //MARK: - Function for the loading leaderboard
+    func loadLead() {
         NetworkEngine.getLeaderBoard { (response) in
             var number = 0
             while (number < (response["leaderBoard"]?.count)!) {
@@ -33,13 +40,12 @@ class leaderBoardViewController: UIViewController {
                 self.points.append(response["leaderBoard"]![number]["points"].stringValue)
                 self.level.append(response["leaderBoard"]![number]["level"].stringValue)
                 print(response["leaderBoard"]![number]["name"].stringValue)
-                  number += 1
-            
-        }
+                number += 1
+                
+            }
             self.leaderTable.reloadData()
+        }
     }
-    }
-    
     
     // Refresh selector control
     @objc func refresh(sender:AnyObject) {
