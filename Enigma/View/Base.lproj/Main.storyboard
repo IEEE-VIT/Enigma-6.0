@@ -1211,7 +1211,7 @@ you will get x points</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-yY-1MM" userLabel="SIGNLabel">
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJE-yY-1MM" userLabel="Submit">
                                                 <rect key="frame" x="147" y="666" width="80" height="40"/>
                                                 <color key="backgroundColor" red="0.95294117649999999" green="0.87450980389999999" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1228,7 +1228,7 @@ you will get x points</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="signIn:" destination="7xe-Ug-eTC" eventType="touchUpInside" id="uUe-fC-fub"/>
+                                                    <action selector="answerSubmit:" destination="Bc4-tf-De5" eventType="touchUpInside" id="Nft-Mm-mNk"/>
                                                 </connections>
                                             </button>
                                         </subviews>

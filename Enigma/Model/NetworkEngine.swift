@@ -45,13 +45,36 @@ class NetworkEngine: UIViewController {
         Alamofire.request(url, method: .post, headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-//                print(json)
+                print(json)
                 completion(json["payload"].dictionaryValue)
                
         }
             else{
                 print("Error")
             }
+        }
+    }
+    
+    
+    //MARK: - Check answer
+    
+    public static func checkAnswer(answer: String, completion: @escaping (Bool) -> ()) {
+        let route = "/api/auth/checkAnswer"
+        let url = constants.baseurl + route
+        let params = [
+            "answer":answer
+        ]
+        Alamofire.request(url, method: .post, parameters: params,encoding: JSONEncoding.default,headers: headers).responseJSON{
+            response in if response.result.isSuccess{
+                let json = JSON(response.result.value!)
+                print(json)
+                completion(json["isAnswerCorrect"].boolValue)
+                
+            } else
+            {
+                print("Error in checking answer")
+            }
+            
         }
     }
     

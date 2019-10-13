@@ -24,8 +24,7 @@ class playViewController: UIViewController {
         questionText.isHidden = true
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
-        // Setup question
-        quesF()
+       
       
     }
     
@@ -33,6 +32,8 @@ class playViewController: UIViewController {
         super.viewDidAppear(animated)
         // Function for checking newtwork connection
         checkNewtork(ifError: "Cannot fetch question")
+        // Setup question
+        quesF()
     }
     
     //MARK: - Function to fetch the qestion and display
@@ -41,10 +42,42 @@ class playViewController: UIViewController {
             self.questionText.isHidden = false
             self.questionText.text = sucess["question"]!.stringValue
             self.questionNumber.setTitle(sucess["level"]!.stringValue, for: .normal)
-
-
         }
     }
+    
+    //MARK: - Function for checking answers
+    func checkAns() {
+        // Function for checking newtwork connection
+        super.checkNewtork(ifError: "Cannot fetch question")
+        if answerText.text == "" {
+            authAlert(titlepass: "Error", message: "Answer Can't be blank")
+        }
+        else {
+            NetworkEngine.checkAnswer(answer: answerText.text!) { (response) in
+                if response == true {
+                    self.authAlert(titlepass: "Accurate", message: "Correct Answer")
+                    self.answerText.text = ""
+                }
+                else if response == false {
+                    self.authAlert(titlepass: "Answer not correct", message: "You are miles far!")
+                }
+                else {
+                    self.authAlert(titlepass: "Error", message: "Cannot submit answers please try again!")
+                }
+            }
+            
+        }
+    }
+    
+    //MARK: - check answer function and action
+    
+    @IBAction func answerSubmit(_ sender: UIButton) {
+        
+        checkAns()
+       
+    }
+    
+    
     
     //MARK:- TextField Delegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
