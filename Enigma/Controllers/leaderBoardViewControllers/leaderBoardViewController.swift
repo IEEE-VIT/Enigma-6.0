@@ -15,13 +15,33 @@ class leaderBoardViewController: UIViewController {
     
     //MARK: - Variables
     var refreshControl = UIRefreshControl()
+    private var name : [String?] = []
+    private var rank : [String?] = []
+    private var level : [String?] = []
+    private var points : [String?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         leaderTable.addSubview(refreshControl)
+        NetworkEngine.getLeaderBoard { (response) in
+            var number = 0
+            while (number < (response["leaderBoard"]?.count)!) {
+                self.name.append(response["leaderBoard"]![number]["name"].stringValue)
+                self.rank.append(response["leaderBoard"]![number]["rank"].stringValue)
+                self.points.append(response["leaderBoard"]![number]["points"].stringValue)
+                self.level.append(response["leaderBoard"]![number]["level"].stringValue)
+                print(response["leaderBoard"]![number]["name"].stringValue)
+                  number += 1
+            
+        }
+            self.leaderTable.reloadData()
     }
+    }
+    
+    
+    // Refresh selector control
     @objc func refresh(sender:AnyObject) {
         // Code to refresh table view
         refreshControl.endRefreshing()
@@ -36,7 +56,7 @@ extension leaderBoardViewController: UITableViewDataSource,UITableViewDelegate {
     
     //MARK: - Table View datasource Method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 40
+        return name.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,7 +72,8 @@ extension leaderBoardViewController: UITableViewDataSource,UITableViewDelegate {
             cell.score.textColor = #colorLiteral(red: 0.6431372549, green: 0.1333333333, blue: 1, alpha: 1)
         }
         else {
-            cell.name.text = "Cell \(indexPath.row)"
+            
+            cell.name.text = name[indexPath.row-1]
             cell.rank.text = "Cell \(indexPath.row)"
             cell.ques.text = "Cell \(indexPath.row)"
             cell.score.text = "Cell \(indexPath.row)"

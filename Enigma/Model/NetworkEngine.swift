@@ -23,7 +23,7 @@ class NetworkEngine: UIViewController {
         Alamofire.request(url, method: .post, parameters: params,encoding: JSONEncoding.default,headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-//                print(json)
+                //                print(json)
                 if json["wasUserRegistered"] == true || json["isRegSuccess"] == true{
                     UserDefaults.standard.set(true, forKey: "login")
                     completion(json["payload"]["msg"].stringValue)
@@ -45,10 +45,10 @@ class NetworkEngine: UIViewController {
         Alamofire.request(url, method: .post, headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                print(json)
+//                print(json)
                 completion(json["payload"].dictionaryValue)
-               
-        }
+                
+            }
             else{
                 print("Error")
             }
@@ -67,8 +67,29 @@ class NetworkEngine: UIViewController {
         Alamofire.request(url, method: .post, parameters: params,encoding: JSONEncoding.default,headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                print(json)
+//                print(json)
                 completion(json["isAnswerCorrect"].boolValue)
+                
+            } else
+            {
+                print("Error in checking answer")
+            }
+            
+        }
+    }
+    
+    
+    //MARk: - Network engine for leaderboard
+    
+    public static func getLeaderBoard(completion: @escaping (Dictionary<String,JSON>) -> ()) {
+        let route = "/api/auth/leaderBoard"
+        let url = constants.baseurl + route
+      
+        Alamofire.request(url, method: .post, headers: headers).responseJSON{
+            response in if response.result.isSuccess{
+                let json = JSON(response.result.value!)
+//                print(json["payload"]["leaderBoard"])
+                completion(json["payload"].dictionaryValue)
                 
             } else
             {

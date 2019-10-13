@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7714AA6B235327B2009207A3 /* leaderBoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714AA6A235327B2009207A3 /* leaderBoardData.swift */; };
 		771ED5662326B57D0024329F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771ED5652326B57D0024329F /* AppDelegate.swift */; };
 		771ED56B2326B57D0024329F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771ED5692326B57D0024329F /* Main.storyboard */; };
 		771ED56D2326B57F0024329F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771ED56C2326B57F0024329F /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		375343E786E61C0E32712818 /* Pods-Enigma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enigma.release.xcconfig"; path = "Target Support Files/Pods-Enigma/Pods-Enigma.release.xcconfig"; sourceTree = "<group>"; };
 		61E5325E48241822FE57E2AE /* Pods-Enigma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enigma.debug.xcconfig"; path = "Target Support Files/Pods-Enigma/Pods-Enigma.debug.xcconfig"; sourceTree = "<group>"; };
+		7714AA6A235327B2009207A3 /* leaderBoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardData.swift; sourceTree = "<group>"; };
 		771ED5622326B57D0024329F /* Enigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771ED5652326B57D0024329F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		771ED56A2326B57D0024329F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		778E4625232F655400D7A865 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7714AA6A235327B2009207A3 /* leaderBoardData.swift */,
 				778E4626232F65E300D7A865 /* NetworkEngine.swift */,
 			);
 			path = Model;
@@ -410,6 +413,7 @@
 				7787EEC0232FCB5D008CFBCD /* rulesTableViewCell.swift in Sources */,
 				771ED5662326B57D0024329F /* AppDelegate.swift in Sources */,
 				772A9B6A234DB5ED00DB95C8 /* playViewController.swift in Sources */,
+				7714AA6B235327B2009207A3 /* leaderBoardData.swift in Sources */,
 				77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */,
 				77F39F09233929F800F0F378 /* leaderBoardViewController.swift in Sources */,
 				774478B1233140A800674543 /* checkNetwork.swift in Sources */,
