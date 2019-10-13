@@ -12,7 +12,7 @@ import Firebase
 import GoogleSignIn
 
 extension AppDelegate {
-  
+    
     // Function setting up intial view controller
     func setInitialViewController() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -31,18 +31,16 @@ extension AppDelegate {
             } catch let signOutError as NSError {
                 print ("Error signing out: %@", signOutError)
             }
-            if UID == "notFound" {
                 let VC = mainStoryboard.instantiateViewController(withIdentifier: "loginPageViewController") as! loginPageViewController
                 appDelegate.window?.rootViewController = VC
                 appDelegate.window?.makeKeyAndVisible()
-            }
         }
         else if loginstatus == true {
             let tap = mainStoryboard.instantiateViewController(withIdentifier: "tapBar") as! UITabBarController
             appDelegate.window?.rootViewController = tap
             appDelegate.window?.makeKeyAndVisible()
         }
-       
+        
     }
     
 }

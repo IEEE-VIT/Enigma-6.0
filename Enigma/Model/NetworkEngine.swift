@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class NetworkEngine {
     
-    
+    //MARK: - Network Engine for register player
     public static func registerPlayer(username: String, email: String, completion: @escaping (String) -> ()) {
         let route = "/api/registerPlayer"
         let url = constants.baseurl + route
@@ -24,7 +24,6 @@ class NetworkEngine {
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
                 print(json)
-//                print(json["wasUserRegistered"])
                 if json["wasUserRegistered"] == true || json["isRegSuccess"] == true{
                     UserDefaults.standard.set(true, forKey: "login")
                     completion(json["payload"]["msg"].stringValue)
@@ -36,6 +35,9 @@ class NetworkEngine {
             }
         }
     }
+    
+    
+    // Next network Engine
     
     
 }

@@ -17,7 +17,7 @@ class profileSetUpViewController: UIViewController {
     @IBOutlet weak var firstNameText: UITextField!
     @IBOutlet weak var lastNameText: UITextField!
     @IBOutlet weak var usernameText: UITextField!
-    
+    @IBOutlet weak var load: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,17 @@ class profileSetUpViewController: UIViewController {
         textFieldDelegateSetUp()
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
+        // Get email function
         let email = getEmail()
         emailText.text = email
+        // Hide activity monitor
+        self.load.isHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Function for checking newtwork connection
+        checkNewtork(ifError: "Cannot login")
     }
     
     //MARK:- TextField Delegate Method
@@ -38,28 +47,35 @@ class profileSetUpViewController: UIViewController {
     //MARK: - Done button action
     @IBAction func doneAction(_ sender: UIButton) {
         
-
+        // Start load animation
+        self.load.isHidden = false
+        load.startAnimating()
+        
         if usernameText.text == "" || emailText.text == "" {
             authAlert(titlepass: "Please fill all the required details", message: "Fields empty!")
         }
         else {
-        NetworkEngine.registerPlayer(username: usernameText.text!, email: getEmail()) { (sucess) in
-            if sucess == "Player registered, Let the game begin!!!"
-            {
-                self.performSegue(withIdentifier: "goToRules", sender: self)
+            NetworkEngine.registerPlayer(username: usernameText.text!, email: getEmail()) { (sucess) in
+                if sucess == "Player registered, Let the game begin!!!"
+                {
+                    self.performSegue(withIdentifier: "goToRules", sender: self)
+                    // Vibrates on valid
+                    UIDevice.validVibrate()
+                }
+                else if sucess == "User already registered, Signing In!" {
+                    //                self.authAlert(titlepass: "Account exists", message: "User already registered, Please Signing In!")
+                    self.performSegue(withIdentifier: "goToRules", sender: self)
+                    // Vibrates on valid
+                    UIDevice.validVibrate()
+                }
+                else if sucess == "Username already Taken" {
+                    self.authAlert(titlepass: "Username already Taken", message: "Please use other username!")
+                }
+                else {
+                    self.authAlert(titlepass: "Registration Failed", message: "Please try after some time!")
+                }
             }
-            else if sucess == "User already registered, Signing In!" {
-//                self.authAlert(titlepass: "Account exists", message: "User already registered, Please Signing In!")
-                self.performSegue(withIdentifier: "goToRules", sender: self)
-            }
-            else if sucess == "Username already Taken" {
-                self.authAlert(titlepass: "Username already Taken", message: "Please use other username!")
-            }
-            else {
-                self.authAlert(titlepass: "Registration Failed", message: "Please try after some time!")
-            }
-        }
-        
+            
         }
     }
 }
