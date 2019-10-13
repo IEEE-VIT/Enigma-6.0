@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class NetworkEngine {
+class NetworkEngine: UIViewController {
     
     //MARK: - Network Engine for register player
     public static func registerPlayer(username: String, email: String, completion: @escaping (String) -> ()) {
@@ -23,7 +23,7 @@ class NetworkEngine {
         Alamofire.request(url, method: .post, parameters: params,encoding: JSONEncoding.default,headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                print(json)
+//                print(json)
                 if json["wasUserRegistered"] == true || json["isRegSuccess"] == true{
                     UserDefaults.standard.set(true, forKey: "login")
                     completion(json["payload"]["msg"].stringValue)
@@ -37,7 +37,24 @@ class NetworkEngine {
     }
     
     
-    // Next network Engine
+    //MARk: - Network Engine for fecthing questions
+    
+    public static func fetchQuestion(completion: @escaping (Dictionary<String,JSON>) -> ()) {
+        let route = "/api/auth/getCurrent"
+        let url = constants.baseurl + route
+        Alamofire.request(url, method: .post, headers: headers).responseJSON{
+            response in if response.result.isSuccess{
+                let json = JSON(response.result.value!)
+//                print(json)
+                completion(json["payload"].dictionaryValue)
+               
+        }
+            else{
+                print("Error")
+            }
+        }
+    }
+    
     
     
 }
