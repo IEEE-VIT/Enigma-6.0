@@ -691,6 +691,7 @@
                         <outlet property="firstNameText" destination="ix0-Z1-Cxn" id="mmz-Eu-pst"/>
                         <outlet property="lastNameText" destination="dZN-ja-Cn6" id="N5b-6M-4RD"/>
                         <outlet property="usernameText" destination="UFM-pv-87Y" id="6DC-sb-9mQ"/>
+                        <segue destination="6pP-IG-sbO" kind="show" identifier="goToRules" id="eO1-Xh-XKu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDX-kD-VWj" sceneMemberID="firstResponder"/>

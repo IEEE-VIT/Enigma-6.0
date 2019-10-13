@@ -13,7 +13,7 @@ import SwiftyJSON
 class NetworkEngine {
     
     
-    public static func registerPlayer(username: String, email: String, completion: @escaping (Bool) -> ()) {
+    public static func registerPlayer(username: String, email: String, completion: @escaping (String) -> ()) {
         let route = "/api/registerPlayer"
         let url = constants.baseurl + route
         let params = [
@@ -24,15 +24,15 @@ class NetworkEngine {
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
                 print(json)
-                print(json["wasUserRegistered"])
-                if json["wasUserRegistered"] == true{
-
-                    completion(true)
+//                print(json["wasUserRegistered"])
+                if json["wasUserRegistered"] == true || json["isRegSuccess"] == true{
+                    UserDefaults.standard.set(true, forKey: "login")
+                    completion(json["payload"]["msg"].stringValue)
                 } else {
-                    completion(false)
+                    completion(json["payload"]["msg"].stringValue)
                 }
             } else {
-                completion(false)
+                completion("Error in registration")
             }
         }
     }

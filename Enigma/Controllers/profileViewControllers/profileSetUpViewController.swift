@@ -44,11 +44,19 @@ class profileSetUpViewController: UIViewController {
         }
         else {
         NetworkEngine.registerPlayer(username: usernameText.text!, email: getEmail()) { (sucess) in
-            if sucess {
-                print("Registred")
+            if sucess == "Player registered, Let the game begin!!!"
+            {
+                self.performSegue(withIdentifier: "goToRules", sender: self)
+            }
+            else if sucess == "User already registered, Signing In!" {
+//                self.authAlert(titlepass: "Account exists", message: "User already registered, Please Signing In!")
+                self.performSegue(withIdentifier: "goToRules", sender: self)
+            }
+            else if sucess == "Username already Taken" {
+                self.authAlert(titlepass: "Username already Taken", message: "Please use other username!")
             }
             else {
-                print("erf2f")
+                self.authAlert(titlepass: "Registration Failed", message: "Please try after some time!")
             }
         }
         

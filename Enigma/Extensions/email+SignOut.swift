@@ -16,6 +16,7 @@ extension UIViewController {
     func signOut() {
         let firebaseAuth = Auth.auth()
         do {
+            UserDefaults.standard.set(false, forKey: "login")
             try firebaseAuth.signOut()
             GIDSignIn.sharedInstance().signOut()
             print("SignOut sucessful")
