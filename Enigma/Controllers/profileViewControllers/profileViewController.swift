@@ -64,6 +64,7 @@ class profileViewController: UIViewController {
         scrollView.alwaysBounceVertical = true
         scrollView.bounces  = true
         refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .white
         refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
         self.scrollView.addSubview(refreshControl)
         

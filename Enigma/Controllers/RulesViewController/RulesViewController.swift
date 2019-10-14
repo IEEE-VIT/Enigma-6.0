@@ -48,7 +48,7 @@ extension RulesViewController: UITableViewDataSource,UITableViewDelegate {
     }
     // Setting custom header height
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 20
     }
     // Setting custom row height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

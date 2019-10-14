@@ -23,6 +23,7 @@ class leaderBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Pull to refresh
+        refreshControl.tintColor = .white
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         leaderTable.addSubview(refreshControl)
@@ -56,6 +57,7 @@ class leaderBoardViewController: UIViewController {
     // Refresh selector control
     @objc func refresh(sender:AnyObject) {
         // Code to refresh table view
+        loadLead()
         refreshControl.endRefreshing()
         checkNewtork(ifError: "Cannot fetch leaderboard!")
     }
