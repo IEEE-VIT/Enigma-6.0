@@ -24,12 +24,28 @@ class profileViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    //    //MARK: - Set status bar style to light
-    //    override var preferredStatusBarStyle: UIStatusBarStyle {
-    //        return UIStatusBarStyle.lightContent
-    //    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Function for checking newtwork connection
+        checkNewtork(ifError: "Cannot fetch profile!")
+        viewInitial()
+    }
+    
+    //MARK: - Function for initialisation
+    func viewInitial() {
+        name.text = "\(UserDefaults.standard.string(forKey: "firstName") ?? "NOT PROVIDED") \(UserDefaults.standard.string(forKey: "lastName") ?? "NOT PROVIDED")"
+        username.text = "\(UserDefaults.standard.string(forKey: "userName") ?? "NOT PROVIDED")"
+        email.text = getEmail()
+    }
+    
+    
     
     @IBAction func logout(_ sender: Any) {
-      signOut()
+        // calling signOut function
+        signOut()
+        // Deleting all user Defaults
+        if let appDomain = Bundle.main.bundleIdentifier {
+            UserDefaults.standard.removePersistentDomain(forName: appDomain)
+        }
     }
 }

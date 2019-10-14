@@ -33,7 +33,7 @@ class profileSetUpViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Function for checking newtwork connection
-        checkNewtork(ifError: "Cannot login")
+        checkNewtork(ifError: "Cannot Setup profile!")
     }
     
     //MARK:- TextField Delegate Method
@@ -49,11 +49,14 @@ class profileSetUpViewController: UIViewController {
         self.load.isHidden = false
         load.startAnimating()
         
-        if usernameText.text == "" || emailText.text == "" {
+        if usernameText.text == "" || emailText.text == "" || firstNameText.text == "" || lastNameText.text == "" {
             authAlert(titlepass: "Please fill all the required details", message: "Fields empty!")
         }
         else {
             NetworkEngine.registerPlayer(username: usernameText.text!, email: getEmail()) { (sucess) in
+                UserDefaults.standard.set("\(self.firstNameText.text ?? "Unknown")", forKey: "firstName")
+                UserDefaults.standard.set("\(self.lastNameText.text ?? "Unknown")", forKey: "lastName")
+                UserDefaults.standard.set("\(self.usernameText.text ?? "Unknown")", forKey: "userName")
                 if sucess == "Player registered, Let the game begin!!!"
                 {
                     self.performSegue(withIdentifier: "goToRules", sender: self)

@@ -22,6 +22,7 @@ class leaderBoardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Pull to refresh
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         leaderTable.addSubview(refreshControl)
@@ -47,7 +48,6 @@ class leaderBoardViewController: UIViewController {
                 self.level.append(response["leaderBoard"]![number]["level"].stringValue)
                 print(response["leaderBoard"]![number]["name"].stringValue)
                 number += 1
-                
             }
             self.leaderTable.reloadData()
         }
@@ -57,6 +57,7 @@ class leaderBoardViewController: UIViewController {
     @objc func refresh(sender:AnyObject) {
         // Code to refresh table view
         refreshControl.endRefreshing()
+        checkNewtork(ifError: "Cannot fetch leaderboard!")
     }
     
 }

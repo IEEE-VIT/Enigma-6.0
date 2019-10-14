@@ -746,7 +746,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-ps-VoX">
-                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -854,7 +854,7 @@ you will get x points</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-oy-G6m">
-                                                    <rect key="frame" x="51" y="0.0" width="310" height="53"/>
+                                                    <rect key="frame" x="51" y="0.0" width="349" height="53"/>
                                                     <string key="text">For every correct answer without using hints,
 you will get x points</string>
                                                     <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="15"/>
@@ -1026,7 +1026,7 @@ you will get x points</string>
                                                                 <color key="textColor" red="0.3803921569" green="0.96862745100000003" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-Ac-twn">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="BNj-Ac-twn">
                                                                 <rect key="frame" x="0.0" y="27" width="41.333333333333336" height="27"/>
                                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="17"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1381,7 +1381,7 @@ you will get x points</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-QT-JtX">
-                                                    <rect key="frame" x="41.666666666666657" y="14" width="292" height="27"/>
+                                                    <rect key="frame" x="61" y="14" width="292" height="27"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="hfF-Sd-V1u">
                                                             <rect key="frame" x="0.0" y="0.0" width="43" height="27"/>

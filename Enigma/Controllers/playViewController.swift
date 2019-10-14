@@ -24,8 +24,8 @@ class playViewController: UIViewController {
         questionText.isHidden = true
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
-       
-      
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,7 +39,7 @@ class playViewController: UIViewController {
     //MARK: - Function to fetch the qestion and display
     func quesF() {
         NetworkEngine.fetchQuestion { (sucess,status) in
-//            print(status)
+            //            print(status)
             if status == 200 {
                 self.questionText.isHidden = false
                 self.questionText.text = sucess["question"]!.stringValue
@@ -80,7 +80,7 @@ class playViewController: UIViewController {
     @IBAction func answerSubmit(_ sender: UIButton) {
         
         checkAns()
-       
+        
     }
     
     

@@ -15,9 +15,11 @@ extension AppDelegate {
     
     // Function setting up intial view controller
     func setInitialViewController() {
+        // app delegate setup
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        // Get UID function
         let UID = getUID()
         print(UID)
         let loginstatus = UserDefaults.standard.bool(forKey: "login")
@@ -31,9 +33,9 @@ extension AppDelegate {
             } catch let signOutError as NSError {
                 print ("Error signing out: %@", signOutError)
             }
-                let VC = mainStoryboard.instantiateViewController(withIdentifier: "loginPageViewController") as! loginPageViewController
-                appDelegate.window?.rootViewController = VC
-                appDelegate.window?.makeKeyAndVisible()
+            let VC = mainStoryboard.instantiateViewController(withIdentifier: "loginPageViewController") as! loginPageViewController
+            appDelegate.window?.rootViewController = VC
+            appDelegate.window?.makeKeyAndVisible()
         }
         else if loginstatus == true {
             let tap = mainStoryboard.instantiateViewController(withIdentifier: "tapBar") as! UITabBarController
