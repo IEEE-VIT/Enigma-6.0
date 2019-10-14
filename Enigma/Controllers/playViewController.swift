@@ -38,10 +38,16 @@ class playViewController: UIViewController {
     
     //MARK: - Function to fetch the qestion and display
     func quesF() {
-        NetworkEngine.fetchQuestion { (sucess) in
-            self.questionText.isHidden = false
-            self.questionText.text = sucess["question"]!.stringValue
-            self.questionNumber.setTitle(sucess["level"]!.stringValue, for: .normal)
+        NetworkEngine.fetchQuestion { (sucess,status) in
+//            print(status)
+            if status == 200 {
+                self.questionText.isHidden = false
+                self.questionText.text = sucess["question"]!.stringValue
+                self.questionNumber.setTitle(sucess["level"]!.stringValue, for: .normal)
+            }
+            else {
+                self.authAlert(titlepass: "Error", message: "Cannot fetch the question please try again!")
+            }
         }
     }
     

@@ -30,6 +30,12 @@ class leaderBoardViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Function for checking newtwork connection
+        checkNewtork(ifError: "Cannot fetch leaderboard!")
+    }
+    
     //MARK: - Function for the loading leaderboard
     func loadLead() {
         NetworkEngine.getLeaderBoard { (response) in

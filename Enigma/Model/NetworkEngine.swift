@@ -39,14 +39,15 @@ class NetworkEngine: UIViewController {
     
     //MARk: - Network Engine for fecthing questions
     
-    public static func fetchQuestion(completion: @escaping (Dictionary<String,JSON>) -> ()) {
+    public static func fetchQuestion(completion: @escaping (Dictionary<String,JSON>,Int) -> ()) {
         let route = "/api/auth/getCurrent"
         let url = constants.baseurl + route
         Alamofire.request(url, method: .post, headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
 //                print(json)
-                completion(json["payload"].dictionaryValue)
+//                print(json["statusCode"])
+                completion(json["payload"].dictionaryValue,json["statusCode"].intValue)
                 
             }
             else{
