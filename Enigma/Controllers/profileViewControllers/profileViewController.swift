@@ -41,7 +41,7 @@ class profileViewController: UIViewController {
     private func profileSetUp() {
         
         NetworkEngine.getProfile { (response,status) in
-            print(response)
+//            print(response)
             //            print(response["name"]!.stringValue)
             //            print(status)
             if status == 200 {
