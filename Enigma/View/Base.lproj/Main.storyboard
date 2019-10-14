@@ -1156,11 +1156,11 @@ you will get x points</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                                                         <color key="backgroundColor" red="0.89019607840000003" green="0.80392156859999997" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="44" id="bdj-le-uXT"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="bdj-le-uXT"/>
                                                             <constraint firstAttribute="height" constant="44" id="qhP-aH-Xis"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="20"/>
-                                                        <state key="normal" title="1">
+                                                        <state key="normal" title="-">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -1180,6 +1180,7 @@ you will get x points</string>
                                                     <constraint firstAttribute="bottom" secondItem="iMV-r9-jR8" secondAttribute="bottom" constant="5" id="btu-c8-vpU"/>
                                                     <constraint firstAttribute="width" secondItem="2FY-XP-7JS" secondAttribute="height" multiplier="152:111" id="g57-gR-r4q"/>
                                                     <constraint firstItem="iMV-r9-jR8" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="jPK-6X-df0"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NBd-Dw-DTB" secondAttribute="trailing" symbolic="YES" id="kiN-ed-ydf"/>
                                                     <constraint firstItem="NBd-Dw-DTB" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="lYs-Tj-UX1"/>
                                                     <constraint firstItem="NBd-Dw-DTB" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" id="uV8-KT-07K"/>
                                                 </constraints>
