@@ -40,13 +40,13 @@ class leaderBoardViewController: UIViewController {
     
     //MARK: - Function for the loading leaderboard
     func loadLead() {
-        // Initialise to empty
-        name = []
-        rank = []
-        level = []
-        points = []
         NetworkEngine.getLeaderBoard { (response) in
             var number = 0
+            // Initialise to empty
+            self.name = []
+            self.rank = []
+            self.level = []
+            self.points = []
             while (number < (response["leaderBoard"]?.count)!) {
                 self.name.append(response["leaderBoard"]![number]["name"].stringValue)
                 self.rank.append(response["leaderBoard"]![number]["rank"].stringValue)
