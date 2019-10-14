@@ -1276,6 +1276,7 @@ you will get x points</string>
                         <outlet property="answerText" destination="M9f-4b-Qmc" id="7XE-TU-7Cz"/>
                         <outlet property="questionNumber" destination="NBd-Dw-DTB" id="sTt-C6-cHI"/>
                         <outlet property="questionText" destination="d2j-fr-1HM" id="alj-d9-x8m"/>
+                        <outlet property="scrollView" destination="4sz-uC-ad0" id="rUP-3i-zBL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,7 +14,10 @@ class playViewController: UIViewController {
     @IBOutlet weak var answerText: UITextField!
     @IBOutlet weak var questionText: UITextView!
     @IBOutlet weak var questionNumber: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     
+    //MARK: - Variables
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +28,21 @@ class playViewController: UIViewController {
         //EXTENSION: - Hide keyborad
         hideKeyboardWhenTappedAround()
         
+        // Pull to refresh setup
+        scrollView.alwaysBounceVertical = true
+        scrollView.bounces  = true
+        refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .white
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+        self.scrollView.addSubview(refreshControl)
         
+    }
+    
+    // Selector for the pull to refresh
+    @objc func didPullToRefresh() {
+        quesF()
+        // For End refrshing
+        refreshControl?.endRefreshing()
     }
     
     override func viewDidAppear(_ animated: Bool) {
