@@ -131,4 +131,23 @@ class NetworkEngine: UIViewController {
         }
     }
     
+    //MARK: - Newtork engine for getting hint
+    
+    public static func getHint(completion: @escaping (Dictionary<String,JSON>,Int) -> ()) {
+        // Routes and url
+        let route = "/api/auth/hintClicked"
+        let url = constants.baseurl + route
+        // Request .post method
+        Alamofire.request(url, method: .post, headers: headers).responseJSON{
+            response in if response.result.isSuccess{
+                let json = JSON(response.result.value!)
+                completion(json["payload"].dictionaryValue,json["statusCode"].intValue)
+                
+            } else
+            {
+                print("Error in fetching profile")
+            }
+        }
+    }
+    
 }

@@ -101,6 +101,22 @@ class playViewController: UIViewController {
     }
     
     
+    //MARK: - Action for hint button
+    
+    @IBAction func hintButton(_ sender: UIButton) {
+        
+        NetworkEngine.getHint { (response, status) in
+            //            print(response["hint"]!.stringValue)
+            if status == 200 {
+                self.authAlert(titlepass: "Hint", message: "\(response["hint"]!.stringValue)")
+            } else {
+                self.authAlert(titlepass: "Error", message: "Cannot fetch hint please try again!")
+            }
+        }
+        
+        
+    }
+    
     
     //MARK:- TextField Delegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

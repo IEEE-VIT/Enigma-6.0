@@ -1148,6 +1148,9 @@ you will get x points</string>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="hintButton:" destination="Bc4-tf-De5" eventType="touchUpInside" id="Oby-5W-297"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-Dw-DTB" customClass="RoundedCornerView" customModule="Enigma" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
