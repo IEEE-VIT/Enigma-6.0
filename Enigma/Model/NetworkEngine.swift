@@ -92,7 +92,7 @@ class NetworkEngine: UIViewController {
     //MARk: - Network engine for leaderboard
     
     public static func getLeaderBoard(completion: @escaping (Dictionary<String,JSON>) -> ()) {
-        // Routes ans url
+        // Routes and url
         let route = "/api/auth/leaderBoard"
         let url = constants.baseurl + route
         // Request .post method
@@ -112,17 +112,16 @@ class NetworkEngine: UIViewController {
     
     //MARK: - Network engine for getprofile
     
-    public static func getProfile(completion: @escaping (Dictionary<String,JSON>) -> ()) {
-        // Routes ans url
+    public static func getProfile(completion: @escaping (Dictionary<String,JSON>,Int) -> ()) {
+        // Routes and url
         let route = "/api/auth/profile"
         let url = constants.baseurl + route
         // Request .post method
         Alamofire.request(url, method: .post, headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                //                print(json["payload"]["leaderBoard"])
-                print(json)
-//                completion(json["payload"].dictionaryValue)
+                //                print(json)
+                completion(json["payload"]["user"].dictionaryValue,json["statusCode"].intValue)
                 
             } else
             {

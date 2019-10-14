@@ -1098,9 +1098,10 @@ you will get x points</string>
                         <outlet property="email" destination="AVj-iN-3jO" id="hPR-cO-jGT"/>
                         <outlet property="hintsUsed" destination="BNj-Ac-twn" id="LGC-8c-pPB"/>
                         <outlet property="name" destination="wgr-F6-aSu" id="uOd-LE-moG"/>
-                        <outlet property="questionSolved" destination="X4R-Z5-1eB" id="nzf-V8-MfK"/>
+                        <outlet property="questionSolved" destination="spl-hn-GHg" id="KeM-ao-Pz3"/>
                         <outlet property="rank" destination="ii0-9s-Gvw" id="Fky-fe-Ddf"/>
                         <outlet property="score" destination="X4R-Z5-1eB" id="MPg-KR-tTi"/>
+                        <outlet property="scrollView" destination="lb8-tG-j4h" id="bmr-gn-5m7"/>
                         <outlet property="username" destination="fAD-ps-lgO" id="a3i-4I-V5m"/>
                     </connections>
                 </viewController>

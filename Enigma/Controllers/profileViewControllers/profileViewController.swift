@@ -19,9 +19,15 @@ class profileViewController: UIViewController {
     @IBOutlet weak var questionSolved: UILabel!
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var rank: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    //MARK: - Variables
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // setting up profile function called
+        profileSetUp()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,11 +37,46 @@ class profileViewController: UIViewController {
         viewInitial()
     }
     
+    //MARK: - Function for profile view setup
+    private func profileSetUp() {
+        
+        NetworkEngine.getProfile { (response,status) in
+            print(response)
+            //            print(response["name"]!.stringValue)
+            //            print(status)
+            if status == 200 {
+                self.username.text = response["name"]!.stringValue
+                self.rank.text = response["rank"]!.stringValue
+                self.score.text = response["points"]!.stringValue
+                self.questionSolved.text = response["level"]!.stringValue
+            }
+            else {
+                self.authAlert(titlepass: "Error", message: "Cannot fetch the profile please try again!")
+            }
+        }
+        
+    }
+    
     //MARK: - Function for initialisation
-    func viewInitial() {
+    private func viewInitial() {
+        
+        // Pull to refresh setup
+        scrollView.alwaysBounceVertical = true
+        scrollView.bounces  = true
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+        self.scrollView.addSubview(refreshControl)
+        
+        // Setting up the profile first and last name
         name.text = "\(UserDefaults.standard.string(forKey: "firstName") ?? "NOT PROVIDED") \(UserDefaults.standard.string(forKey: "lastName") ?? "NOT PROVIDED")"
-        username.text = "\(UserDefaults.standard.string(forKey: "userName") ?? "NOT PROVIDED")"
         email.text = getEmail()
+    }
+    
+    // Selector for the pull to refresh
+    @objc func didPullToRefresh() {
+        profileSetUp()
+        // For End refrshing
+        refreshControl?.endRefreshing()
     }
     
     
