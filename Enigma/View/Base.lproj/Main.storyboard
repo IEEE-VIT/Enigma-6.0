@@ -936,29 +936,29 @@ you will get x points</string>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rank" translatesAutoresizingMaskIntoConstraints="NO" id="got-le-yVI">
                                                 <rect key="frame" x="8" y="565" width="218" height="138"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="spl-hn-GHg">
-                                                <rect key="frame" x="91" y="293" width="52" height="63"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="spl-hn-GHg">
+                                                <rect key="frame" x="88" y="293" width="58" height="63"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="X4R-Z5-1eB">
-                                                <rect key="frame" x="91" y="444" width="52" height="63"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="X4R-Z5-1eB">
+                                                <rect key="frame" x="88" y="444" width="58" height="63"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ii0-9s-Gvw">
-                                                <rect key="frame" x="91" y="590" width="52" height="63"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ii0-9s-Gvw">
+                                                <rect key="frame" x="88" y="590" width="58" height="63"/>
                                                 <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-UL-jqv">
-                                                <rect key="frame" x="22" y="-11" width="281.66666666666669" height="261"/>
+                                                <rect key="frame" x="22" y="-11" width="283.33333333333331" height="261"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZoI-fb-f8F">
-                                                        <rect key="frame" x="0.0" y="0.0" width="252.66666666666666" height="54"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="283.33333333333331" height="54"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FL-3u-eEQ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="27"/>
@@ -975,7 +975,7 @@ you will get x points</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-zh-9Md">
-                                                        <rect key="frame" x="0.0" y="69" width="252.66666666666666" height="54"/>
+                                                        <rect key="frame" x="0.0" y="69" width="283.33333333333331" height="54"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-J1-BQw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="94.666666666666671" height="27"/>
@@ -983,8 +983,8 @@ you will get x points</string>
                                                                 <color key="textColor" red="0.38039215686274508" green="0.96862745098039216" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mr. Donald Trump Tatya Tommy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ps-lgO">
-                                                                <rect key="frame" x="0.0" y="27" width="252.66666666666666" height="27"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----------------------------------------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fAD-ps-lgO">
+                                                                <rect key="frame" x="0.0" y="27" width="283.33333333333331" height="27"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="27" id="IXK-91-2y3"/>
                                                                 </constraints>
