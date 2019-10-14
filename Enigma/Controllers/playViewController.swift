@@ -78,8 +78,10 @@ class playViewController: UIViewController {
         else {
             NetworkEngine.checkAnswer(answer: answerText.text!) { (response) in
                 if response == true {
-                    self.authAlert(titlepass: "Accurate", message: "Correct Answer")
+                    self.authAlert(titlepass: "Congratulation!", message: "Correct Answer")
                     self.answerText.text = ""
+                    // reload the next question if answer is correct
+                    self.quesF()
                 }
                 else if response == false {
                     self.authAlert(titlepass: "Answer not correct", message: "You are miles far!")
