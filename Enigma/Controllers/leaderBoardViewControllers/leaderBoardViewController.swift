@@ -94,9 +94,9 @@ extension leaderBoardViewController: UITableViewDataSource,UITableViewDelegate {
         else {
             
             cell.name.text = name[indexPath.row-1]
-            cell.rank.text = "Cell \(indexPath.row)"
-            cell.ques.text = "Cell \(indexPath.row)"
-            cell.score.text = "Cell \(indexPath.row)"
+            cell.rank.text = rank[indexPath.row-1]
+            cell.ques.text = ques[indexPath.row-1]
+            cell.score.text = score[indexPath.row-1]
             cell.name.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.rank.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.ques.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
