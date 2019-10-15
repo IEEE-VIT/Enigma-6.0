@@ -52,7 +52,7 @@ class leaderBoardViewController: UIViewController {
                 self.rank.append(response["leaderBoard"]![number]["rank"].stringValue)
                 self.points.append(response["leaderBoard"]![number]["points"].stringValue)
                 self.level.append(response["leaderBoard"]![number]["level"].stringValue)
-                print(response["leaderBoard"]![number]["name"].stringValue)
+//                print(response["leaderBoard"]![number]["level"].stringValue)
                 number += 1
             }
             self.leaderTable.reloadData()
@@ -92,11 +92,10 @@ extension leaderBoardViewController: UITableViewDataSource,UITableViewDelegate {
             cell.score.textColor = #colorLiteral(red: 0.6431372549, green: 0.1333333333, blue: 1, alpha: 1)
         }
         else {
-            
             cell.name.text = name[indexPath.row-1]
             cell.rank.text = rank[indexPath.row-1]
-            cell.ques.text = ques[indexPath.row-1]
-            cell.score.text = score[indexPath.row-1]
+            cell.ques.text = level[indexPath.row-1]
+            cell.score.text = points[indexPath.row-1]
             cell.name.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.rank.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.ques.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

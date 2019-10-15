@@ -99,7 +99,7 @@ class NetworkEngine: UIViewController {
         Alamofire.request(url, method: .post, headers: headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                //                print(json["payload"]["leaderBoard"])
+//                                print(json["payload"]["leaderBoard"].count)
                 completion(json["payload"].dictionaryValue)
                 
             } else
