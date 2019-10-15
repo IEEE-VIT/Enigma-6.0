@@ -27,15 +27,14 @@ class leaderBoardViewController: UIViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         leaderTable.addSubview(refreshControl)
-        //Loading table and refresh UI
-        loadLead()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // Function for checking newtwork connection
         checkNewtork(ifError: "Cannot fetch leaderboard!")
+        //Loading table and refresh UI
+        loadLead()
     }
     
     //MARK: - Function for the loading leaderboard
