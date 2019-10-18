@@ -7,7 +7,6 @@ target 'Enigma' do
 
   # Pods for Enigma
   pod 'Firebase/Auth'
-  pod 'Firebase/Database'
   pod 'GoogleSignIn'
   pod 'Alamofire', '~> 4.8.2'
   pod 'SwiftyJSON'
