@@ -30,7 +30,7 @@ extension ruleTabBarViewController: UITableViewDataSource,UITableViewDelegate {
     
     //MARK: - Table View datasource Method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rules.count
+        return constants.rules.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
