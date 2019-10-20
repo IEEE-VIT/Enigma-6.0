@@ -14,9 +14,9 @@ extension UIDevice {
     
     // Vibrates when any error occur like invalid password etc.
     static func invalidVibrate() {
-        let tryAgain = SystemSoundID(1102)
-        AudioServicesPlaySystemSound(tryAgain)
+        AudioServicesPlaySystemSound(SystemSoundID(1102))
     }
+    
     // For sucess login
     static func validVibrate() {
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)

@@ -15,13 +15,15 @@ extension AppDelegate {
     
     // Function setting up intial view controller
     func setInitialViewController() {
+        
         // app delegate setup
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
         // Get UID function
-        let UID = getUID()
-        print(UID)
+        print(getUID())
+        
         let loginstatus = UserDefaults.standard.bool(forKey: "login")
         print("Login status=\(loginstatus)")
         if loginstatus == false {
