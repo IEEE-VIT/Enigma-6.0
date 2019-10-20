@@ -10,9 +10,6 @@ import UIKit
 
 class rulesTableViewCell: UITableViewCell {
     
-    //MARK: -
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
