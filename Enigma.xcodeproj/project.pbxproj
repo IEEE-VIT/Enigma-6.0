@@ -113,6 +113,7 @@
 		771ED5642326B57D0024329F /* Enigma */ = {
 			isa = PBXGroup;
 			children = (
+				772DDAE2235CA2B4009F8CAF /* Networking */,
 				778E4628232F68D900D7A865 /* Extensions */,
 				778E4625232F655400D7A865 /* Model */,
 				778E4622232F650F00D7A865 /* View */,
@@ -124,6 +125,60 @@
 				77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */,
 			);
 			path = Enigma;
+			sourceTree = "<group>";
+		};
+		772DDAE2235CA2B4009F8CAF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				778E4626232F65E300D7A865 /* NetworkEngine.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		772DDAE3235CA2D8009F8CAF /* auth+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77EE0A7D2333BE4100E4338D /* google+SignIn.swift */,
+				77F39F002338FFED00F0F378 /* email+SignOut.swift */,
+			);
+			path = "auth+Extensions";
+			sourceTree = "<group>";
+		};
+		772DDAE4235CA2F5009F8CAF /* alertNhaptic+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */,
+				774478B22331487800674543 /* alert+Function.swift */,
+			);
+			path = "alertNhaptic+Extensions";
+			sourceTree = "<group>";
+		};
+		772DDAE5235CA314009F8CAF /* utils+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
+				774478B0233140A800674543 /* checkNetwork.swift */,
+				77799FB623355AA300110768 /* custom+Navigation.swift */,
+				77F39F022339073500F0F378 /* instantiate+ViewController.swift */,
+			);
+			path = "utils+Extensions";
+			sourceTree = "<group>";
+		};
+		772DDAE6235CA35F009F8CAF /* authViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				778E462B232F80AE00D7A865 /* signUpPageViewController.swift */,
+				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
+			);
+			path = authViewControllers;
+			sourceTree = "<group>";
+		};
+		772DDAE7235CA36A009F8CAF /* playViewController */ = {
+			isa = PBXGroup;
+			children = (
+				772A9B69234DB5ED00DB95C8 /* playViewController.swift */,
+			);
+			path = playViewController;
 			sourceTree = "<group>";
 		};
 		774478AD23313EA000674543 /* Services */ = {
@@ -177,9 +232,8 @@
 				77E6424E234E13C00075F0A4 /* leaderBoardViewControllers */,
 				7787EEC1232FCB65008CFBCD /* RulesViewController */,
 				7762795C233540360050A402 /* profileViewControllers */,
-				778E462B232F80AE00D7A865 /* signUpPageViewController.swift */,
-				772A9B69234DB5ED00DB95C8 /* playViewController.swift */,
-				778E4620232F64C800D7A865 /* loginPageViewController.swift */,
+				772DDAE6235CA35F009F8CAF /* authViewControllers */,
+				772DDAE7235CA36A009F8CAF /* playViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				7714AA6A235327B2009207A3 /* leaderBoardData.swift */,
-				778E4626232F65E300D7A865 /* NetworkEngine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,14 +261,9 @@
 		778E4628232F68D900D7A865 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				77EE0A7D2333BE4100E4338D /* google+SignIn.swift */,
-				77F39F002338FFED00F0F378 /* email+SignOut.swift */,
-				778E4629232F690400D7A865 /* keyboard+Hide.swift */,
-				77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */,
-				774478B22331487800674543 /* alert+Function.swift */,
-				774478B0233140A800674543 /* checkNetwork.swift */,
-				77799FB623355AA300110768 /* custom+Navigation.swift */,
-				77F39F022339073500F0F378 /* instantiate+ViewController.swift */,
+				772DDAE3235CA2D8009F8CAF /* auth+Extensions */,
+				772DDAE5235CA314009F8CAF /* utils+Extensions */,
+				772DDAE4235CA2F5009F8CAF /* alertNhaptic+Extensions */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
