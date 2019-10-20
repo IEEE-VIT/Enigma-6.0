@@ -95,16 +95,11 @@ class playViewController: UIViewController {
     }
     
     //MARK: - check answer function and action
-    
     @IBAction func answerSubmit(_ sender: UIButton) {
-        
         checkAns()
-        
     }
     
-    
     //MARK: - Action for hint button
-    
     @IBAction func hintButton(_ sender: UIButton) {
         
         NetworkEngine.getHint { (response, status) in
@@ -115,17 +110,13 @@ class playViewController: UIViewController {
                 self.authAlert(titlepass: "Error", message: "Cannot fetch hint please try again!")
             }
         }
-        
-        
     }
-    
     
     //MARK:- TextField Delegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
-    
 }
 
 

@@ -9,11 +9,6 @@
 import Foundation
 import Alamofire
 
-internal let rules = ["For every correct answer without using hints,you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points","For every correct answer without using hints, you will get x points"]
-
-
-
-
 class constants {
     public static let baseurl = "https://enigma6-backend.herokuapp.com"
     public static let headers: HTTPHeaders = ["Authorization":"Bearer \(getUID())"]
