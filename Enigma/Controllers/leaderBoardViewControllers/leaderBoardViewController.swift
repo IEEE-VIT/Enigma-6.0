@@ -15,10 +15,7 @@ class leaderBoardViewController: UIViewController {
     
     //MARK: - Variables
     var refreshControl = UIRefreshControl()
-    private var name : [String?] = []
-    private var rank : [String?] = []
-    private var level : [String?] = []
-    private var points : [String?] = []
+    let leader = leaderB()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,15 +39,16 @@ class leaderBoardViewController: UIViewController {
         NetworkEngine.getLeaderBoard { (response) in
             var number = 0
             // Initialise to empty
-            self.name = []
-            self.rank = []
-            self.level = []
-            self.points = []
+            self.leader.name = []
+            self.leader.rank = []
+            self.leader.level = []
+            self.leader.points = []
+
             while (number < (response["leaderBoard"]?.count)!) {
-                self.name.append(response["leaderBoard"]![number]["name"].stringValue)
-                self.rank.append(response["leaderBoard"]![number]["rank"].stringValue)
-                self.points.append(response["leaderBoard"]![number]["points"].stringValue)
-                self.level.append(response["leaderBoard"]![number]["level"].stringValue)
+                self.leader.name.append(response["leaderBoard"]![number]["name"].stringValue)
+                self.leader.rank.append(response["leaderBoard"]![number]["rank"].stringValue)
+                self.leader.points.append(response["leaderBoard"]![number]["points"].stringValue)
+                self.leader.level.append(response["leaderBoard"]![number]["level"].stringValue)
 //                print(response["leaderBoard"]![number]["level"].stringValue)
                 number += 1
             }
@@ -75,7 +73,7 @@ extension leaderBoardViewController: UITableViewDataSource,UITableViewDelegate {
     
     //MARK: - Table View datasource Method
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return name.count + 1
+        return leader.name.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,10 +89,10 @@ extension leaderBoardViewController: UITableViewDataSource,UITableViewDelegate {
             cell.score.textColor = #colorLiteral(red: 0.6431372549, green: 0.1333333333, blue: 1, alpha: 1)
         }
         else {
-            cell.name.text = name[indexPath.row-1]
-            cell.rank.text = rank[indexPath.row-1]
-            cell.ques.text = level[indexPath.row-1]
-            cell.score.text = points[indexPath.row-1]
+            cell.name.text = leader.name[indexPath.row-1]
+            cell.rank.text = leader.rank[indexPath.row-1]
+            cell.ques.text = leader.level[indexPath.row-1]
+            cell.score.text = leader.points[indexPath.row-1]
             cell.name.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.rank.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.ques.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

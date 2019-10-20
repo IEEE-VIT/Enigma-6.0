@@ -10,9 +10,8 @@ import Foundation
 
 class leaderB {
     
-    var name : String = ""
-    var points : Int = 0
-    var rank : Int = 0
-    var level : Int = 0
-    
+    var name : [String?] = []
+    var points : [String?] = []
+    var rank : [String?] = []
+    var level : [String?] = []
 }

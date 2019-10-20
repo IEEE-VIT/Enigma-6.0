@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class NetworkEngine: UIViewController {
+class NetworkEngine {
     
     //MARK: - Network Engine for register player
     
