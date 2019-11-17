@@ -44,7 +44,7 @@ class leaderBoardViewController: UIViewController {
             self.leader.level = []
             self.leader.points = []
 
-            while (number < (response["leaderBoard"]?.count)!) {
+            while (number < (response["leaderBoard"]?.count) ?? 0) {
                 self.leader.name.append(response["leaderBoard"]![number]["name"].stringValue)
                 self.leader.rank.append(response["leaderBoard"]![number]["rank"].stringValue)
                 self.leader.points.append(response["leaderBoard"]![number]["points"].stringValue)

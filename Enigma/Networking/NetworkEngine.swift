@@ -60,6 +60,9 @@ class NetworkEngine {
                 print("Error")
             }
         }
+//        Alamofire.request(url).debugLog()
+//            .responseJSON( completionHandler: { response in
+//            })
     }
     
     
@@ -107,8 +110,10 @@ class NetworkEngine {
             {
                 print("Error in checking answer")
             }
-            
         }
+//        Alamofire.request(url).debugLog()
+//            .responseJSON( completionHandler: { response in
+//            })
     }
     
     //MARK: - Network engine for getprofile
@@ -152,4 +157,16 @@ class NetworkEngine {
         }
     }
     
+}
+
+
+extension Request {
+    public func debugLog() -> Self {
+        #if DEBUG
+        debugPrint("=======================================")
+        debugPrint(self)
+        debugPrint("=======================================")
+        #endif
+        return self
+    }
 }
