@@ -60,9 +60,9 @@ class NetworkEngine {
                 print("Error")
             }
         }
-//        Alamofire.request(url).debugLog()
-//            .responseJSON( completionHandler: { response in
-//            })
+        Alamofire.request(url).debugLog()
+            .responseJSON( completionHandler: { response in
+            })
     }
     
     
@@ -111,9 +111,9 @@ class NetworkEngine {
                 print("Error in checking answer")
             }
         }
-//        Alamofire.request(url).debugLog()
-//            .responseJSON( completionHandler: { response in
-//            })
+        Alamofire.request(url).debugLog()
+            .responseJSON( completionHandler: { response in
+            })
     }
     
     //MARK: - Network engine for getprofile
