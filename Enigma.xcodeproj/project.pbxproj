@@ -38,6 +38,9 @@
 		77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F0623391F0A00F0F378 /* constant+Functions.swift */; };
 		77F39F09233929F800F0F378 /* leaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F08233929F800F0F378 /* leaderBoardViewController.swift */; };
 		77FCFD5B238DA71A0017E155 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FCFD5A238DA71A0017E155 /* GoogleService-Info.plist */; };
+		77FCFD60238DAEAE0017E155 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCFD5F238DAEAE0017E155 /* UIImage+Gif.swift */; };
+		77FCFD65238DB0F60017E155 /* Enigma.gif in Resources */ = {isa = PBXBuildFile; fileRef = 77FCFD64238DB0F50017E155 /* Enigma.gif */; };
+		77FCFD67238DB4EC0017E155 /* splashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FCFD66238DB4EC0017E155 /* splashViewController.swift */; };
 		D4308317C040D9605A997FD6 /* Pods_Enigma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		77F39F0623391F0A00F0F378 /* constant+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "constant+Functions.swift"; sourceTree = "<group>"; };
 		77F39F08233929F800F0F378 /* leaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardViewController.swift; sourceTree = "<group>"; };
 		77FCFD5A238DA71A0017E155 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		77FCFD5F238DAEAE0017E155 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		77FCFD64238DB0F50017E155 /* Enigma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Enigma.gif; sourceTree = "<group>"; };
+		77FCFD66238DB4EC0017E155 /* splashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashViewController.swift; sourceTree = "<group>"; };
 		F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Enigma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +121,7 @@
 			children = (
 				772DDAE2235CA2B4009F8CAF /* Networking */,
 				778E4628232F68D900D7A865 /* Extensions */,
+				77FCFD5E238DAE550017E155 /* swiftGIFManager */,
 				778E4625232F655400D7A865 /* Model */,
 				778E4622232F650F00D7A865 /* View */,
 				778E4623232F651900D7A865 /* Controllers */,
@@ -122,6 +129,7 @@
 				774478AD23313EA000674543 /* Services */,
 				778E4624232F652E00D7A865 /* Helpers */,
 				771ED5712326B57F0024329F /* Info.plist */,
+				77FCFD64238DB0F50017E155 /* Enigma.gif */,
 				77FCFD5A238DA71A0017E155 /* GoogleService-Info.plist */,
 			);
 			path = Enigma;
@@ -229,6 +237,7 @@
 		778E4623232F651900D7A865 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				77FCFD66238DB4EC0017E155 /* splashViewController.swift */,
 				77E6424E234E13C00075F0A4 /* leaderBoardViewControllers */,
 				7787EEC1232FCB65008CFBCD /* RulesViewController */,
 				7762795C233540360050A402 /* profileViewControllers */,
@@ -275,6 +284,14 @@
 				77F39F08233929F800F0F378 /* leaderBoardViewController.swift */,
 			);
 			path = leaderBoardViewControllers;
+			sourceTree = "<group>";
+		};
+		77FCFD5E238DAE550017E155 /* swiftGIFManager */ = {
+			isa = PBXGroup;
+			children = (
+				77FCFD5F238DAEAE0017E155 /* UIImage+Gif.swift */,
+			);
+			path = swiftGIFManager;
 			sourceTree = "<group>";
 		};
 		A492BA66EEB22480668EBD20 /* Pods */ = {
@@ -355,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FCFD65238DB0F60017E155 /* Enigma.gif in Resources */,
 				778E461F232F50AE00D7A865 /* chosence.regular.otf in Resources */,
 				771ED5702326B57F0024329F /* LaunchScreen.storyboard in Resources */,
 				771ED56D2326B57F0024329F /* Assets.xcassets in Resources */,
@@ -451,6 +469,7 @@
 				77721CC9233289D30053F617 /* profileViewController.swift in Sources */,
 				77E6424C234E13A90075F0A4 /* leaderBoardTableViewCell.swift in Sources */,
 				7787EEBC232FC588008CFBCD /* RulesViewController.swift in Sources */,
+				77FCFD60238DAEAE0017E155 /* UIImage+Gif.swift in Sources */,
 				77F39F012338FFED00F0F378 /* email+SignOut.swift in Sources */,
 				778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */,
 				778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */,
@@ -461,6 +480,7 @@
 				772A9B6A234DB5ED00DB95C8 /* playViewController.swift in Sources */,
 				7714AA6B235327B2009207A3 /* leaderBoardData.swift in Sources */,
 				77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */,
+				77FCFD67238DB4EC0017E155 /* splashViewController.swift in Sources */,
 				77F39F09233929F800F0F378 /* leaderBoardViewController.swift in Sources */,
 				774478B1233140A800674543 /* checkNetwork.swift in Sources */,
 				778E4621232F64C800D7A865 /* loginPageViewController.swift in Sources */,

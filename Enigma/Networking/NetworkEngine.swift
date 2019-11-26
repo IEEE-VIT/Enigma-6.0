@@ -60,9 +60,9 @@ class NetworkEngine {
                 print("Error")
             }
         }
-        Alamofire.request(url).debugLog()
-            .responseJSON( completionHandler: { response in
-            })
+//        Alamofire.request(url).debugLog()
+//            .responseJSON( completionHandler: { response in
+//            })
     }
     
     
@@ -103,6 +103,7 @@ class NetworkEngine {
         Alamofire.request(url, method: .post, headers: constants.headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
+                print(json)
                 //                                print(json["payload"]["leaderBoard"].count)
                 completion(json["payload"].dictionaryValue)
                 
@@ -111,9 +112,9 @@ class NetworkEngine {
                 print("Error in checking answer")
             }
         }
-        Alamofire.request(url).debugLog()
-            .responseJSON( completionHandler: { response in
-            })
+//        Alamofire.request(url).debugLog()
+//            .responseJSON( completionHandler: { response in
+//            })
     }
     
     //MARK: - Network engine for getprofile
@@ -127,7 +128,7 @@ class NetworkEngine {
         Alamofire.request(url, method: .post, headers: constants.headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                //                print(json)
+                                print(json)
                 completion(json["payload"]["user"].dictionaryValue,json["statusCode"].intValue)
                 
             } else

@@ -29,6 +29,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         return true
     }
     
+//    private func splashScreen() {
+//        let lauchVC = UIStoryboard.init(name: "Main", bundle: nil)
+//        let rootVC = lauchVC.instantiateViewController(withIdentifier: "Splash")
+//        self.window?.rootViewController = rootVC
+//        self.window?.makeKeyAndVisible()
+//        Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(dismissSplash), userInfo: nil, repeats: false)
+//    }
+    
+//    @objc func dismissSplash() {
+////        let mainVC = UIStoryboard.init(name: "Main", bundle: nil)
+////        let rootVC = lauchVC.instantiateViewController(withIdentifier: "Splash")
+//    }
+    
     // Open URL for GoogleSignIn
     @available(iOS 9.0, *)
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
