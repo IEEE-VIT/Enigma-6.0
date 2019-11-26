@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>4070460195-vpbm4hmkdihj9gug0big3hh7n0iftv2t.apps.googleusercontent.com</string>
+	<string>940006707956-3dv1tij4fptfj2c332au0m4rcvb3njoq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.4070460195-vpbm4hmkdihj9gug0big3hh7n0iftv2t</string>
+	<string>com.googleusercontent.apps.940006707956-3dv1tij4fptfj2c332au0m4rcvb3njoq</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>4070460195-fmdv92u8e5evmasudl0t5vkmdrag7eqg.apps.googleusercontent.com</string>
+	<string>940006707956-5er3o0bmlfkvjj8gbelcj6mnocmgfpcu.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDPxS5TILoRhrGJQoj89LywXjS1visWu5M</string>
+	<string>AIzaSyDKW7xtFfj_0CYn8z5m7quUNbVRVSFn8DE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>4070460195</string>
+	<string>940006707956</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.ieeevit.Enigma</string>
 	<key>PROJECT_ID</key>
-	<string>enigma-2019</string>
+	<string>enigma-test-9c97a</string>
 	<key>STORAGE_BUCKET</key>
-	<string>enigma-2019.appspot.com</string>
+	<string>enigma-test-9c97a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:4070460195:ios:ead64389ae19802e6d1a96</string>
+	<string>1:940006707956:ios:7962bc66b68ae975de84a1</string>
 	<key>DATABASE_URL</key>
-	<string>https://enigma-2019.firebaseio.com</string>
+	<string>https://enigma-test-9c97a.firebaseio.com</string>
 </dict>
 </plist>

@@ -30,7 +30,6 @@
 		778E4627232F65E300D7A865 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4626232F65E300D7A865 /* NetworkEngine.swift */; };
 		778E462A232F690400D7A865 /* keyboard+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E4629232F690400D7A865 /* keyboard+Hide.swift */; };
 		778E462C232F80AE00D7A865 /* signUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778E462B232F80AE00D7A865 /* signUpPageViewController.swift */; };
-		77AA76AA233133D700C7C5ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */; };
 		77E6424C234E13A90075F0A4 /* leaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E6424B234E13A80075F0A4 /* leaderBoardTableViewCell.swift */; };
 		77EE0A7C2333BAD300E4338D /* haptic+Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */; };
 		77EE0A7E2333BE4100E4338D /* google+SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE0A7D2333BE4100E4338D /* google+SignIn.swift */; };
@@ -38,6 +37,7 @@
 		77F39F032339073500F0F378 /* instantiate+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F022339073500F0F378 /* instantiate+ViewController.swift */; };
 		77F39F0723391F0A00F0F378 /* constant+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F0623391F0A00F0F378 /* constant+Functions.swift */; };
 		77F39F09233929F800F0F378 /* leaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F39F08233929F800F0F378 /* leaderBoardViewController.swift */; };
+		77FCFD5B238DA71A0017E155 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FCFD5A238DA71A0017E155 /* GoogleService-Info.plist */; };
 		D4308317C040D9605A997FD6 /* Pods_Enigma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,6 @@
 		778E4626232F65E300D7A865 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		778E4629232F690400D7A865 /* keyboard+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard+Hide.swift"; sourceTree = "<group>"; };
 		778E462B232F80AE00D7A865 /* signUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpPageViewController.swift; sourceTree = "<group>"; };
-		77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77E6424B234E13A80075F0A4 /* leaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardTableViewCell.swift; sourceTree = "<group>"; };
 		77EE0A7B2333BAD300E4338D /* haptic+Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "haptic+Feedback.swift"; sourceTree = "<group>"; };
 		77EE0A7D2333BE4100E4338D /* google+SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "google+SignIn.swift"; sourceTree = "<group>"; };
@@ -77,6 +76,7 @@
 		77F39F022339073500F0F378 /* instantiate+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "instantiate+ViewController.swift"; sourceTree = "<group>"; };
 		77F39F0623391F0A00F0F378 /* constant+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "constant+Functions.swift"; sourceTree = "<group>"; };
 		77F39F08233929F800F0F378 /* leaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderBoardViewController.swift; sourceTree = "<group>"; };
+		77FCFD5A238DA71A0017E155 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6492F8B8E4A2DD4903B71B0 /* Pods_Enigma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Enigma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,7 +122,7 @@
 				774478AD23313EA000674543 /* Services */,
 				778E4624232F652E00D7A865 /* Helpers */,
 				771ED5712326B57F0024329F /* Info.plist */,
-				77AA76A9233133D700C7C5ED /* GoogleService-Info.plist */,
+				77FCFD5A238DA71A0017E155 /* GoogleService-Info.plist */,
 			);
 			path = Enigma;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 				771ED56D2326B57F0024329F /* Assets.xcassets in Resources */,
 				778E461C232F4F4300D7A865 /* Saira-Regular.ttf in Resources */,
 				771ED56B2326B57D0024329F /* Main.storyboard in Resources */,
-				77AA76AA233133D700C7C5ED /* GoogleService-Info.plist in Resources */,
+				77FCFD5B238DA71A0017E155 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
