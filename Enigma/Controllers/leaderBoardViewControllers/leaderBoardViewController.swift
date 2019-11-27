@@ -34,6 +34,12 @@ class leaderBoardViewController: UIViewController {
         loadLead()
     }
     
+    
+    //MARK: - Set status bar style to light
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     //MARK: - Function for the loading leaderboard
     func loadLead() {
         NetworkEngine.getLeaderBoard { (response) in
