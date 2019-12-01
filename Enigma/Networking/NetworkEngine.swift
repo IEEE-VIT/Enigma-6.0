@@ -51,7 +51,7 @@ class NetworkEngine {
         Alamofire.request(url, method: .post, headers: constants.headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                //                print(json)
+//                                print(json)
                 //                print(json["statusCode"])
                 completion(json["payload"].dictionaryValue,json["statusCode"].intValue)
                 
@@ -103,7 +103,7 @@ class NetworkEngine {
         Alamofire.request(url, method: .post, headers: constants.headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                print(json)
+//                print(json)
                 //                                print(json["payload"]["leaderBoard"].count)
                 completion(json["payload"].dictionaryValue)
                 

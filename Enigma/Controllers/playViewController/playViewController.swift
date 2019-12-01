@@ -15,6 +15,8 @@ class playViewController: UIViewController {
     @IBOutlet weak var questionText: UITextView!
     @IBOutlet weak var questionNumber: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var quesImage: UIImageView!
+    
     
     //MARK: - Variables
     var refreshControl: UIRefreshControl!
@@ -61,9 +63,25 @@ class playViewController: UIViewController {
                 self.questionText.isHidden = false
                 self.questionText.text = sucess["question"]!.stringValue
                 self.questionNumber.setTitle(sucess["level"]!.stringValue, for: .normal)
+                self.setImage(from: sucess["imgURL"]?.stringValue ?? "https://i.imgur.com//q9RPN8y.png")
             }
             else {
                 self.authAlert(titlepass: "Error", message: "Cannot fetch the question please try again!")
+            }
+        }
+    }
+    
+    // Set Image From the URL Function
+    func setImage(from url: String) {
+        guard let imageURL = URL(string: url) else { return }
+        
+        // just not to cause a deadlock in UI!
+        DispatchQueue.global().async {
+            guard let imageData = try? Data(contentsOf: imageURL) else { return }
+            
+            let image = UIImage(data: imageData)
+            DispatchQueue.main.async {
+                self.quesImage.image = image
             }
         }
     }

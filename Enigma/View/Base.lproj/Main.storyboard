@@ -1127,7 +1127,7 @@ you will get x points</string>
                                                 <rect key="frame" x="28" y="32" width="319" height="233"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quesimg" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-JW-zAR">
-                                                        <rect key="frame" x="0.0" y="3" width="319" height="226"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="229"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                 <integer key="value" value="12"/>
@@ -1174,13 +1174,13 @@ you will get x points</string>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Aho-JW-zAR" secondAttribute="bottom" constant="4" id="FIm-bx-2F7"/>
-                                                    <constraint firstItem="Aho-JW-zAR" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" constant="3" id="Kst-Lp-3hu"/>
+                                                    <constraint firstItem="Aho-JW-zAR" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" id="Kst-Lp-3hu"/>
                                                     <constraint firstAttribute="trailing" secondItem="Aho-JW-zAR" secondAttribute="trailing" id="TqT-md-QqD"/>
                                                     <constraint firstItem="Aho-JW-zAR" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="bKe-EH-1LJ"/>
                                                     <constraint firstAttribute="bottom" secondItem="iMV-r9-jR8" secondAttribute="bottom" constant="5" id="btu-c8-vpU"/>
                                                     <constraint firstAttribute="width" secondItem="2FY-XP-7JS" secondAttribute="height" multiplier="152:111" id="g57-gR-r4q"/>
                                                     <constraint firstItem="iMV-r9-jR8" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="jPK-6X-df0"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NBd-Dw-DTB" secondAttribute="trailing" symbolic="YES" id="kiN-ed-ydf"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NBd-Dw-DTB" secondAttribute="trailing" constant="20" symbolic="YES" id="kiN-ed-ydf"/>
                                                     <constraint firstItem="NBd-Dw-DTB" firstAttribute="leading" secondItem="2FY-XP-7JS" secondAttribute="leading" id="lYs-Tj-UX1"/>
                                                     <constraint firstItem="NBd-Dw-DTB" firstAttribute="top" secondItem="2FY-XP-7JS" secondAttribute="top" id="uV8-KT-07K"/>
                                                 </constraints>
@@ -1278,6 +1278,7 @@ you will get x points</string>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
                         <outlet property="answerText" destination="M9f-4b-Qmc" id="7XE-TU-7Cz"/>
+                        <outlet property="quesImage" destination="Aho-JW-zAR" id="Qrs-t7-vcc"/>
                         <outlet property="questionNumber" destination="NBd-Dw-DTB" id="sTt-C6-cHI"/>
                         <outlet property="questionText" destination="d2j-fr-1HM" id="alj-d9-x8m"/>
                         <outlet property="scrollView" destination="4sz-uC-ad0" id="rUP-3i-zBL"/>
@@ -1285,7 +1286,7 @@ you will get x points</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxI-8Z-gxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4253.6000000000004" y="-896.85157421289364"/>
+            <point key="canvasLocation" x="4252.898550724638" y="-897.32142857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wxM-fu-bq7">
