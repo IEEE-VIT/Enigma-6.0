@@ -71,7 +71,7 @@ class playViewController: UIViewController {
         }
     }
     
-    // Set Image From the URL Function
+    // Set Image From the URL Function 
     func setImage(from url: String) {
         guard let imageURL = URL(string: url) else { return }
         

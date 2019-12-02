@@ -128,7 +128,7 @@ class NetworkEngine {
         Alamofire.request(url, method: .post, headers: constants.headers).responseJSON{
             response in if response.result.isSuccess{
                 let json = JSON(response.result.value!)
-                                print(json)
+//                                print(json)
                 completion(json["payload"]["user"].dictionaryValue,json["statusCode"].intValue)
                 
             } else
