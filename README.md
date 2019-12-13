@@ -12,8 +12,8 @@ Every year IEEE VIT SB host Enigma(a online cryptic hunt). The iOS application w
 ### Application Preview
 
 <p align = "center">
-<img src = "Screenshots/Launch.PNG" width = "24%" height = "24%">
-<img src = "Screenshots/login.PNG" width = "24%" height = "24%">
-<img src = "Screenshots/gsing.PNG" width = "24%" height = "24%">
-<img src = "Screenshots/setpro.PNG" width = "24%" height = "24%">
+<img src = "Screenshots/Launch.png" width = "24%" height = "24%">
+<img src = "Screenshots/login.png" width = "24%" height = "24%">
+<img src = "Screenshots/gsing.png" width = "24%" height = "24%">
+<img src = "Screenshots/setpro.png" width = "24%" height = "24%">
 </p>
