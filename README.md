@@ -29,3 +29,19 @@ Every year IEEE VIT SB host Enigma(a online cryptic hunt). The iOS application w
 <p align = "center">
 <img src = "Screenshots/rule.png" width = "24%" height = "24%">
 </p>
+
+
+## What is IEEE VIT SB?
+<br><p align = "center"><img src = "Screenshots/IEEE-Logo.png" width = "60%" height = "60%"></p><br>
+IEEE VIT Core Committee is one of the most active chapters inside Region 10 of IEEE International. We boast of highly skilled members in technical and non-technical disciplines. The IEEE Region 10, also sometimes referred as the Asia Pacific Region, comprises of 57 Sections, 6 Councils, 17 Sub-sections, 515 Chapters, 60 Affinity Groups and 958 Student Branches. It covers a geographical area stretching from South Korea and Japan in the north-east to New Zealand in the south, and Pakistan in the west. With over 100,000 members it is one of the largest regions in IEEE.
+
+## What is techloop?
+<br><p align = "center"><img src = "Screenshots/Techloop.png" width = "60%" height = "60%"></p><br>
+A one of its kind initiative from IEEE VIT that seeks to proliferate technical skills among students. Topics discussed include
+<ul>
+<li>Electronics
+<li>Machine Learning
+<li>Application Development
+<li>Web Development
+<li>Design
+</ul>
