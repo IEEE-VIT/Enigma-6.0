@@ -44,4 +44,5 @@ A one of its kind initiative from IEEE VIT that seeks to proliferate technical s
 <li>Application Development
 <li>Web Development
 <li>Design
+<li>Cyber Security
 </ul>
