@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Gn-Uq-0TL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -825,7 +825,7 @@ you will get x points</string>
             <objects>
                 <viewController id="30E-h9-OW9" customClass="ruleTabBarViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kvq-29-jM1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="Eih-Bg-5jW">
@@ -918,7 +918,7 @@ you will get x points</string>
             <objects>
                 <viewController id="9gO-8H-Ywf" customClass="profileViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrq-jU-7AV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="709"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lb8-tG-j4h">
@@ -1114,7 +1114,7 @@ you will get x points</string>
             <objects>
                 <viewController id="Bc4-tf-De5" customClass="playViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yye-0y-Xf7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sz-uC-ad0">
@@ -1160,7 +1160,7 @@ you will get x points</string>
                                                             <constraint firstAttribute="height" constant="44" id="qhP-aH-Xis"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Saira-Regular" family="Saira" pointSize="20"/>
-                                                        <state key="normal" title="-">
+                                                        <state key="normal" title="1">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -1280,7 +1280,7 @@ you will get x points</string>
                         <outlet property="answerText" destination="M9f-4b-Qmc" id="7XE-TU-7Cz"/>
                         <outlet property="quesImage" destination="Aho-JW-zAR" id="Qrs-t7-vcc"/>
                         <outlet property="questionNumber" destination="NBd-Dw-DTB" id="sTt-C6-cHI"/>
-                        <outlet property="questionText" destination="d2j-fr-1HM" id="alj-d9-x8m"/>
+                        <outlet property="questionText" destination="d2j-fr-1HM" id="rfB-uc-yoM"/>
                         <outlet property="scrollView" destination="4sz-uC-ad0" id="rUP-3i-zBL"/>
                     </connections>
                 </viewController>
@@ -1319,7 +1319,6 @@ you will get x points</string>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Qo5-ES-hcx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -1344,7 +1343,6 @@ you will get x points</string>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="wX4-mQ-6gM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -1365,7 +1363,7 @@ you will get x points</string>
             <objects>
                 <viewController id="MdU-kc-Kkr" customClass="leaderBoardViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WSj-or-5SM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaderBoard" translatesAutoresizingMaskIntoConstraints="NO" id="lgq-iq-3yS">
