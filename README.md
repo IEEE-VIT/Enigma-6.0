@@ -6,7 +6,7 @@ Official Enigma 6.0 App
 
 
 ### Introduction
-Every year IEEE VIT SB host Enigma(a online cryptic hunt). The iOS application was used to register new user using Google sign-In and to play Enigma and also to check the leaderboard.
+Every year IEEE-VIT host Enigma (a online cryptic hunt). The iOS application was used to register new user using Google sign-In and to play Enigma and also to check the leaderboard.
 
 
 ### Application Preview
@@ -31,7 +31,7 @@ Every year IEEE VIT SB host Enigma(a online cryptic hunt). The iOS application w
 </p>
 
 
-## What is IEEE VIT SB?
+## What is IEEE-VIT?
 <br><p align = "center"><img src = "Screenshots/IEEE-Logo.png" width = "60%" height = "60%"></p><br>
 IEEE VIT Core Committee is one of the most active chapters inside Region 10 of IEEE International. We boast of highly skilled members in technical and non-technical disciplines. The IEEE Region 10, also sometimes referred as the Asia Pacific Region, comprises of 57 Sections, 6 Councils, 17 Sub-sections, 515 Chapters, 60 Affinity Groups and 958 Student Branches. It covers a geographical area stretching from South Korea and Japan in the north-east to New Zealand in the south, and Pakistan in the west. With over 100,000 members it is one of the largest regions in IEEE.
 
@@ -52,7 +52,7 @@ A one of its kind initiative from IEEE VIT that seeks to proliferate technical s
 
 MIT License
 
-Copyright (c) 2019 Devang Patel on behalf of IEEE VIT SB
+Copyright (c) 2020 IEEE-VIT
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
